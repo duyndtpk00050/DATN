@@ -60,7 +60,6 @@
             this.cbbnvntaohdban = new System.Windows.Forms.ComboBox();
             this.cbbkhhdban = new System.Windows.Forms.ComboBox();
             this.cbbhdban = new System.Windows.Forms.ComboBox();
-            this.dtpngaytaohdban = new System.Windows.Forms.DateTimePicker();
             this.lbltongtienhdban = new System.Windows.Forms.Label();
             this.lblhdban = new System.Windows.Forms.Label();
             this.lblnvntaohdban = new System.Windows.Forms.Label();
@@ -281,7 +280,6 @@
             this.gbtimhdban.Controls.Add(this.cbbnvntaohdban);
             this.gbtimhdban.Controls.Add(this.cbbkhhdban);
             this.gbtimhdban.Controls.Add(this.cbbhdban);
-            this.gbtimhdban.Controls.Add(this.dtpngaytaohdban);
             this.gbtimhdban.Controls.Add(this.lbltongtienhdban);
             this.gbtimhdban.Controls.Add(this.lblhdban);
             this.gbtimhdban.Controls.Add(this.lblnvntaohdban);
@@ -447,17 +445,6 @@
             this.cbbhdban.Name = "cbbhdban";
             this.cbbhdban.Size = new System.Drawing.Size(159, 21);
             this.cbbhdban.TabIndex = 1;
-            // 
-            // dtpngaytaohdban
-            // 
-            this.dtpngaytaohdban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpngaytaohdban.Location = new System.Drawing.Point(112, 25);
-            this.dtpngaytaohdban.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
-            this.dtpngaytaohdban.MinDate = new System.DateTime(2015, 9, 16, 0, 0, 0, 0);
-            this.dtpngaytaohdban.Name = "dtpngaytaohdban";
-            this.dtpngaytaohdban.Size = new System.Drawing.Size(223, 20);
-            this.dtpngaytaohdban.TabIndex = 0;
-            this.dtpngaytaohdban.Value = new System.DateTime(2015, 9, 16, 11, 47, 27, 0);
             // 
             // lbltongtienhdban
             // 
@@ -718,7 +705,6 @@
         private System.Windows.Forms.ComboBox cbbnvntaohdban;
         private System.Windows.Forms.ComboBox cbbkhhdban;
         private System.Windows.Forms.ComboBox cbbhdban;
-        private System.Windows.Forms.DateTimePicker dtpngaytaohdban;
         private System.Windows.Forms.Label lbltongtienhdban;
         private System.Windows.Forms.Label lblhdban;
         private System.Windows.Forms.Label lblnvntaohdban;
