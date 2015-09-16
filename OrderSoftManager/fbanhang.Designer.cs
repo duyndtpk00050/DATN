@@ -31,13 +31,30 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fbanhang));
             this.gbdshdnhap = new System.Windows.Forms.GroupBox();
             this.dtgdshdnhap = new System.Windows.Forms.DataGridView();
+            this.sttdshdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvtaohdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaytaohdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongtienhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaikhhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbchucnanghdban = new System.Windows.Forms.GroupBox();
+            this.btncancelhdban = new System.Windows.Forms.Button();
+            this.btnthanhtoanhdban = new System.Windows.Forms.Button();
+            this.btnaddhdban = new System.Windows.Forms.Button();
             this.btndshdban = new System.Windows.Forms.Button();
+            this.btninhdban = new System.Windows.Forms.Button();
             this.btntimhdban = new System.Windows.Forms.Button();
             this.gbtimhdban = new System.Windows.Forms.GroupBox();
+            this.lblsoluongmhhdban = new System.Windows.Forms.Label();
+            this.numsoluongmhhdban = new System.Windows.Forms.NumericUpDown();
+            this.btnaddmhhdban = new System.Windows.Forms.Button();
+            this.btntimmhhdban = new System.Windows.Forms.Button();
+            this.cbbmhhdban = new System.Windows.Forms.ComboBox();
+            this.lblmhhdban = new System.Windows.Forms.Label();
+            this.btnaddkhhdban = new System.Windows.Forms.Button();
             this.numtongtienhdban = new System.Windows.Forms.NumericUpDown();
             this.cbbloaikhhdban = new System.Windows.Forms.ComboBox();
-            this.btninhdban = new System.Windows.Forms.Button();
             this.lblloaikhhdban = new System.Windows.Forms.Label();
             this.lbldvgiahdban = new System.Windows.Forms.Label();
             this.cbbnvntaohdban = new System.Windows.Forms.ComboBox();
@@ -49,33 +66,16 @@
             this.lblnvntaohdban = new System.Windows.Forms.Label();
             this.lblkhhdban = new System.Windows.Forms.Label();
             this.lblngaytaohdban = new System.Windows.Forms.Label();
-            this.btnaddhdban = new System.Windows.Forms.Button();
             this.gbdsmhban = new System.Windows.Forms.GroupBox();
-            this.btnaddkhhdban = new System.Windows.Forms.Button();
             this.dtbdsmhban = new System.Windows.Forms.DataGridView();
-            this.btnaddmhhdban = new System.Windows.Forms.Button();
-            this.btntimmhhdban = new System.Windows.Forms.Button();
-            this.cbbmhhdban = new System.Windows.Forms.ComboBox();
-            this.lblmhhdban = new System.Windows.Forms.Label();
-            this.numsoluongmhhdban = new System.Windows.Forms.NumericUpDown();
-            this.lblsoluongmhhdban = new System.Windows.Forms.Label();
             this.sttmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluongmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giamhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dvmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thuemhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btncancelhdban = new System.Windows.Forms.Button();
-            this.btnthanhtoanhdban = new System.Windows.Forms.Button();
             this.gbchitiethdban = new System.Windows.Forms.GroupBox();
             this.dtgchitiethdban = new System.Windows.Forms.DataGridView();
-            this.sttdshdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvtaohdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaytaohdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongtienhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaikhhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sttchitiethdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenchitiethdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaytaochitiethdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,10 +86,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgdshdnhap)).BeginInit();
             this.gbchucnanghdban.SuspendLayout();
             this.gbtimhdban.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numsoluongmhhdban)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numtongtienhdban)).BeginInit();
             this.gbdsmhban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtbdsmhban)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numsoluongmhhdban)).BeginInit();
             this.gbchitiethdban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgchitiethdban)).BeginInit();
             this.SuspendLayout();
@@ -101,7 +101,7 @@
             this.gbdshdnhap.Controls.Add(this.dtgdshdnhap);
             this.gbdshdnhap.Location = new System.Drawing.Point(435, 74);
             this.gbdshdnhap.Name = "gbdshdnhap";
-            this.gbdshdnhap.Size = new System.Drawing.Size(608, 273);
+            this.gbdshdnhap.Size = new System.Drawing.Size(581, 273);
             this.gbdshdnhap.TabIndex = 3;
             this.gbdshdnhap.TabStop = false;
             this.gbdshdnhap.Text = "Danh sách hóa đơn bán";
@@ -132,8 +132,57 @@
             this.dtgdshdnhap.Name = "dtgdshdnhap";
             this.dtgdshdnhap.ReadOnly = true;
             this.dtgdshdnhap.RowHeadersVisible = false;
-            this.dtgdshdnhap.Size = new System.Drawing.Size(596, 248);
+            this.dtgdshdnhap.Size = new System.Drawing.Size(569, 248);
             this.dtgdshdnhap.TabIndex = 0;
+            // 
+            // sttdshdban
+            // 
+            this.sttdshdban.HeaderText = "STT";
+            this.sttdshdban.Name = "sttdshdban";
+            this.sttdshdban.ReadOnly = true;
+            this.sttdshdban.Width = 52;
+            // 
+            // nvtaohdban
+            // 
+            this.nvtaohdban.HeaderText = "Nhân viên tạo hóa đơn";
+            this.nvtaohdban.Name = "nvtaohdban";
+            this.nvtaohdban.ReadOnly = true;
+            this.nvtaohdban.Width = 141;
+            // 
+            // tenhdnhap
+            // 
+            this.tenhdnhap.HeaderText = "Tên hóa đơn";
+            this.tenhdnhap.Name = "tenhdnhap";
+            this.tenhdnhap.ReadOnly = true;
+            this.tenhdnhap.Width = 93;
+            // 
+            // ngaytaohdban
+            // 
+            this.ngaytaohdban.HeaderText = "Ngày tạo";
+            this.ngaytaohdban.Name = "ngaytaohdban";
+            this.ngaytaohdban.ReadOnly = true;
+            this.ngaytaohdban.Width = 74;
+            // 
+            // tongtienhdban
+            // 
+            this.tongtienhdban.HeaderText = "Tổng tiền (VNĐ)";
+            this.tongtienhdban.Name = "tongtienhdban";
+            this.tongtienhdban.ReadOnly = true;
+            this.tongtienhdban.Width = 108;
+            // 
+            // khhdban
+            // 
+            this.khhdban.HeaderText = "Khách hàng";
+            this.khhdban.Name = "khhdban";
+            this.khhdban.ReadOnly = true;
+            this.khhdban.Width = 89;
+            // 
+            // loaikhhdban
+            // 
+            this.loaikhhdban.HeaderText = "Loại khách hàng";
+            this.loaikhhdban.Name = "loaikhhdban";
+            this.loaikhhdban.ReadOnly = true;
+            this.loaikhhdban.Width = 111;
             // 
             // gbchucnanghdban
             // 
@@ -149,6 +198,39 @@
             this.gbchucnanghdban.TabStop = false;
             this.gbchucnanghdban.Text = "Chức năng";
             // 
+            // btncancelhdban
+            // 
+            this.btncancelhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncancelhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btncancelhdban.Location = new System.Drawing.Point(106, 22);
+            this.btncancelhdban.Name = "btncancelhdban";
+            this.btncancelhdban.Size = new System.Drawing.Size(75, 23);
+            this.btncancelhdban.TabIndex = 1;
+            this.btncancelhdban.Text = "Hủy";
+            this.btncancelhdban.UseVisualStyleBackColor = true;
+            // 
+            // btnthanhtoanhdban
+            // 
+            this.btnthanhtoanhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnthanhtoanhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnthanhtoanhdban.Location = new System.Drawing.Point(192, 22);
+            this.btnthanhtoanhdban.Name = "btnthanhtoanhdban";
+            this.btnthanhtoanhdban.Size = new System.Drawing.Size(102, 23);
+            this.btnthanhtoanhdban.TabIndex = 2;
+            this.btnthanhtoanhdban.Text = "Thanh toán";
+            this.btnthanhtoanhdban.UseVisualStyleBackColor = true;
+            // 
+            // btnaddhdban
+            // 
+            this.btnaddhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaddhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnaddhdban.Location = new System.Drawing.Point(20, 22);
+            this.btnaddhdban.Name = "btnaddhdban";
+            this.btnaddhdban.Size = new System.Drawing.Size(75, 23);
+            this.btnaddhdban.TabIndex = 0;
+            this.btnaddhdban.Text = "Tạo";
+            this.btnaddhdban.UseVisualStyleBackColor = true;
+            // 
             // btndshdban
             // 
             this.btndshdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -159,6 +241,17 @@
             this.btndshdban.TabIndex = 3;
             this.btndshdban.Text = "Danh sách hóa đơn bán";
             this.btndshdban.UseVisualStyleBackColor = true;
+            // 
+            // btninhdban
+            // 
+            this.btninhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btninhdban.Location = new System.Drawing.Point(485, 22);
+            this.btninhdban.Name = "btninhdban";
+            this.btninhdban.Size = new System.Drawing.Size(105, 23);
+            this.btninhdban.TabIndex = 4;
+            this.btninhdban.Text = "In hóa đơn";
+            this.btninhdban.UseVisualStyleBackColor = true;
             // 
             // btntimhdban
             // 
@@ -201,6 +294,80 @@
             this.gbtimhdban.TabStop = false;
             this.gbtimhdban.Text = "Hóa đơn";
             // 
+            // lblsoluongmhhdban
+            // 
+            this.lblsoluongmhhdban.AutoSize = true;
+            this.lblsoluongmhhdban.Location = new System.Drawing.Point(19, 300);
+            this.lblsoluongmhhdban.Name = "lblsoluongmhhdban";
+            this.lblsoluongmhhdban.Size = new System.Drawing.Size(49, 13);
+            this.lblsoluongmhhdban.TabIndex = 28;
+            this.lblsoluongmhhdban.Text = "Số lượng";
+            // 
+            // numsoluongmhhdban
+            // 
+            this.numsoluongmhhdban.Location = new System.Drawing.Point(112, 296);
+            this.numsoluongmhhdban.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.numsoluongmhhdban.Name = "numsoluongmhhdban";
+            this.numsoluongmhhdban.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numsoluongmhhdban.Size = new System.Drawing.Size(142, 20);
+            this.numsoluongmhhdban.TabIndex = 10;
+            // 
+            // btnaddmhhdban
+            // 
+            this.btnaddmhhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaddmhhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnaddmhhdban.Location = new System.Drawing.Point(260, 295);
+            this.btnaddmhhdban.Name = "btnaddmhhdban";
+            this.btnaddmhhdban.Size = new System.Drawing.Size(132, 23);
+            this.btnaddmhhdban.TabIndex = 11;
+            this.btnaddmhhdban.Text = "Thêm vào hóa đơn";
+            this.btnaddmhhdban.UseVisualStyleBackColor = true;
+            // 
+            // btntimmhhdban
+            // 
+            this.btntimmhhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntimmhhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btntimmhhdban.Location = new System.Drawing.Point(340, 256);
+            this.btntimmhhdban.Name = "btntimmhhdban";
+            this.btntimmhhdban.Size = new System.Drawing.Size(52, 23);
+            this.btntimmhhdban.TabIndex = 9;
+            this.btntimmhhdban.Text = "Tìm";
+            this.btntimmhhdban.UseVisualStyleBackColor = true;
+            // 
+            // cbbmhhdban
+            // 
+            this.cbbmhhdban.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbbmhhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbmhhdban.FormattingEnabled = true;
+            this.cbbmhhdban.Location = new System.Drawing.Point(112, 257);
+            this.cbbmhhdban.Name = "cbbmhhdban";
+            this.cbbmhhdban.Size = new System.Drawing.Size(222, 21);
+            this.cbbmhhdban.TabIndex = 8;
+            // 
+            // lblmhhdban
+            // 
+            this.lblmhhdban.AutoSize = true;
+            this.lblmhhdban.Location = new System.Drawing.Point(19, 261);
+            this.lblmhhdban.Name = "lblmhhdban";
+            this.lblmhhdban.Size = new System.Drawing.Size(52, 13);
+            this.lblmhhdban.TabIndex = 25;
+            this.lblmhhdban.Text = "Mặt hàng";
+            // 
+            // btnaddkhhdban
+            // 
+            this.btnaddkhhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaddkhhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnaddkhhdban.Location = new System.Drawing.Point(340, 178);
+            this.btnaddkhhdban.Name = "btnaddkhhdban";
+            this.btnaddkhhdban.Size = new System.Drawing.Size(52, 23);
+            this.btnaddkhhdban.TabIndex = 6;
+            this.btnaddkhhdban.Text = "Thêm";
+            this.btnaddkhhdban.UseVisualStyleBackColor = true;
+            // 
             // numtongtienhdban
             // 
             this.numtongtienhdban.Increment = new decimal(new int[] {
@@ -229,17 +396,6 @@
             this.cbbloaikhhdban.Name = "cbbloaikhhdban";
             this.cbbloaikhhdban.Size = new System.Drawing.Size(280, 21);
             this.cbbloaikhhdban.TabIndex = 7;
-            // 
-            // btninhdban
-            // 
-            this.btninhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btninhdban.Location = new System.Drawing.Point(485, 22);
-            this.btninhdban.Name = "btninhdban";
-            this.btninhdban.Size = new System.Drawing.Size(105, 23);
-            this.btninhdban.TabIndex = 4;
-            this.btninhdban.Text = "In hóa đơn";
-            this.btninhdban.UseVisualStyleBackColor = true;
             // 
             // lblloaikhhdban
             // 
@@ -348,17 +504,6 @@
             this.lblngaytaohdban.TabIndex = 0;
             this.lblngaytaohdban.Text = "Ngày tạo";
             // 
-            // btnaddhdban
-            // 
-            this.btnaddhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaddhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnaddhdban.Location = new System.Drawing.Point(20, 22);
-            this.btnaddhdban.Name = "btnaddhdban";
-            this.btnaddhdban.Size = new System.Drawing.Size(75, 23);
-            this.btnaddhdban.TabIndex = 0;
-            this.btnaddhdban.Text = "Tạo";
-            this.btnaddhdban.UseVisualStyleBackColor = true;
-            // 
             // gbdsmhban
             // 
             this.gbdsmhban.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -370,17 +515,6 @@
             this.gbdsmhban.TabIndex = 2;
             this.gbdsmhban.TabStop = false;
             this.gbdsmhban.Text = "Mặt hàng";
-            // 
-            // btnaddkhhdban
-            // 
-            this.btnaddkhhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaddkhhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnaddkhhdban.Location = new System.Drawing.Point(340, 178);
-            this.btnaddkhhdban.Name = "btnaddkhhdban";
-            this.btnaddkhhdban.Size = new System.Drawing.Size(52, 23);
-            this.btnaddkhhdban.TabIndex = 6;
-            this.btnaddkhhdban.Text = "Thêm";
-            this.btnaddkhhdban.UseVisualStyleBackColor = true;
             // 
             // dtbdsmhban
             // 
@@ -410,132 +544,47 @@
             this.dtbdsmhban.Size = new System.Drawing.Size(399, 137);
             this.dtbdsmhban.TabIndex = 0;
             // 
-            // btnaddmhhdban
-            // 
-            this.btnaddmhhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnaddmhhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnaddmhhdban.Location = new System.Drawing.Point(260, 295);
-            this.btnaddmhhdban.Name = "btnaddmhhdban";
-            this.btnaddmhhdban.Size = new System.Drawing.Size(132, 23);
-            this.btnaddmhhdban.TabIndex = 11;
-            this.btnaddmhhdban.Text = "Thêm vào hóa đơn";
-            this.btnaddmhhdban.UseVisualStyleBackColor = true;
-            // 
-            // btntimmhhdban
-            // 
-            this.btntimmhhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btntimmhhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btntimmhhdban.Location = new System.Drawing.Point(340, 256);
-            this.btntimmhhdban.Name = "btntimmhhdban";
-            this.btntimmhhdban.Size = new System.Drawing.Size(52, 23);
-            this.btntimmhhdban.TabIndex = 9;
-            this.btntimmhhdban.Text = "Tìm";
-            this.btntimmhhdban.UseVisualStyleBackColor = true;
-            // 
-            // cbbmhhdban
-            // 
-            this.cbbmhhdban.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbmhhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbmhhdban.FormattingEnabled = true;
-            this.cbbmhhdban.Location = new System.Drawing.Point(112, 257);
-            this.cbbmhhdban.Name = "cbbmhhdban";
-            this.cbbmhhdban.Size = new System.Drawing.Size(222, 21);
-            this.cbbmhhdban.TabIndex = 8;
-            // 
-            // lblmhhdban
-            // 
-            this.lblmhhdban.AutoSize = true;
-            this.lblmhhdban.Location = new System.Drawing.Point(19, 261);
-            this.lblmhhdban.Name = "lblmhhdban";
-            this.lblmhhdban.Size = new System.Drawing.Size(52, 13);
-            this.lblmhhdban.TabIndex = 25;
-            this.lblmhhdban.Text = "Mặt hàng";
-            // 
-            // numsoluongmhhdban
-            // 
-            this.numsoluongmhhdban.Location = new System.Drawing.Point(112, 296);
-            this.numsoluongmhhdban.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.numsoluongmhhdban.Name = "numsoluongmhhdban";
-            this.numsoluongmhhdban.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numsoluongmhhdban.Size = new System.Drawing.Size(142, 20);
-            this.numsoluongmhhdban.TabIndex = 10;
-            // 
-            // lblsoluongmhhdban
-            // 
-            this.lblsoluongmhhdban.AutoSize = true;
-            this.lblsoluongmhhdban.Location = new System.Drawing.Point(19, 300);
-            this.lblsoluongmhhdban.Name = "lblsoluongmhhdban";
-            this.lblsoluongmhhdban.Size = new System.Drawing.Size(49, 13);
-            this.lblsoluongmhhdban.TabIndex = 28;
-            this.lblsoluongmhhdban.Text = "Số lượng";
-            // 
             // sttmhban
             // 
             this.sttmhban.HeaderText = "STT";
             this.sttmhban.Name = "sttmhban";
             this.sttmhban.ReadOnly = true;
-            this.sttmhban.Width = 53;
+            this.sttmhban.Width = 52;
             // 
             // tenmhban
             // 
             this.tenmhban.HeaderText = "Tên mặt hàng";
             this.tenmhban.Name = "tenmhban";
             this.tenmhban.ReadOnly = true;
-            this.tenmhban.Width = 98;
+            this.tenmhban.Width = 97;
             // 
             // soluongmhban
             // 
             this.soluongmhban.HeaderText = "Số lượng";
             this.soluongmhban.Name = "soluongmhban";
             this.soluongmhban.ReadOnly = true;
-            this.soluongmhban.Width = 74;
+            this.soluongmhban.Width = 73;
             // 
             // giamhban
             // 
             this.giamhban.HeaderText = "Giá (VNĐ)";
             this.giamhban.Name = "giamhban";
             this.giamhban.ReadOnly = true;
-            this.giamhban.Width = 80;
+            this.giamhban.Width = 79;
             // 
             // dvmhban
             // 
             this.dvmhban.HeaderText = "Đơn vị tính";
             this.dvmhban.Name = "dvmhban";
             this.dvmhban.ReadOnly = true;
-            this.dvmhban.Width = 85;
+            this.dvmhban.Width = 84;
             // 
             // thuemhban
             // 
             this.thuemhban.HeaderText = "Thuế VAT (%)";
             this.thuemhban.Name = "thuemhban";
             this.thuemhban.ReadOnly = true;
-            this.thuemhban.Width = 98;
-            // 
-            // btncancelhdban
-            // 
-            this.btncancelhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncancelhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btncancelhdban.Location = new System.Drawing.Point(106, 22);
-            this.btncancelhdban.Name = "btncancelhdban";
-            this.btncancelhdban.Size = new System.Drawing.Size(75, 23);
-            this.btncancelhdban.TabIndex = 1;
-            this.btncancelhdban.Text = "Hủy";
-            this.btncancelhdban.UseVisualStyleBackColor = true;
-            // 
-            // btnthanhtoanhdban
-            // 
-            this.btnthanhtoanhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnthanhtoanhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnthanhtoanhdban.Location = new System.Drawing.Point(192, 22);
-            this.btnthanhtoanhdban.Name = "btnthanhtoanhdban";
-            this.btnthanhtoanhdban.Size = new System.Drawing.Size(102, 23);
-            this.btnthanhtoanhdban.TabIndex = 2;
-            this.btnthanhtoanhdban.Text = "Thanh toán";
-            this.btnthanhtoanhdban.UseVisualStyleBackColor = true;
+            this.thuemhban.Width = 97;
             // 
             // gbchitiethdban
             // 
@@ -545,7 +594,7 @@
             this.gbchitiethdban.Controls.Add(this.dtgchitiethdban);
             this.gbchitiethdban.Location = new System.Drawing.Point(435, 353);
             this.gbchitiethdban.Name = "gbchitiethdban";
-            this.gbchitiethdban.Size = new System.Drawing.Size(608, 163);
+            this.gbchitiethdban.Size = new System.Drawing.Size(581, 163);
             this.gbchitiethdban.TabIndex = 4;
             this.gbchitiethdban.TabStop = false;
             this.gbchitiethdban.Text = "Chi tiết hóa đơn bán";
@@ -575,57 +624,8 @@
             this.dtgchitiethdban.Name = "dtgchitiethdban";
             this.dtgchitiethdban.ReadOnly = true;
             this.dtgchitiethdban.RowHeadersVisible = false;
-            this.dtgchitiethdban.Size = new System.Drawing.Size(596, 138);
+            this.dtgchitiethdban.Size = new System.Drawing.Size(569, 138);
             this.dtgchitiethdban.TabIndex = 0;
-            // 
-            // sttdshdban
-            // 
-            this.sttdshdban.HeaderText = "STT";
-            this.sttdshdban.Name = "sttdshdban";
-            this.sttdshdban.ReadOnly = true;
-            this.sttdshdban.Width = 53;
-            // 
-            // nvtaohdban
-            // 
-            this.nvtaohdban.HeaderText = "Nhân viên tạo hóa đơn";
-            this.nvtaohdban.Name = "nvtaohdban";
-            this.nvtaohdban.ReadOnly = true;
-            this.nvtaohdban.Width = 142;
-            // 
-            // tenhdnhap
-            // 
-            this.tenhdnhap.HeaderText = "Tên hóa đơn";
-            this.tenhdnhap.Name = "tenhdnhap";
-            this.tenhdnhap.ReadOnly = true;
-            this.tenhdnhap.Width = 94;
-            // 
-            // ngaytaohdban
-            // 
-            this.ngaytaohdban.HeaderText = "Ngày tạo";
-            this.ngaytaohdban.Name = "ngaytaohdban";
-            this.ngaytaohdban.ReadOnly = true;
-            this.ngaytaohdban.Width = 75;
-            // 
-            // tongtienhdban
-            // 
-            this.tongtienhdban.HeaderText = "Tổng tiền (VNĐ)";
-            this.tongtienhdban.Name = "tongtienhdban";
-            this.tongtienhdban.ReadOnly = true;
-            this.tongtienhdban.Width = 109;
-            // 
-            // khhdban
-            // 
-            this.khhdban.HeaderText = "Khách hàng";
-            this.khhdban.Name = "khhdban";
-            this.khhdban.ReadOnly = true;
-            this.khhdban.Width = 90;
-            // 
-            // loaikhhdban
-            // 
-            this.loaikhhdban.HeaderText = "Loại khách hàng";
-            this.loaikhhdban.Name = "loaikhhdban";
-            this.loaikhhdban.ReadOnly = true;
-            this.loaikhhdban.Width = 112;
             // 
             // sttchitiethdban
             // 
@@ -676,7 +676,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1055, 525);
+            this.ClientSize = new System.Drawing.Size(1028, 525);
             this.Controls.Add(this.gbchitiethdban);
             this.Controls.Add(this.gbdsmhban);
             this.Controls.Add(this.gbdshdnhap);
@@ -691,10 +691,10 @@
             this.gbchucnanghdban.ResumeLayout(false);
             this.gbtimhdban.ResumeLayout(false);
             this.gbtimhdban.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numsoluongmhhdban)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numtongtienhdban)).EndInit();
             this.gbdsmhban.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtbdsmhban)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numsoluongmhhdban)).EndInit();
             this.gbchitiethdban.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgchitiethdban)).EndInit();
             this.ResumeLayout(false);
