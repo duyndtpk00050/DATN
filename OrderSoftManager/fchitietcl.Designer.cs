@@ -33,7 +33,6 @@
             this.cbbnamchitietcl = new System.Windows.Forms.ComboBox();
             this.cbbthangchitietcl = new System.Windows.Forms.ComboBox();
             this.cbbngaychitietcl = new System.Windows.Forms.ComboBox();
-            this.cbbcvchitietcl = new System.Windows.Forms.ComboBox();
             this.txtnvchitietcl = new System.Windows.Forms.TextBox();
             this.lblnamchitietcl = new System.Windows.Forms.Label();
             this.lblthangchitietcl = new System.Windows.Forms.Label();
@@ -122,7 +121,6 @@
             this.gbchucnangchitietcl.Controls.Add(this.cbbnamchitietcl);
             this.gbchucnangchitietcl.Controls.Add(this.cbbthangchitietcl);
             this.gbchucnangchitietcl.Controls.Add(this.cbbngaychitietcl);
-            this.gbchucnangchitietcl.Controls.Add(this.cbbcvchitietcl);
             this.gbchucnangchitietcl.Controls.Add(this.txtnvchitietcl);
             this.gbchucnangchitietcl.Controls.Add(this.lblnamchitietcl);
             this.gbchucnangchitietcl.Controls.Add(this.lblthangchitietcl);
@@ -170,17 +168,6 @@
             this.cbbngaychitietcl.Name = "cbbngaychitietcl";
             this.cbbngaychitietcl.Size = new System.Drawing.Size(56, 21);
             this.cbbngaychitietcl.TabIndex = 2;
-            // 
-            // cbbcvchitietcl
-            // 
-            this.cbbcvchitietcl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbcvchitietcl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbcvchitietcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbcvchitietcl.FormattingEnabled = true;
-            this.cbbcvchitietcl.Location = new System.Drawing.Point(321, 23);
-            this.cbbcvchitietcl.Name = "cbbcvchitietcl";
-            this.cbbcvchitietcl.Size = new System.Drawing.Size(121, 21);
-            this.cbbcvchitietcl.TabIndex = 1;
             // 
             // txtnvchitietcl
             // 
@@ -352,28 +339,28 @@
             this.stt.HeaderText = "STT";
             this.stt.Name = "stt";
             this.stt.ReadOnly = true;
-            this.stt.Width = 53;
+            this.stt.Width = 52;
             // 
             // tennv
             // 
             this.tennv.HeaderText = "Tên NV";
             this.tennv.Name = "tennv";
             this.tennv.ReadOnly = true;
-            this.tennv.Width = 69;
+            this.tennv.Width = 68;
             // 
             // cvnv
             // 
             this.cvnv.HeaderText = "Chức vụ";
             this.cvnv.Name = "cvnv";
             this.cvnv.ReadOnly = true;
-            this.cvnv.Width = 72;
+            this.cvnv.Width = 71;
             // 
             // nvchamca
             // 
             this.nvchamca.HeaderText = "Nhân viên chấm ca";
             this.nvchamca.Name = "nvchamca";
             this.nvchamca.ReadOnly = true;
-            this.nvchamca.Width = 125;
+            this.nvchamca.Width = 124;
             // 
             // ngay1lamtheocl
             // 
@@ -381,13 +368,13 @@
             this.ngay1lamtheocl.Name = "ngay1lamtheocl";
             this.ngay1lamtheocl.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ngay1lamtheocl.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ngay1lamtheocl.Width = 66;
+            this.ngay1lamtheocl.Width = 65;
             // 
             // ngay2lamtheocl
             // 
             this.ngay2lamtheocl.HeaderText = "Ngày 2";
             this.ngay2lamtheocl.Name = "ngay2lamtheocl";
-            this.ngay2lamtheocl.Width = 47;
+            this.ngay2lamtheocl.Width = 46;
             // 
             // ngay3lamtheocl
             // 
@@ -395,37 +382,37 @@
             this.ngay3lamtheocl.Name = "ngay3lamtheocl";
             this.ngay3lamtheocl.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ngay3lamtheocl.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ngay3lamtheocl.Width = 66;
+            this.ngay3lamtheocl.Width = 65;
             // 
             // ngay4lamtheocl
             // 
             this.ngay4lamtheocl.HeaderText = "Ngày 4";
             this.ngay4lamtheocl.Name = "ngay4lamtheocl";
-            this.ngay4lamtheocl.Width = 47;
+            this.ngay4lamtheocl.Width = 46;
             // 
             // ngay5lamtheocl
             // 
             this.ngay5lamtheocl.HeaderText = "Ngày 5";
             this.ngay5lamtheocl.Name = "ngay5lamtheocl";
-            this.ngay5lamtheocl.Width = 47;
+            this.ngay5lamtheocl.Width = 46;
             // 
             // ngay6lamtheocl
             // 
             this.ngay6lamtheocl.HeaderText = "Ngày 6";
             this.ngay6lamtheocl.Name = "ngay6lamtheocl";
-            this.ngay6lamtheocl.Width = 47;
+            this.ngay6lamtheocl.Width = 46;
             // 
             // ngay7lamtheocl
             // 
             this.ngay7lamtheocl.HeaderText = "Ngày 7";
             this.ngay7lamtheocl.Name = "ngay7lamtheocl";
-            this.ngay7lamtheocl.Width = 47;
+            this.ngay7lamtheocl.Width = 46;
             // 
             // ngay8lamtheocl
             // 
             this.ngay8lamtheocl.HeaderText = "Ngày 8";
             this.ngay8lamtheocl.Name = "ngay8lamtheocl";
-            this.ngay8lamtheocl.Width = 47;
+            this.ngay8lamtheocl.Width = 46;
             // 
             // ngay9lamtheocl
             // 
@@ -433,7 +420,7 @@
             this.ngay9lamtheocl.Name = "ngay9lamtheocl";
             this.ngay9lamtheocl.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ngay9lamtheocl.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ngay9lamtheocl.Width = 66;
+            this.ngay9lamtheocl.Width = 65;
             // 
             // ngay10lamtheocl
             // 
@@ -441,133 +428,133 @@
             this.ngay10lamtheocl.Name = "ngay10lamtheocl";
             this.ngay10lamtheocl.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ngay10lamtheocl.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ngay10lamtheocl.Width = 72;
+            this.ngay10lamtheocl.Width = 71;
             // 
             // ngay11lamtheocl
             // 
             this.ngay11lamtheocl.HeaderText = "Ngày 11";
             this.ngay11lamtheocl.Name = "ngay11lamtheocl";
-            this.ngay11lamtheocl.Width = 53;
+            this.ngay11lamtheocl.Width = 52;
             // 
             // ngay12lamtheocl
             // 
             this.ngay12lamtheocl.HeaderText = "Ngày 12";
             this.ngay12lamtheocl.Name = "ngay12lamtheocl";
-            this.ngay12lamtheocl.Width = 53;
+            this.ngay12lamtheocl.Width = 52;
             // 
             // ngay13lamtheocl
             // 
             this.ngay13lamtheocl.HeaderText = "Ngày 13";
             this.ngay13lamtheocl.Name = "ngay13lamtheocl";
-            this.ngay13lamtheocl.Width = 53;
+            this.ngay13lamtheocl.Width = 52;
             // 
             // ngay14lamtheocl
             // 
             this.ngay14lamtheocl.HeaderText = "Ngày 14";
             this.ngay14lamtheocl.Name = "ngay14lamtheocl";
-            this.ngay14lamtheocl.Width = 53;
+            this.ngay14lamtheocl.Width = 52;
             // 
             // ngay15lamtheocl
             // 
             this.ngay15lamtheocl.HeaderText = "Ngày 15";
             this.ngay15lamtheocl.Name = "ngay15lamtheocl";
-            this.ngay15lamtheocl.Width = 53;
+            this.ngay15lamtheocl.Width = 52;
             // 
             // ngay16lamtheocl
             // 
             this.ngay16lamtheocl.HeaderText = "Ngày 16";
             this.ngay16lamtheocl.Name = "ngay16lamtheocl";
-            this.ngay16lamtheocl.Width = 53;
+            this.ngay16lamtheocl.Width = 52;
             // 
             // ngay17lamtheocl
             // 
             this.ngay17lamtheocl.HeaderText = "Ngày 17";
             this.ngay17lamtheocl.Name = "ngay17lamtheocl";
-            this.ngay17lamtheocl.Width = 53;
+            this.ngay17lamtheocl.Width = 52;
             // 
             // ngay18lamtheocl
             // 
             this.ngay18lamtheocl.HeaderText = "Ngày 18";
             this.ngay18lamtheocl.Name = "ngay18lamtheocl";
-            this.ngay18lamtheocl.Width = 53;
+            this.ngay18lamtheocl.Width = 52;
             // 
             // ngay19lamtheocl
             // 
             this.ngay19lamtheocl.HeaderText = "Ngày 19";
             this.ngay19lamtheocl.Name = "ngay19lamtheocl";
-            this.ngay19lamtheocl.Width = 53;
+            this.ngay19lamtheocl.Width = 52;
             // 
             // ngay20lamtheocl
             // 
             this.ngay20lamtheocl.HeaderText = "Ngày 20";
             this.ngay20lamtheocl.Name = "ngay20lamtheocl";
-            this.ngay20lamtheocl.Width = 53;
+            this.ngay20lamtheocl.Width = 52;
             // 
             // ngay21lamtheocl
             // 
             this.ngay21lamtheocl.HeaderText = "Ngày 21";
             this.ngay21lamtheocl.Name = "ngay21lamtheocl";
-            this.ngay21lamtheocl.Width = 53;
+            this.ngay21lamtheocl.Width = 52;
             // 
             // ngay22lamtheocl
             // 
             this.ngay22lamtheocl.HeaderText = "Ngày 22";
             this.ngay22lamtheocl.Name = "ngay22lamtheocl";
-            this.ngay22lamtheocl.Width = 53;
+            this.ngay22lamtheocl.Width = 52;
             // 
             // ngay23lamtheocl
             // 
             this.ngay23lamtheocl.HeaderText = "Ngày 23";
             this.ngay23lamtheocl.Name = "ngay23lamtheocl";
-            this.ngay23lamtheocl.Width = 53;
+            this.ngay23lamtheocl.Width = 52;
             // 
             // ngay24lamtheocl
             // 
             this.ngay24lamtheocl.HeaderText = "Ngày 24";
             this.ngay24lamtheocl.Name = "ngay24lamtheocl";
-            this.ngay24lamtheocl.Width = 53;
+            this.ngay24lamtheocl.Width = 52;
             // 
             // ngay25lamtheocl
             // 
             this.ngay25lamtheocl.HeaderText = "Ngày 25";
             this.ngay25lamtheocl.Name = "ngay25lamtheocl";
-            this.ngay25lamtheocl.Width = 53;
+            this.ngay25lamtheocl.Width = 52;
             // 
             // ngay26lamtheocl
             // 
             this.ngay26lamtheocl.HeaderText = "Ngày 26";
             this.ngay26lamtheocl.Name = "ngay26lamtheocl";
-            this.ngay26lamtheocl.Width = 53;
+            this.ngay26lamtheocl.Width = 52;
             // 
             // ngay27lamtheocl
             // 
             this.ngay27lamtheocl.HeaderText = "Ngày 27";
             this.ngay27lamtheocl.Name = "ngay27lamtheocl";
-            this.ngay27lamtheocl.Width = 53;
+            this.ngay27lamtheocl.Width = 52;
             // 
             // ngay28lamtheocl
             // 
             this.ngay28lamtheocl.HeaderText = "Ngày 28";
             this.ngay28lamtheocl.Name = "ngay28lamtheocl";
-            this.ngay28lamtheocl.Width = 53;
+            this.ngay28lamtheocl.Width = 52;
             // 
             // ngay29lamtheocl
             // 
             this.ngay29lamtheocl.HeaderText = "Ngày 29";
             this.ngay29lamtheocl.Name = "ngay29lamtheocl";
-            this.ngay29lamtheocl.Width = 53;
+            this.ngay29lamtheocl.Width = 52;
             // 
             // ngay30lamtheocl
             // 
             this.ngay30lamtheocl.HeaderText = "Ngày 30";
             this.ngay30lamtheocl.Name = "ngay30lamtheocl";
-            this.ngay30lamtheocl.Width = 53;
+            this.ngay30lamtheocl.Width = 52;
             // 
             // ngay31lamtheocl
             // 
             this.ngay31lamtheocl.HeaderText = "Ngày 31";
             this.ngay31lamtheocl.Name = "ngay31lamtheocl";
-            this.ngay31lamtheocl.Width = 53;
+            this.ngay31lamtheocl.Width = 52;
             // 
             // ngay1tangcl
             // 
@@ -575,181 +562,181 @@
             this.ngay1tangcl.Name = "ngay1tangcl";
             this.ngay1tangcl.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.ngay1tangcl.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ngay1tangcl.Width = 111;
+            this.ngay1tangcl.Width = 110;
             // 
             // ngay2tangcl
             // 
             this.ngay2tangcl.HeaderText = "Ngày 2 (tăng ca)";
             this.ngay2tangcl.Name = "ngay2tangcl";
-            this.ngay2tangcl.Width = 92;
+            this.ngay2tangcl.Width = 91;
             // 
             // ngay3tangcl
             // 
             this.ngay3tangcl.HeaderText = "Ngày 3 (tăng ca)";
             this.ngay3tangcl.Name = "ngay3tangcl";
-            this.ngay3tangcl.Width = 92;
+            this.ngay3tangcl.Width = 91;
             // 
             // ngay4tangcl
             // 
             this.ngay4tangcl.HeaderText = "Ngày 4 (tăng ca)";
             this.ngay4tangcl.Name = "ngay4tangcl";
-            this.ngay4tangcl.Width = 92;
+            this.ngay4tangcl.Width = 91;
             // 
             // ngay5tangcl
             // 
             this.ngay5tangcl.HeaderText = "Ngày 5 (tăng ca)";
             this.ngay5tangcl.Name = "ngay5tangcl";
-            this.ngay5tangcl.Width = 92;
+            this.ngay5tangcl.Width = 91;
             // 
             // ngay6tangcl
             // 
             this.ngay6tangcl.HeaderText = "Ngày 6 (tăng ca)";
             this.ngay6tangcl.Name = "ngay6tangcl";
-            this.ngay6tangcl.Width = 92;
+            this.ngay6tangcl.Width = 91;
             // 
             // ngay7tangcl
             // 
             this.ngay7tangcl.HeaderText = "Ngày 7 (tăng ca)";
             this.ngay7tangcl.Name = "ngay7tangcl";
-            this.ngay7tangcl.Width = 92;
+            this.ngay7tangcl.Width = 91;
             // 
             // ngay8tangcl
             // 
             this.ngay8tangcl.HeaderText = "Ngày 8 (tăng ca)";
             this.ngay8tangcl.Name = "ngay8tangcl";
-            this.ngay8tangcl.Width = 92;
+            this.ngay8tangcl.Width = 91;
             // 
             // ngay9tangcl
             // 
             this.ngay9tangcl.HeaderText = "Ngày 9 (tăng ca)";
             this.ngay9tangcl.Name = "ngay9tangcl";
-            this.ngay9tangcl.Width = 92;
+            this.ngay9tangcl.Width = 91;
             // 
             // ngay10tangcl
             // 
             this.ngay10tangcl.HeaderText = "Ngày 10 (tăng ca)";
             this.ngay10tangcl.Name = "ngay10tangcl";
-            this.ngay10tangcl.Width = 98;
+            this.ngay10tangcl.Width = 97;
             // 
             // ngay11tangcl
             // 
             this.ngay11tangcl.HeaderText = "Ngày 11 (tăng ca)";
             this.ngay11tangcl.Name = "ngay11tangcl";
-            this.ngay11tangcl.Width = 98;
+            this.ngay11tangcl.Width = 97;
             // 
             // ngay12tangcl
             // 
             this.ngay12tangcl.HeaderText = "Ngày 12 (tăng ca)";
             this.ngay12tangcl.Name = "ngay12tangcl";
-            this.ngay12tangcl.Width = 98;
+            this.ngay12tangcl.Width = 97;
             // 
             // ngay13tangcl
             // 
             this.ngay13tangcl.HeaderText = "Ngày 13 (tăng ca)";
             this.ngay13tangcl.Name = "ngay13tangcl";
-            this.ngay13tangcl.Width = 98;
+            this.ngay13tangcl.Width = 97;
             // 
             // ngay14tangcl
             // 
             this.ngay14tangcl.HeaderText = "Ngày 14 (tăng ca)";
             this.ngay14tangcl.Name = "ngay14tangcl";
-            this.ngay14tangcl.Width = 98;
+            this.ngay14tangcl.Width = 97;
             // 
             // ngay16tangcl
             // 
             this.ngay16tangcl.HeaderText = "Ngày 16 (tăng ca)";
             this.ngay16tangcl.Name = "ngay16tangcl";
-            this.ngay16tangcl.Width = 98;
+            this.ngay16tangcl.Width = 97;
             // 
             // ngay17tangcl
             // 
             this.ngay17tangcl.HeaderText = "Ngày 17 (tăng ca)";
             this.ngay17tangcl.Name = "ngay17tangcl";
-            this.ngay17tangcl.Width = 98;
+            this.ngay17tangcl.Width = 97;
             // 
             // ngay18tangcl
             // 
             this.ngay18tangcl.HeaderText = "Ngày 18 (tăng ca)";
             this.ngay18tangcl.Name = "ngay18tangcl";
-            this.ngay18tangcl.Width = 98;
+            this.ngay18tangcl.Width = 97;
             // 
             // ngay19tangcl
             // 
             this.ngay19tangcl.HeaderText = "Ngày 19 (tăng ca)";
             this.ngay19tangcl.Name = "ngay19tangcl";
-            this.ngay19tangcl.Width = 98;
+            this.ngay19tangcl.Width = 97;
             // 
             // ngay20tangcl
             // 
             this.ngay20tangcl.HeaderText = "Ngày 20 (tăng ca)";
             this.ngay20tangcl.Name = "ngay20tangcl";
-            this.ngay20tangcl.Width = 98;
+            this.ngay20tangcl.Width = 97;
             // 
             // ngay21tangcl
             // 
             this.ngay21tangcl.HeaderText = "Ngày 21 (tăng ca)";
             this.ngay21tangcl.Name = "ngay21tangcl";
-            this.ngay21tangcl.Width = 98;
+            this.ngay21tangcl.Width = 97;
             // 
             // ngay22tangcl
             // 
             this.ngay22tangcl.HeaderText = "Ngày 22 (tăng ca)";
             this.ngay22tangcl.Name = "ngay22tangcl";
-            this.ngay22tangcl.Width = 98;
+            this.ngay22tangcl.Width = 97;
             // 
             // ngay23tangcl
             // 
             this.ngay23tangcl.HeaderText = "Ngày 23 (tăng ca)";
             this.ngay23tangcl.Name = "ngay23tangcl";
-            this.ngay23tangcl.Width = 98;
+            this.ngay23tangcl.Width = 97;
             // 
             // ngay24tangcl
             // 
             this.ngay24tangcl.HeaderText = "Ngày 24 (tăng ca)";
             this.ngay24tangcl.Name = "ngay24tangcl";
-            this.ngay24tangcl.Width = 98;
+            this.ngay24tangcl.Width = 97;
             // 
             // ngay25tangcl
             // 
             this.ngay25tangcl.HeaderText = "Ngày 25 (tăng ca)";
             this.ngay25tangcl.Name = "ngay25tangcl";
-            this.ngay25tangcl.Width = 98;
+            this.ngay25tangcl.Width = 97;
             // 
             // ngay26tangcl
             // 
             this.ngay26tangcl.HeaderText = "Ngày 26 (tăng ca)";
             this.ngay26tangcl.Name = "ngay26tangcl";
-            this.ngay26tangcl.Width = 98;
+            this.ngay26tangcl.Width = 97;
             // 
             // ngay27tangcl
             // 
             this.ngay27tangcl.HeaderText = "Ngày 27 (tăng ca)";
             this.ngay27tangcl.Name = "ngay27tangcl";
-            this.ngay27tangcl.Width = 98;
+            this.ngay27tangcl.Width = 97;
             // 
             // ngay28tangcl
             // 
             this.ngay28tangcl.HeaderText = "Ngày 28 (tăng ca)";
             this.ngay28tangcl.Name = "ngay28tangcl";
-            this.ngay28tangcl.Width = 98;
+            this.ngay28tangcl.Width = 97;
             // 
             // ngay29tangcl
             // 
             this.ngay29tangcl.HeaderText = "Ngày 29 (tăng ca)";
             this.ngay29tangcl.Name = "ngay29tangcl";
-            this.ngay29tangcl.Width = 98;
+            this.ngay29tangcl.Width = 97;
             // 
             // ngay30tangcl
             // 
             this.ngay30tangcl.HeaderText = "Ngày 30 (tăng ca)";
             this.ngay30tangcl.Name = "ngay30tangcl";
-            this.ngay30tangcl.Width = 98;
+            this.ngay30tangcl.Width = 97;
             // 
             // ngay31tangcl
             // 
             this.ngay31tangcl.HeaderText = "Ngày 31 (tăng ca)";
             this.ngay31tangcl.Name = "ngay31tangcl";
-            this.ngay31tangcl.Width = 98;
+            this.ngay31tangcl.Width = 97;
             // 
             // idcl
             // 
@@ -797,7 +784,6 @@
         private System.Windows.Forms.ComboBox cbbnamchitietcl;
         private System.Windows.Forms.ComboBox cbbthangchitietcl;
         private System.Windows.Forms.ComboBox cbbngaychitietcl;
-        private System.Windows.Forms.ComboBox cbbcvchitietcl;
         private System.Windows.Forms.TextBox txtnvchitietcl;
         private System.Windows.Forms.Label lblnamchitietcl;
         private System.Windows.Forms.Label lblthangchitietcl;
