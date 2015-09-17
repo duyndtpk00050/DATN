@@ -30,9 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fhdnhap));
             this.gbtimhdnhap = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.numtongtienhdnhap = new System.Windows.Forms.NumericUpDown();
             this.cbbtrangthaihdnhap = new System.Windows.Forms.ComboBox();
-            this.btninhdnhap = new System.Windows.Forms.Button();
             this.lbltrangthaihdnhap = new System.Windows.Forms.Label();
             this.lbldvgiahdnhap = new System.Windows.Forms.Label();
             this.cbbnvnhaphd = new System.Windows.Forms.ComboBox();
@@ -44,6 +45,7 @@
             this.lblnvnhaphd = new System.Windows.Forms.Label();
             this.lblncchdnhap = new System.Windows.Forms.Label();
             this.lblngaynhaphd = new System.Windows.Forms.Label();
+            this.btninhdnhap = new System.Windows.Forms.Button();
             this.gbchucnanghdnhap = new System.Windows.Forms.GroupBox();
             this.btnchitiethdnhap = new System.Windows.Forms.Button();
             this.btntimhdnhap = new System.Windows.Forms.Button();
@@ -53,6 +55,8 @@
             this.tenhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaynhaphd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ncchdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phivanchuyenhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thuevathdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tongtienhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangthaihdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nvnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +69,8 @@
             // 
             // gbtimhdnhap
             // 
+            this.gbtimhdnhap.Controls.Add(this.label1);
+            this.gbtimhdnhap.Controls.Add(this.dateTimePicker1);
             this.gbtimhdnhap.Controls.Add(this.numtongtienhdnhap);
             this.gbtimhdnhap.Controls.Add(this.cbbtrangthaihdnhap);
             this.gbtimhdnhap.Controls.Add(this.lbltrangthaihdnhap);
@@ -84,6 +90,28 @@
             this.gbtimhdnhap.TabIndex = 0;
             this.gbtimhdnhap.TabStop = false;
             this.gbtimhdnhap.Text = "Thông tin";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(195, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 23);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "-";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(220, 63);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(83, 20);
+            this.dateTimePicker1.TabIndex = 18;
+            this.dateTimePicker1.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
             // 
             // numtongtienhdnhap
             // 
@@ -107,26 +135,15 @@
             // 
             this.cbbtrangthaihdnhap.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbtrangthaihdnhap.FormattingEnabled = true;
-            this.cbbtrangthaihdnhap.Location = new System.Drawing.Point(388, 100);
+            this.cbbtrangthaihdnhap.Location = new System.Drawing.Point(414, 100);
             this.cbbtrangthaihdnhap.Name = "cbbtrangthaihdnhap";
-            this.cbbtrangthaihdnhap.Size = new System.Drawing.Size(197, 21);
+            this.cbbtrangthaihdnhap.Size = new System.Drawing.Size(171, 21);
             this.cbbtrangthaihdnhap.TabIndex = 6;
-            // 
-            // btninhdnhap
-            // 
-            this.btninhdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninhdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btninhdnhap.Location = new System.Drawing.Point(18, 64);
-            this.btninhdnhap.Name = "btninhdnhap";
-            this.btninhdnhap.Size = new System.Drawing.Size(75, 23);
-            this.btninhdnhap.TabIndex = 3;
-            this.btninhdnhap.Text = "In";
-            this.btninhdnhap.UseVisualStyleBackColor = true;
             // 
             // lbltrangthaihdnhap
             // 
             this.lbltrangthaihdnhap.AutoSize = true;
-            this.lbltrangthaihdnhap.Location = new System.Drawing.Point(299, 104);
+            this.lbltrangthaihdnhap.Location = new System.Drawing.Point(325, 103);
             this.lbltrangthaihdnhap.Name = "lbltrangthaihdnhap";
             this.lbltrangthaihdnhap.Size = new System.Drawing.Size(55, 13);
             this.lbltrangthaihdnhap.TabIndex = 17;
@@ -148,18 +165,18 @@
             this.cbbnvnhaphd.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbnvnhaphd.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cbbnvnhaphd.FormattingEnabled = true;
-            this.cbbnvnhaphd.Location = new System.Drawing.Point(388, 26);
+            this.cbbnvnhaphd.Location = new System.Drawing.Point(414, 26);
             this.cbbnvnhaphd.Name = "cbbnvnhaphd";
-            this.cbbnvnhaphd.Size = new System.Drawing.Size(197, 21);
+            this.cbbnvnhaphd.Size = new System.Drawing.Size(171, 21);
             this.cbbnvnhaphd.TabIndex = 1;
             // 
             // cbbncchdnhap
             // 
             this.cbbncchdnhap.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbncchdnhap.FormattingEnabled = true;
-            this.cbbncchdnhap.Location = new System.Drawing.Point(388, 63);
+            this.cbbncchdnhap.Location = new System.Drawing.Point(414, 63);
             this.cbbncchdnhap.Name = "cbbncchdnhap";
-            this.cbbncchdnhap.Size = new System.Drawing.Size(197, 21);
+            this.cbbncchdnhap.Size = new System.Drawing.Size(171, 21);
             this.cbbncchdnhap.TabIndex = 4;
             // 
             // cbbhdnhap
@@ -168,7 +185,7 @@
             this.cbbhdnhap.FormattingEnabled = true;
             this.cbbhdnhap.Location = new System.Drawing.Point(99, 26);
             this.cbbhdnhap.Name = "cbbhdnhap";
-            this.cbbhdnhap.Size = new System.Drawing.Size(183, 21);
+            this.cbbhdnhap.Size = new System.Drawing.Size(204, 21);
             this.cbbhdnhap.TabIndex = 2;
             // 
             // dtpngaynhaphd
@@ -178,7 +195,7 @@
             this.dtpngaynhaphd.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpngaynhaphd.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
             this.dtpngaynhaphd.Name = "dtpngaynhaphd";
-            this.dtpngaynhaphd.Size = new System.Drawing.Size(183, 20);
+            this.dtpngaynhaphd.Size = new System.Drawing.Size(90, 20);
             this.dtpngaynhaphd.TabIndex = 0;
             this.dtpngaynhaphd.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
             // 
@@ -203,7 +220,7 @@
             // lblnvnhaphd
             // 
             this.lblnvnhaphd.AutoSize = true;
-            this.lblnvnhaphd.Location = new System.Drawing.Point(299, 30);
+            this.lblnvnhaphd.Location = new System.Drawing.Point(325, 29);
             this.lblnvnhaphd.Name = "lblnvnhaphd";
             this.lblnvnhaphd.Size = new System.Drawing.Size(83, 13);
             this.lblnvnhaphd.TabIndex = 2;
@@ -212,7 +229,7 @@
             // lblncchdnhap
             // 
             this.lblncchdnhap.AutoSize = true;
-            this.lblncchdnhap.Location = new System.Drawing.Point(299, 67);
+            this.lblncchdnhap.Location = new System.Drawing.Point(325, 66);
             this.lblncchdnhap.Name = "lblncchdnhap";
             this.lblncchdnhap.Size = new System.Drawing.Size(75, 13);
             this.lblncchdnhap.TabIndex = 1;
@@ -226,6 +243,17 @@
             this.lblngaynhaphd.Size = new System.Drawing.Size(59, 13);
             this.lblngaynhaphd.TabIndex = 0;
             this.lblngaynhaphd.Text = "Ngày nhập";
+            // 
+            // btninhdnhap
+            // 
+            this.btninhdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninhdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btninhdnhap.Location = new System.Drawing.Point(18, 64);
+            this.btninhdnhap.Name = "btninhdnhap";
+            this.btninhdnhap.Size = new System.Drawing.Size(75, 23);
+            this.btninhdnhap.TabIndex = 3;
+            this.btninhdnhap.Text = "In";
+            this.btninhdnhap.UseVisualStyleBackColor = true;
             // 
             // gbchucnanghdnhap
             // 
@@ -291,6 +319,8 @@
             this.tenhdnhap,
             this.ngaynhaphd,
             this.ncchdnhap,
+            this.phivanchuyenhdban,
+            this.thuevathdban,
             this.tongtienhdnhap,
             this.trangthaihdnhap,
             this.nvnhap});
@@ -330,6 +360,20 @@
             this.ncchdnhap.Name = "ncchdnhap";
             this.ncchdnhap.ReadOnly = true;
             this.ncchdnhap.Width = 99;
+            // 
+            // phivanchuyenhdban
+            // 
+            this.phivanchuyenhdban.HeaderText = "Phí vận chuyển";
+            this.phivanchuyenhdban.Name = "phivanchuyenhdban";
+            this.phivanchuyenhdban.ReadOnly = true;
+            this.phivanchuyenhdban.Width = 107;
+            // 
+            // thuevathdban
+            // 
+            this.thuevathdban.HeaderText = "Thuế VAT";
+            this.thuevathdban.Name = "thuevathdban";
+            this.thuevathdban.ReadOnly = true;
+            this.thuevathdban.Width = 80;
             // 
             // tongtienhdnhap
             // 
@@ -398,14 +442,18 @@
         private System.Windows.Forms.Label lbldvgiahdnhap;
         private System.Windows.Forms.Button btninhdnhap;
         private System.Windows.Forms.Label lbltrangthaihdnhap;
+        private System.Windows.Forms.NumericUpDown numtongtienhdnhap;
+        private System.Windows.Forms.ComboBox cbbtrangthaihdnhap;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridViewTextBoxColumn stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenhdnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaynhaphd;
         private System.Windows.Forms.DataGridViewTextBoxColumn ncchdnhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phivanchuyenhdban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thuevathdban;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongtienhdnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangthaihdnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvnhap;
-        private System.Windows.Forms.NumericUpDown numtongtienhdnhap;
-        private System.Windows.Forms.ComboBox cbbtrangthaihdnhap;
     }
 }

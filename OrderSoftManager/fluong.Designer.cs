@@ -98,7 +98,7 @@
             this.dtpngaytraluong.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpngaytraluong.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
             this.dtpngaytraluong.Name = "dtpngaytraluong";
-            this.dtpngaytraluong.Size = new System.Drawing.Size(102, 20);
+            this.dtpngaytraluong.Size = new System.Drawing.Size(139, 20);
             this.dtpngaytraluong.TabIndex = 1;
             this.dtpngaytraluong.Value = new System.DateTime(2015, 9, 13, 21, 18, 40, 0);
             // 
@@ -223,9 +223,9 @@
             // 
             this.btntimluongnv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntimluongnv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btntimluongnv.Location = new System.Drawing.Point(20, 48);
+            this.btntimluongnv.Location = new System.Drawing.Point(21, 48);
             this.btntimluongnv.Name = "btntimluongnv";
-            this.btntimluongnv.Size = new System.Drawing.Size(122, 23);
+            this.btntimluongnv.Size = new System.Drawing.Size(108, 23);
             this.btntimluongnv.TabIndex = 7;
             this.btntimluongnv.Text = "Lọc";
             this.btntimluongnv.UseVisualStyleBackColor = true;
@@ -234,9 +234,9 @@
             // 
             this.btnchitietcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnchitietcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitietcl.Location = new System.Drawing.Point(20, 19);
+            this.btnchitietcl.Location = new System.Drawing.Point(21, 19);
             this.btnchitietcl.Name = "btnchitietcl";
-            this.btnchitietcl.Size = new System.Drawing.Size(122, 23);
+            this.btnchitietcl.Size = new System.Drawing.Size(108, 23);
             this.btnchitietcl.TabIndex = 4;
             this.btnchitietcl.Text = "Chi tiêt ca làm";
             this.btnchitietcl.UseVisualStyleBackColor = true;
@@ -245,9 +245,9 @@
             // 
             this.btninbienlailuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninbienlailuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btninbienlailuong.Location = new System.Drawing.Point(20, 77);
+            this.btninbienlailuong.Location = new System.Drawing.Point(21, 77);
             this.btninbienlailuong.Name = "btninbienlailuong";
-            this.btninbienlailuong.Size = new System.Drawing.Size(122, 23);
+            this.btninbienlailuong.Size = new System.Drawing.Size(108, 23);
             this.btninbienlailuong.TabIndex = 3;
             this.btninbienlailuong.Text = "In biên lai";
             this.btninbienlailuong.UseVisualStyleBackColor = true;
@@ -260,7 +260,7 @@
             this.gbdsngaylamnv.Controls.Add(this.dtgdsluongnv);
             this.gbdsngaylamnv.Location = new System.Drawing.Point(12, 130);
             this.gbdsngaylamnv.Name = "gbdsngaylamnv";
-            this.gbdsngaylamnv.Size = new System.Drawing.Size(901, 370);
+            this.gbdsngaylamnv.Size = new System.Drawing.Size(896, 370);
             this.gbdsngaylamnv.TabIndex = 1;
             this.gbdsngaylamnv.TabStop = false;
             this.gbdsngaylamnv.Text = "Danh sách ngày làm nhân viên";
@@ -294,7 +294,7 @@
             this.dtgdsluongnv.Name = "dtgdsluongnv";
             this.dtgdsluongnv.ReadOnly = true;
             this.dtgdsluongnv.RowHeadersVisible = false;
-            this.dtgdsluongnv.Size = new System.Drawing.Size(889, 345);
+            this.dtgdsluongnv.Size = new System.Drawing.Size(884, 345);
             this.dtgdsluongnv.TabIndex = 0;
             // 
             // stt
@@ -374,7 +374,7 @@
             this.gbchucnangluong.Controls.Add(this.btntimluongnv);
             this.gbchucnangluong.Location = new System.Drawing.Point(755, 12);
             this.gbchucnangluong.Name = "gbchucnangluong";
-            this.gbchucnangluong.Size = new System.Drawing.Size(158, 112);
+            this.gbchucnangluong.Size = new System.Drawing.Size(153, 112);
             this.gbchucnangluong.TabIndex = 11;
             this.gbchucnangluong.TabStop = false;
             this.gbchucnangluong.Text = "Chức năng";
@@ -386,7 +386,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(925, 512);
+            this.ClientSize = new System.Drawing.Size(920, 512);
             this.Controls.Add(this.gbchucnangluong);
             this.Controls.Add(this.gbdsngaylamnv);
             this.Controls.Add(this.gbtimluongnv);

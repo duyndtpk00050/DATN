@@ -127,26 +127,25 @@
             this.sttphanquyennv.HeaderText = "STT";
             this.sttphanquyennv.Name = "sttphanquyennv";
             this.sttphanquyennv.ReadOnly = true;
-            this.sttphanquyennv.Width = 53;
+            this.sttphanquyennv.Width = 52;
             // 
             // tennvphanquyen
             // 
             this.tennvphanquyen.HeaderText = "Nhân viên";
             this.tennvphanquyen.Name = "tennvphanquyen";
             this.tennvphanquyen.ReadOnly = true;
-            this.tennvphanquyen.Width = 81;
+            this.tennvphanquyen.Width = 80;
             // 
             // quyenhannv
             // 
             this.quyenhannv.HeaderText = "Quyền hạn";
             this.quyenhannv.Name = "quyenhannv";
             this.quyenhannv.ReadOnly = true;
-            this.quyenhannv.Width = 84;
+            this.quyenhannv.Width = 83;
             // 
             // cbbquyennv
             // 
-            this.cbbquyennv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbquyennv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbquyennv.BackColor = System.Drawing.Color.White;
             this.cbbquyennv.FormattingEnabled = true;
             this.cbbquyennv.Location = new System.Drawing.Point(79, 21);
             this.cbbquyennv.Name = "cbbquyennv";

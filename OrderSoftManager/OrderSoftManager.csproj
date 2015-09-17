@@ -50,11 +50,11 @@
     <Compile Include="fbanhang.Designer.cs">
       <DependentUpon>fbanhang.cs</DependentUpon>
     </Compile>
-    <Compile Include="fchitietcl.cs">
+    <Compile Include="fchamluong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fchitietcl.Designer.cs">
-      <DependentUpon>fchitietcl.cs</DependentUpon>
+    <Compile Include="fchamluong.Designer.cs">
+      <DependentUpon>fchamluong.cs</DependentUpon>
     </Compile>
     <Compile Include="fcv.cs">
       <SubType>Form</SubType>
@@ -67,6 +67,12 @@
     </Compile>
     <Compile Include="fdoimk.Designer.cs">
       <DependentUpon>fdoimk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fhdban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fhdban.Designer.cs">
+      <DependentUpon>fhdban.cs</DependentUpon>
     </Compile>
     <Compile Include="fhdnhap.cs">
       <SubType>Form</SubType>
@@ -157,14 +163,17 @@
     <EmbeddedResource Include="fbanhang.resx">
       <DependentUpon>fbanhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fchitietcl.resx">
-      <DependentUpon>fchitietcl.cs</DependentUpon>
+    <EmbeddedResource Include="fchamluong.resx">
+      <DependentUpon>fchamluong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fcv.resx">
       <DependentUpon>fcv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fdoimk.resx">
       <DependentUpon>fdoimk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fhdban.resx">
+      <DependentUpon>fhdban.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fhdnhap.resx">
       <DependentUpon>fhdnhap.cs</DependentUpon>
