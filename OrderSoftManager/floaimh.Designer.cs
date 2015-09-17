@@ -36,14 +36,14 @@
             this.idloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txttencl = new System.Windows.Forms.TextBox();
             this.lbltenloaimh = new System.Windows.Forms.Label();
-            this.gbchucnangcl = new System.Windows.Forms.GroupBox();
+            this.gbchucnangloaimh = new System.Windows.Forms.GroupBox();
             this.btnchitietloaimh = new System.Windows.Forms.Button();
             this.btndelloaimh = new System.Windows.Forms.Button();
             this.btneditloaimh = new System.Windows.Forms.Button();
             this.btnaddloaimh = new System.Windows.Forms.Button();
             this.gbthongtinloaimh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsloaimh)).BeginInit();
-            this.gbchucnangcl.SuspendLayout();
+            this.gbchucnangloaimh.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbthongtinloaimh
@@ -126,20 +126,20 @@
             this.lbltenloaimh.TabIndex = 0;
             this.lbltenloaimh.Text = "Loại mặt hàng";
             // 
-            // gbchucnangcl
+            // gbchucnangloaimh
             // 
-            this.gbchucnangcl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gbchucnangloaimh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbchucnangcl.Controls.Add(this.btnchitietloaimh);
-            this.gbchucnangcl.Controls.Add(this.btndelloaimh);
-            this.gbchucnangcl.Controls.Add(this.btneditloaimh);
-            this.gbchucnangcl.Controls.Add(this.btnaddloaimh);
-            this.gbchucnangcl.Location = new System.Drawing.Point(12, 12);
-            this.gbchucnangcl.Name = "gbchucnangcl";
-            this.gbchucnangcl.Size = new System.Drawing.Size(387, 68);
-            this.gbchucnangcl.TabIndex = 1;
-            this.gbchucnangcl.TabStop = false;
-            this.gbchucnangcl.Text = "Chức năng";
+            this.gbchucnangloaimh.Controls.Add(this.btnchitietloaimh);
+            this.gbchucnangloaimh.Controls.Add(this.btndelloaimh);
+            this.gbchucnangloaimh.Controls.Add(this.btneditloaimh);
+            this.gbchucnangloaimh.Controls.Add(this.btnaddloaimh);
+            this.gbchucnangloaimh.Location = new System.Drawing.Point(12, 12);
+            this.gbchucnangloaimh.Name = "gbchucnangloaimh";
+            this.gbchucnangloaimh.Size = new System.Drawing.Size(387, 68);
+            this.gbchucnangloaimh.TabIndex = 1;
+            this.gbchucnangloaimh.TabStop = false;
+            this.gbchucnangloaimh.Text = "Chức năng";
             // 
             // btnchitietloaimh
             // 
@@ -196,7 +196,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(413, 280);
             this.Controls.Add(this.gbthongtinloaimh);
-            this.Controls.Add(this.gbchucnangcl);
+            this.Controls.Add(this.gbchucnangloaimh);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "floaimh";
@@ -205,7 +205,7 @@
             this.gbthongtinloaimh.ResumeLayout(false);
             this.gbthongtinloaimh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsloaimh)).EndInit();
-            this.gbchucnangcl.ResumeLayout(false);
+            this.gbchucnangloaimh.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -216,7 +216,7 @@
         private System.Windows.Forms.DataGridView dtgdsloaimh;
         private System.Windows.Forms.TextBox txttencl;
         private System.Windows.Forms.Label lbltenloaimh;
-        private System.Windows.Forms.GroupBox gbchucnangcl;
+        private System.Windows.Forms.GroupBox gbchucnangloaimh;
         private System.Windows.Forms.Button btnchitietloaimh;
         private System.Windows.Forms.Button btndelloaimh;
         private System.Windows.Forms.Button btneditloaimh;

@@ -152,6 +152,12 @@
     <Compile Include="fphanquyen.Designer.cs">
       <DependentUpon>fphanquyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="fthongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fthongke.Designer.cs">
+      <DependentUpon>fthongke.cs</DependentUpon>
+    </Compile>
     <Compile Include="fthongtin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fphanquyen.resx">
       <DependentUpon>fphanquyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fthongke.resx">
+      <DependentUpon>fthongke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fthongtin.resx">
       <DependentUpon>fthongtin.cs</DependentUpon>

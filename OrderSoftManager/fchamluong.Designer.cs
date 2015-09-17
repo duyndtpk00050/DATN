@@ -30,50 +30,76 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fchamluong));
             this.gbchucnangchitietcl = new System.Windows.Forms.GroupBox();
-            this.txtnvchitietcl = new System.Windows.Forms.TextBox();
+            this.btnbangluong = new System.Windows.Forms.Button();
+            this.btntinhluong = new System.Windows.Forms.Button();
+            this.txtnvchamluong = new System.Windows.Forms.TextBox();
             this.lblcvchitietcl = new System.Windows.Forms.Label();
             this.lblnvchitietcl = new System.Windows.Forms.Label();
             this.gbchitietclnv = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbldvluong = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnluong = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnviewcl = new System.Windows.Forms.Button();
+            this.lbltienluong = new System.Windows.Forms.Label();
+            this.numluongcb = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.lbltrangthainhanluong = new System.Windows.Forms.Label();
+            this.lbldvluong = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cbbthangchamluong = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.clbngaychamluong = new System.Windows.Forms.CheckedListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbbcachamluong = new System.Windows.Forms.ComboBox();
+            this.cbbcvchamluong = new System.Windows.Forms.ComboBox();
             this.gbchucnangchitietcl.SuspendLayout();
             this.gbchitietclnv.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numluongcb)).BeginInit();
             this.SuspendLayout();
             // 
             // gbchucnangchitietcl
             // 
-            this.gbchucnangchitietcl.Controls.Add(this.button1);
+            this.gbchucnangchitietcl.Controls.Add(this.btnbangluong);
+            this.gbchucnangchitietcl.Controls.Add(this.btntinhluong);
             this.gbchucnangchitietcl.Location = new System.Drawing.Point(12, 12);
             this.gbchucnangchitietcl.Name = "gbchucnangchitietcl";
-            this.gbchucnangchitietcl.Size = new System.Drawing.Size(468, 56);
-            this.gbchucnangchitietcl.TabIndex = 0;
+            this.gbchucnangchitietcl.Size = new System.Drawing.Size(456, 56);
+            this.gbchucnangchitietcl.TabIndex = 1;
             this.gbchucnangchitietcl.TabStop = false;
             this.gbchucnangchitietcl.Text = "Chức năng";
             // 
-            // txtnvchitietcl
+            // btnbangluong
             // 
-            this.txtnvchitietcl.Location = new System.Drawing.Point(78, 32);
-            this.txtnvchitietcl.Name = "txtnvchitietcl";
-            this.txtnvchitietcl.Size = new System.Drawing.Size(182, 20);
-            this.txtnvchitietcl.TabIndex = 0;
+            this.btnbangluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbangluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnbangluong.Location = new System.Drawing.Point(120, 21);
+            this.btnbangluong.Name = "btnbangluong";
+            this.btnbangluong.Size = new System.Drawing.Size(82, 25);
+            this.btnbangluong.TabIndex = 1;
+            this.btnbangluong.Text = "Bảng lương";
+            this.btnbangluong.UseVisualStyleBackColor = true;
+            this.btnbangluong.Click += new System.EventHandler(this.btnbangluong_Click);
+            // 
+            // btntinhluong
+            // 
+            this.btntinhluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntinhluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btntinhluong.Location = new System.Drawing.Point(18, 21);
+            this.btntinhluong.Name = "btntinhluong";
+            this.btntinhluong.Size = new System.Drawing.Size(82, 25);
+            this.btntinhluong.TabIndex = 0;
+            this.btntinhluong.Text = "Tính lương";
+            this.btntinhluong.UseVisualStyleBackColor = true;
+            // 
+            // txtnvchamluong
+            // 
+            this.txtnvchamluong.Location = new System.Drawing.Point(78, 32);
+            this.txtnvchamluong.Name = "txtnvchamluong";
+            this.txtnvchamluong.Size = new System.Drawing.Size(215, 20);
+            this.txtnvchamluong.TabIndex = 0;
             // 
             // lblcvchitietcl
             // 
             this.lblcvchitietcl.AutoSize = true;
-            this.lblcvchitietcl.Location = new System.Drawing.Point(16, 76);
+            this.lblcvchitietcl.Location = new System.Drawing.Point(16, 77);
             this.lblcvchitietcl.Name = "lblcvchitietcl";
             this.lblcvchitietcl.Size = new System.Drawing.Size(47, 13);
             this.lblcvchitietcl.TabIndex = 2;
@@ -90,66 +116,136 @@
             // 
             // gbchitietclnv
             // 
+            this.gbchitietclnv.Controls.Add(this.btnviewcl);
+            this.gbchitietclnv.Controls.Add(this.lbltienluong);
+            this.gbchitietclnv.Controls.Add(this.numluongcb);
             this.gbchitietclnv.Controls.Add(this.label5);
-            this.gbchitietclnv.Controls.Add(this.textBox2);
             this.gbchitietclnv.Controls.Add(this.label6);
-            this.gbchitietclnv.Controls.Add(this.btnluong);
-            this.gbchitietclnv.Controls.Add(this.label4);
+            this.gbchitietclnv.Controls.Add(this.lbltrangthainhanluong);
             this.gbchitietclnv.Controls.Add(this.lbldvluong);
-            this.gbchitietclnv.Controls.Add(this.textBox1);
             this.gbchitietclnv.Controls.Add(this.label3);
-            this.gbchitietclnv.Controls.Add(this.comboBox3);
+            this.gbchitietclnv.Controls.Add(this.cbbthangchamluong);
             this.gbchitietclnv.Controls.Add(this.label2);
-            this.gbchitietclnv.Controls.Add(this.checkedListBox1);
+            this.gbchitietclnv.Controls.Add(this.clbngaychamluong);
             this.gbchitietclnv.Controls.Add(this.label1);
-            this.gbchitietclnv.Controls.Add(this.comboBox2);
-            this.gbchitietclnv.Controls.Add(this.comboBox1);
-            this.gbchitietclnv.Controls.Add(this.txtnvchitietcl);
+            this.gbchitietclnv.Controls.Add(this.cbbcachamluong);
+            this.gbchitietclnv.Controls.Add(this.cbbcvchamluong);
+            this.gbchitietclnv.Controls.Add(this.txtnvchamluong);
             this.gbchitietclnv.Controls.Add(this.lblnvchitietcl);
             this.gbchitietclnv.Controls.Add(this.lblcvchitietcl);
             this.gbchitietclnv.Location = new System.Drawing.Point(12, 74);
             this.gbchitietclnv.Name = "gbchitietclnv";
-            this.gbchitietclnv.Size = new System.Drawing.Size(468, 348);
-            this.gbchitietclnv.TabIndex = 1;
+            this.gbchitietclnv.Size = new System.Drawing.Size(456, 348);
+            this.gbchitietclnv.TabIndex = 0;
             this.gbchitietclnv.TabStop = false;
             this.gbchitietclnv.Text = "Thông tin chi tiêt ca làm nhân viên";
             // 
-            // comboBox1
+            // btnviewcl
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(78, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(182, 21);
-            this.comboBox1.TabIndex = 6;
+            this.btnviewcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnviewcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnviewcl.Location = new System.Drawing.Point(208, 115);
+            this.btnviewcl.Name = "btnviewcl";
+            this.btnviewcl.Size = new System.Drawing.Size(40, 23);
+            this.btnviewcl.TabIndex = 4;
+            this.btnviewcl.Text = "Xem";
+            this.btnviewcl.UseVisualStyleBackColor = true;
+            this.btnviewcl.Click += new System.EventHandler(this.btnviewcl_Click);
             // 
-            // comboBox2
+            // lbltienluong
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(78, 116);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 2;
+            this.lbltienluong.BackColor = System.Drawing.SystemColors.Info;
+            this.lbltienluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbltienluong.Location = new System.Drawing.Point(78, 304);
+            this.lbltienluong.Name = "lbltienluong";
+            this.lbltienluong.Size = new System.Drawing.Size(146, 20);
+            this.lbltienluong.TabIndex = 36;
+            this.lbltienluong.Text = "0";
+            this.lbltienluong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label1
+            // numluongcb
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Ca làm";
+            this.numluongcb.Location = new System.Drawing.Point(310, 73);
+            this.numluongcb.Name = "numluongcb";
+            this.numluongcb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numluongcb.Size = new System.Drawing.Size(96, 20);
+            this.numluongcb.TabIndex = 2;
             // 
-            // checkedListBox1
+            // label5
             // 
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.ColumnWidth = 90;
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(412, 77);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(30, 13);
+            this.label5.TabIndex = 35;
+            this.label5.Text = "VNĐ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(266, 77);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 13);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "LCB";
+            // 
+            // lbltrangthainhanluong
+            // 
+            this.lbltrangthainhanluong.BackColor = System.Drawing.SystemColors.Info;
+            this.lbltrangthainhanluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbltrangthainhanluong.Location = new System.Drawing.Point(291, 304);
+            this.lbltrangthainhanluong.Name = "lbltrangthainhanluong";
+            this.lbltrangthainhanluong.Size = new System.Drawing.Size(133, 20);
+            this.lbltrangthainhanluong.TabIndex = 31;
+            this.lbltrangthainhanluong.Text = "Trạng thái nhận lương";
+            this.lbltrangthainhanluong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbldvluong
+            // 
+            this.lbldvluong.AutoSize = true;
+            this.lbldvluong.Location = new System.Drawing.Point(230, 308);
+            this.lbldvluong.Name = "lbldvluong";
+            this.lbldvluong.Size = new System.Drawing.Size(30, 13);
+            this.lbldvluong.TabIndex = 30;
+            this.lbldvluong.Text = "VNĐ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 308);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(57, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Tiền lương";
+            // 
+            // cbbthangchamluong
+            // 
+            this.cbbthangchamluong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbbthangchamluong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbthangchamluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbthangchamluong.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cbbthangchamluong.FormattingEnabled = true;
+            this.cbbthangchamluong.Location = new System.Drawing.Point(310, 116);
+            this.cbbthangchamluong.Name = "cbbthangchamluong";
+            this.cbbthangchamluong.Size = new System.Drawing.Size(133, 21);
+            this.cbbthangchamluong.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(266, 120);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Tháng";
+            // 
+            // clbngaychamluong
+            // 
+            this.clbngaychamluong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.clbngaychamluong.CheckOnClick = true;
+            this.clbngaychamluong.ColumnWidth = 90;
+            this.clbngaychamluong.FormattingEnabled = true;
+            this.clbngaychamluong.Items.AddRange(new object[] {
             "Ngày 1",
             "Ngày 2",
             "Ngày 3",
@@ -181,132 +277,62 @@
             "Ngày 29",
             "Ngày 30",
             "Ngày 31"});
-            this.checkedListBox1.Location = new System.Drawing.Point(78, 161);
-            this.checkedListBox1.MultiColumn = true;
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(365, 120);
-            this.checkedListBox1.TabIndex = 8;
+            this.clbngaychamluong.Location = new System.Drawing.Point(78, 161);
+            this.clbngaychamluong.MultiColumn = true;
+            this.clbngaychamluong.Name = "clbngaychamluong";
+            this.clbngaychamluong.Size = new System.Drawing.Size(365, 120);
+            this.clbngaychamluong.TabIndex = 6;
             // 
-            // comboBox3
+            // label1
             // 
-            this.comboBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(310, 116);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(133, 21);
-            this.comboBox3.TabIndex = 10;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Ca làm";
             // 
-            // label2
+            // cbbcachamluong
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(266, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Tháng";
+            this.cbbcachamluong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbbcachamluong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbcachamluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbcachamluong.FormattingEnabled = true;
+            this.cbbcachamluong.Location = new System.Drawing.Point(78, 116);
+            this.cbbcachamluong.Name = "cbbcachamluong";
+            this.cbbcachamluong.Size = new System.Drawing.Size(124, 21);
+            this.cbbcachamluong.TabIndex = 3;
             // 
-            // textBox1
+            // cbbcvchamluong
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 305);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
-            this.textBox1.TabIndex = 11;
+            this.cbbcvchamluong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbbcvchamluong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbcvchamluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbcvchamluong.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cbbcvchamluong.FormattingEnabled = true;
+            this.cbbcvchamluong.Location = new System.Drawing.Point(78, 73);
+            this.cbbcvchamluong.Name = "cbbcvchamluong";
+            this.cbbcvchamluong.Size = new System.Drawing.Size(170, 21);
+            this.cbbcvchamluong.TabIndex = 1;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 308);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Tiền lương";
-            // 
-            // lbldvluong
-            // 
-            this.lbldvluong.AutoSize = true;
-            this.lbldvluong.Location = new System.Drawing.Point(266, 308);
-            this.lbldvluong.Name = "lbldvluong";
-            this.lbldvluong.Size = new System.Drawing.Size(30, 13);
-            this.lbldvluong.TabIndex = 30;
-            this.lbldvluong.Text = "VNĐ";
-            // 
-            // label4
-            // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(310, 304);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 20);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "Trạng thái nhận lương";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnluong
-            // 
-            this.btnluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnluong.Location = new System.Drawing.Point(205, 114);
-            this.btnluong.Name = "btnluong";
-            this.btnluong.Size = new System.Drawing.Size(55, 25);
-            this.btnluong.TabIndex = 5;
-            this.btnluong.Text = "Thêm";
-            this.btnluong.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(18, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 25);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Tính lương";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(412, 76);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 13);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "VNĐ";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(310, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(97, 20);
-            this.textBox2.TabIndex = 33;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(277, 76);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 13);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "LCB";
-            // 
-            // fchitietcl
+            // fchamluong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(492, 434);
+            this.ClientSize = new System.Drawing.Size(482, 434);
             this.Controls.Add(this.gbchitietclnv);
             this.Controls.Add(this.gbchucnangchitietcl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "fchitietcl";
+            this.Name = "fchamluong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chấm lương";
             this.gbchucnangchitietcl.ResumeLayout(false);
             this.gbchitietclnv.ResumeLayout(false);
             this.gbchitietclnv.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numluongcb)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -316,22 +342,23 @@
         private System.Windows.Forms.GroupBox gbchucnangchitietcl;
         private System.Windows.Forms.GroupBox gbchitietclnv;
         private System.Windows.Forms.Label lblnvchitietcl;
-        private System.Windows.Forms.TextBox txtnvchitietcl;
+        private System.Windows.Forms.TextBox txtnvchamluong;
         private System.Windows.Forms.Label lblcvchitietcl;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbbcvchamluong;
+        private System.Windows.Forms.ComboBox cbbthangchamluong;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox clbngaychamluong;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbbcachamluong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbldvluong;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnluong;
+        private System.Windows.Forms.Label lbltrangthainhanluong;
+        private System.Windows.Forms.Button btntinhluong;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.NumericUpDown numluongcb;
+        private System.Windows.Forms.Label lbltienluong;
+        private System.Windows.Forms.Button btnviewcl;
+        private System.Windows.Forms.Button btnbangluong;
     }
 }

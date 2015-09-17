@@ -15,17 +15,12 @@ namespace OrderSoftManager
         {
             InitializeComponent();
         }
-
-        private void btnnhapmh_Click(object sender, EventArgs e)
-        {
-            fnhaphang frm = new fnhaphang();
-            frm.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        
+        private void btnloaimh_Click(object sender, EventArgs e)
         {
             floaimh frm = new floaimh();
-            frm.Show();
+            frm.ShowDialog();
         }
+
     }
 }

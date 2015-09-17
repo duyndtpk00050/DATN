@@ -15,6 +15,6 @@ namespace OrderSoftManager
         {
             InitializeComponent();
         }
-
+        
     }
 }

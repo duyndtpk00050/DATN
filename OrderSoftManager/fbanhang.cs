@@ -15,5 +15,17 @@ namespace OrderSoftManager
         {
             InitializeComponent();
         }
+
+        private void btndshdban_Click(object sender, EventArgs e)
+        {
+            fhdban frm = new fhdban();
+            frm.ShowDialog();
+        }
+
+        private void btnaddkhhdban_Click(object sender, EventArgs e)
+        {
+            fkh frm = new fkh();
+            frm.ShowDialog();
+        }
     }
 }

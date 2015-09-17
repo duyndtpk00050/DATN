@@ -16,6 +16,18 @@ namespace OrderSoftManager
             InitializeComponent();
         }
 
+        private void btnchamluongnv_Click(object sender, EventArgs e)
+        {
+            fchamluong frm = new fchamluong();
+            frm.ShowDialog();
+        }
+
+        private void btnviewcv_Click(object sender, EventArgs e)
+        {
+            fcv frm = new fcv();
+            frm.ShowDialog();
+        }
+
 
     }
 }

@@ -145,7 +145,8 @@
             // 
             // cbbquyennv
             // 
-            this.cbbquyennv.BackColor = System.Drawing.Color.White;
+            this.cbbquyennv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbbquyennv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbbquyennv.FormattingEnabled = true;
             this.cbbquyennv.Location = new System.Drawing.Point(79, 21);
             this.cbbquyennv.Name = "cbbquyennv";

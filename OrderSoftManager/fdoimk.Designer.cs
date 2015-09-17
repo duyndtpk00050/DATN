@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fdoimk));
             this.gbdoimk = new System.Windows.Forms.GroupBox();
-            this.lbltendn = new System.Windows.Forms.Label();
-            this.lblmkhientai = new System.Windows.Forms.Label();
-            this.lblmkmoi = new System.Windows.Forms.Label();
-            this.lblnhaplaimk = new System.Windows.Forms.Label();
-            this.txttendn = new System.Windows.Forms.TextBox();
-            this.txtmkhientai = new System.Windows.Forms.TextBox();
-            this.txtmkmoi = new System.Windows.Forms.TextBox();
-            this.txtnhaplaimk = new System.Windows.Forms.TextBox();
-            this.btndoimk = new System.Windows.Forms.Button();
             this.btnresetmk = new System.Windows.Forms.Button();
+            this.btndoimk = new System.Windows.Forms.Button();
+            this.txtnhaplaimk = new System.Windows.Forms.TextBox();
+            this.txtmkmoi = new System.Windows.Forms.TextBox();
+            this.txtmkhientai = new System.Windows.Forms.TextBox();
+            this.txttendn = new System.Windows.Forms.TextBox();
+            this.lblnhaplaimk = new System.Windows.Forms.Label();
+            this.lblmkmoi = new System.Windows.Forms.Label();
+            this.lblmkhientai = new System.Windows.Forms.Label();
+            this.lbltendn = new System.Windows.Forms.Label();
             this.gbdoimk.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,32 +65,55 @@
             this.gbdoimk.TabStop = false;
             this.gbdoimk.Text = "Thay đổi mật khẩu";
             // 
-            // lbltendn
+            // btnresetmk
             // 
-            this.lbltendn.AutoSize = true;
-            this.lbltendn.Location = new System.Drawing.Point(24, 31);
-            this.lbltendn.Name = "lbltendn";
-            this.lbltendn.Size = new System.Drawing.Size(81, 13);
-            this.lbltendn.TabIndex = 0;
-            this.lbltendn.Text = "Tên đăng nhập";
+            this.btnresetmk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresetmk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnresetmk.Location = new System.Drawing.Point(266, 166);
+            this.btnresetmk.Name = "btnresetmk";
+            this.btnresetmk.Size = new System.Drawing.Size(111, 23);
+            this.btnresetmk.TabIndex = 5;
+            this.btnresetmk.Text = "Reset mật khẩu";
+            this.btnresetmk.UseVisualStyleBackColor = true;
             // 
-            // lblmkhientai
+            // btndoimk
             // 
-            this.lblmkhientai.AutoSize = true;
-            this.lblmkhientai.Location = new System.Drawing.Point(24, 65);
-            this.lblmkhientai.Name = "lblmkhientai";
-            this.lblmkhientai.Size = new System.Drawing.Size(89, 13);
-            this.lblmkhientai.TabIndex = 1;
-            this.lblmkhientai.Text = "Mật khẩu hiện tại";
+            this.btndoimk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndoimk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btndoimk.Location = new System.Drawing.Point(142, 166);
+            this.btndoimk.Name = "btndoimk";
+            this.btndoimk.Size = new System.Drawing.Size(110, 23);
+            this.btndoimk.TabIndex = 4;
+            this.btndoimk.Text = "Đổi mật khẩu";
+            this.btndoimk.UseVisualStyleBackColor = true;
             // 
-            // lblmkmoi
+            // txtnhaplaimk
             // 
-            this.lblmkmoi.AutoSize = true;
-            this.lblmkmoi.Location = new System.Drawing.Point(24, 99);
-            this.lblmkmoi.Name = "lblmkmoi";
-            this.lblmkmoi.Size = new System.Drawing.Size(71, 13);
-            this.lblmkmoi.TabIndex = 2;
-            this.lblmkmoi.Text = "Mật khẩu mới";
+            this.txtnhaplaimk.Location = new System.Drawing.Point(142, 129);
+            this.txtnhaplaimk.Name = "txtnhaplaimk";
+            this.txtnhaplaimk.Size = new System.Drawing.Size(235, 20);
+            this.txtnhaplaimk.TabIndex = 3;
+            // 
+            // txtmkmoi
+            // 
+            this.txtmkmoi.Location = new System.Drawing.Point(142, 95);
+            this.txtmkmoi.Name = "txtmkmoi";
+            this.txtmkmoi.Size = new System.Drawing.Size(235, 20);
+            this.txtmkmoi.TabIndex = 2;
+            // 
+            // txtmkhientai
+            // 
+            this.txtmkhientai.Location = new System.Drawing.Point(142, 61);
+            this.txtmkhientai.Name = "txtmkhientai";
+            this.txtmkhientai.Size = new System.Drawing.Size(235, 20);
+            this.txtmkhientai.TabIndex = 1;
+            // 
+            // txttendn
+            // 
+            this.txttendn.Location = new System.Drawing.Point(142, 27);
+            this.txttendn.Name = "txttendn";
+            this.txttendn.Size = new System.Drawing.Size(235, 20);
+            this.txttendn.TabIndex = 0;
             // 
             // lblnhaplaimk
             // 
@@ -101,55 +124,32 @@
             this.lblnhaplaimk.TabIndex = 3;
             this.lblnhaplaimk.Text = "Nhập lại mật khẩu mới";
             // 
-            // txttendn
+            // lblmkmoi
             // 
-            this.txttendn.Location = new System.Drawing.Point(142, 27);
-            this.txttendn.Name = "txttendn";
-            this.txttendn.Size = new System.Drawing.Size(235, 20);
-            this.txttendn.TabIndex = 4;
+            this.lblmkmoi.AutoSize = true;
+            this.lblmkmoi.Location = new System.Drawing.Point(24, 99);
+            this.lblmkmoi.Name = "lblmkmoi";
+            this.lblmkmoi.Size = new System.Drawing.Size(71, 13);
+            this.lblmkmoi.TabIndex = 2;
+            this.lblmkmoi.Text = "Mật khẩu mới";
             // 
-            // txtmkhientai
+            // lblmkhientai
             // 
-            this.txtmkhientai.Location = new System.Drawing.Point(142, 61);
-            this.txtmkhientai.Name = "txtmkhientai";
-            this.txtmkhientai.Size = new System.Drawing.Size(235, 20);
-            this.txtmkhientai.TabIndex = 5;
+            this.lblmkhientai.AutoSize = true;
+            this.lblmkhientai.Location = new System.Drawing.Point(24, 65);
+            this.lblmkhientai.Name = "lblmkhientai";
+            this.lblmkhientai.Size = new System.Drawing.Size(89, 13);
+            this.lblmkhientai.TabIndex = 1;
+            this.lblmkhientai.Text = "Mật khẩu hiện tại";
             // 
-            // txtmkmoi
+            // lbltendn
             // 
-            this.txtmkmoi.Location = new System.Drawing.Point(142, 95);
-            this.txtmkmoi.Name = "txtmkmoi";
-            this.txtmkmoi.Size = new System.Drawing.Size(235, 20);
-            this.txtmkmoi.TabIndex = 6;
-            // 
-            // txtnhaplaimk
-            // 
-            this.txtnhaplaimk.Location = new System.Drawing.Point(142, 129);
-            this.txtnhaplaimk.Name = "txtnhaplaimk";
-            this.txtnhaplaimk.Size = new System.Drawing.Size(235, 20);
-            this.txtnhaplaimk.TabIndex = 7;
-            // 
-            // btndoimk
-            // 
-            this.btndoimk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndoimk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndoimk.Location = new System.Drawing.Point(142, 166);
-            this.btndoimk.Name = "btndoimk";
-            this.btndoimk.Size = new System.Drawing.Size(110, 23);
-            this.btndoimk.TabIndex = 8;
-            this.btndoimk.Text = "Đổi mật khẩu";
-            this.btndoimk.UseVisualStyleBackColor = true;
-            // 
-            // btnresetmk
-            // 
-            this.btnresetmk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnresetmk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnresetmk.Location = new System.Drawing.Point(266, 166);
-            this.btnresetmk.Name = "btnresetmk";
-            this.btnresetmk.Size = new System.Drawing.Size(111, 23);
-            this.btnresetmk.TabIndex = 9;
-            this.btnresetmk.Text = "Reset mật khẩu";
-            this.btnresetmk.UseVisualStyleBackColor = true;
+            this.lbltendn.AutoSize = true;
+            this.lbltendn.Location = new System.Drawing.Point(24, 31);
+            this.lbltendn.Name = "lbltendn";
+            this.lbltendn.Size = new System.Drawing.Size(81, 13);
+            this.lbltendn.TabIndex = 0;
+            this.lbltendn.Text = "Tên đăng nhập";
             // 
             // fdoimk
             // 

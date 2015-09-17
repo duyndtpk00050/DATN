@@ -9,17 +9,11 @@ using System.Windows.Forms;
 
 namespace OrderSoftManager
 {
-    public partial class fkh : Form
+    public partial class fthongke : Form
     {
-        public fkh()
+        public fthongke()
         {
             InitializeComponent();
-        }
-
-        private void btnxemloaikh_Click(object sender, EventArgs e)
-        {
-            floaikh frm = new floaikh();
-            frm.ShowDialog();
         }
     }
 }

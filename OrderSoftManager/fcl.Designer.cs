@@ -70,7 +70,7 @@
             // 
             this.btnchitietcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnchitietcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitietcl.Location = new System.Drawing.Point(280, 27);
+            this.btnchitietcl.Location = new System.Drawing.Point(278, 27);
             this.btnchitietcl.Name = "btnchitietcl";
             this.btnchitietcl.Size = new System.Drawing.Size(65, 23);
             this.btnchitietcl.TabIndex = 3;
@@ -82,7 +82,7 @@
             this.btndelcl.BackColor = System.Drawing.Color.White;
             this.btndelcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelcl.Location = new System.Drawing.Point(201, 27);
+            this.btndelcl.Location = new System.Drawing.Point(195, 27);
             this.btndelcl.Name = "btndelcl";
             this.btndelcl.Size = new System.Drawing.Size(65, 23);
             this.btndelcl.TabIndex = 2;
@@ -94,7 +94,7 @@
             this.btneditcl.BackColor = System.Drawing.Color.White;
             this.btneditcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneditcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btneditcl.Location = new System.Drawing.Point(111, 27);
+            this.btneditcl.Location = new System.Drawing.Point(112, 27);
             this.btneditcl.Name = "btneditcl";
             this.btneditcl.Size = new System.Drawing.Size(65, 23);
             this.btneditcl.TabIndex = 1;

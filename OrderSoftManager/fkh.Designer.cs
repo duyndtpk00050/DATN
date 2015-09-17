@@ -77,7 +77,7 @@
             this.gbchucnangkh.Controls.Add(this.btnrefeshkh);
             this.gbchucnangkh.Location = new System.Drawing.Point(12, 12);
             this.gbchucnangkh.Name = "gbchucnangkh";
-            this.gbchucnangkh.Size = new System.Drawing.Size(429, 66);
+            this.gbchucnangkh.Size = new System.Drawing.Size(418, 66);
             this.gbchucnangkh.TabIndex = 1;
             this.gbchucnangkh.TabStop = false;
             this.gbchucnangkh.Text = "Chức năng";
@@ -86,9 +86,9 @@
             // 
             this.btndelkh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelkh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelkh.Location = new System.Drawing.Point(321, 27);
+            this.btndelkh.Location = new System.Drawing.Point(315, 27);
             this.btndelkh.Name = "btndelkh";
-            this.btndelkh.Size = new System.Drawing.Size(78, 23);
+            this.btndelkh.Size = new System.Drawing.Size(83, 23);
             this.btndelkh.TabIndex = 3;
             this.btndelkh.Text = "Xóa";
             this.btndelkh.UseVisualStyleBackColor = true;
@@ -97,9 +97,9 @@
             // 
             this.btneditkh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneditkh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btneditkh.Location = new System.Drawing.Point(223, 27);
+            this.btneditkh.Location = new System.Drawing.Point(216, 27);
             this.btneditkh.Name = "btneditkh";
-            this.btneditkh.Size = new System.Drawing.Size(78, 23);
+            this.btneditkh.Size = new System.Drawing.Size(83, 23);
             this.btneditkh.TabIndex = 2;
             this.btneditkh.Text = "Sửa";
             this.btneditkh.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // 
             this.btnaddkh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaddkh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnaddkh.Location = new System.Drawing.Point(125, 27);
+            this.btnaddkh.Location = new System.Drawing.Point(117, 27);
             this.btnaddkh.Name = "btnaddkh";
-            this.btnaddkh.Size = new System.Drawing.Size(78, 23);
+            this.btnaddkh.Size = new System.Drawing.Size(83, 23);
             this.btnaddkh.TabIndex = 1;
             this.btnaddkh.Text = "Thêm";
             this.btnaddkh.UseVisualStyleBackColor = true;
@@ -119,9 +119,9 @@
             // 
             this.btnrefeshkh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefeshkh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnrefeshkh.Location = new System.Drawing.Point(27, 27);
+            this.btnrefeshkh.Location = new System.Drawing.Point(18, 27);
             this.btnrefeshkh.Name = "btnrefeshkh";
-            this.btnrefeshkh.Size = new System.Drawing.Size(78, 23);
+            this.btnrefeshkh.Size = new System.Drawing.Size(83, 23);
             this.btnrefeshkh.TabIndex = 0;
             this.btnrefeshkh.Text = "Mới";
             this.btnrefeshkh.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@
             this.gbthongtinkh.Controls.Add(this.lbltenkh);
             this.gbthongtinkh.Location = new System.Drawing.Point(12, 84);
             this.gbthongtinkh.Name = "gbthongtinkh";
-            this.gbthongtinkh.Size = new System.Drawing.Size(429, 404);
+            this.gbthongtinkh.Size = new System.Drawing.Size(418, 360);
             this.gbthongtinkh.TabIndex = 0;
             this.gbthongtinkh.TabStop = false;
             this.gbthongtinkh.Text = "Thông tin khách hàng";
@@ -158,12 +158,13 @@
             // 
             this.btnxemloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnxemloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnxemloaikh.Location = new System.Drawing.Point(331, 321);
+            this.btnxemloaikh.Location = new System.Drawing.Point(329, 316);
             this.btnxemloaikh.Name = "btnxemloaikh";
             this.btnxemloaikh.Size = new System.Drawing.Size(67, 23);
             this.btnxemloaikh.TabIndex = 8;
             this.btnxemloaikh.Text = "Xem";
             this.btnxemloaikh.UseVisualStyleBackColor = true;
+            this.btnxemloaikh.Click += new System.EventHandler(this.btnxemloaikh_Click);
             // 
             // cbbloaikh
             // 
@@ -172,7 +173,7 @@
             this.cbbloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbbloaikh.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cbbloaikh.FormattingEnabled = true;
-            this.cbbloaikh.Location = new System.Drawing.Point(109, 322);
+            this.cbbloaikh.Location = new System.Drawing.Point(107, 317);
             this.cbbloaikh.Name = "cbbloaikh";
             this.cbbloaikh.Size = new System.Drawing.Size(216, 21);
             this.cbbloaikh.TabIndex = 7;
@@ -186,7 +187,7 @@
             this.cbbgioitinhkh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbbgioitinhkh.Location = new System.Drawing.Point(301, 78);
+            this.cbbgioitinhkh.Location = new System.Drawing.Point(299, 76);
             this.cbbgioitinhkh.Name = "cbbgioitinhkh";
             this.cbbgioitinhkh.Size = new System.Drawing.Size(100, 21);
             this.cbbgioitinhkh.TabIndex = 2;
@@ -194,7 +195,7 @@
             // dtpngaysinhkh
             // 
             this.dtpngaysinhkh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpngaysinhkh.Location = new System.Drawing.Point(109, 78);
+            this.dtpngaysinhkh.Location = new System.Drawing.Point(107, 76);
             this.dtpngaysinhkh.MaxDate = new System.DateTime(1997, 12, 31, 0, 0, 0, 0);
             this.dtpngaysinhkh.MinDate = new System.DateTime(1940, 1, 1, 0, 0, 0, 0);
             this.dtpngaysinhkh.Name = "dtpngaysinhkh";
@@ -204,29 +205,28 @@
             // 
             // txtmailkh
             // 
-            this.txtmailkh.Location = new System.Drawing.Point(109, 243);
-            this.txtmailkh.Multiline = true;
+            this.txtmailkh.Location = new System.Drawing.Point(107, 276);
             this.txtmailkh.Name = "txtmailkh";
-            this.txtmailkh.Size = new System.Drawing.Size(292, 56);
+            this.txtmailkh.Size = new System.Drawing.Size(292, 20);
             this.txtmailkh.TabIndex = 6;
             // 
             // txtsdtkh
             // 
-            this.txtsdtkh.Location = new System.Drawing.Point(301, 121);
+            this.txtsdtkh.Location = new System.Drawing.Point(107, 158);
             this.txtsdtkh.Name = "txtsdtkh";
-            this.txtsdtkh.Size = new System.Drawing.Size(100, 20);
+            this.txtsdtkh.Size = new System.Drawing.Size(180, 20);
             this.txtsdtkh.TabIndex = 4;
             // 
             // txtcmndkh
             // 
-            this.txtcmndkh.Location = new System.Drawing.Point(109, 121);
+            this.txtcmndkh.Location = new System.Drawing.Point(107, 117);
             this.txtcmndkh.Name = "txtcmndkh";
-            this.txtcmndkh.Size = new System.Drawing.Size(100, 20);
+            this.txtcmndkh.Size = new System.Drawing.Size(180, 20);
             this.txtcmndkh.TabIndex = 3;
             // 
             // txtdiachikh
             // 
-            this.txtdiachikh.Location = new System.Drawing.Point(109, 164);
+            this.txtdiachikh.Location = new System.Drawing.Point(107, 199);
             this.txtdiachikh.Multiline = true;
             this.txtdiachikh.Name = "txtdiachikh";
             this.txtdiachikh.Size = new System.Drawing.Size(292, 56);
@@ -234,7 +234,7 @@
             // 
             // txttenkh
             // 
-            this.txttenkh.Location = new System.Drawing.Point(109, 35);
+            this.txttenkh.Location = new System.Drawing.Point(107, 35);
             this.txttenkh.Name = "txttenkh";
             this.txttenkh.Size = new System.Drawing.Size(292, 20);
             this.txttenkh.TabIndex = 0;
@@ -242,7 +242,7 @@
             // lblloaikh
             // 
             this.lblloaikh.AutoSize = true;
-            this.lblloaikh.Location = new System.Drawing.Point(16, 326);
+            this.lblloaikh.Location = new System.Drawing.Point(14, 321);
             this.lblloaikh.Name = "lblloaikh";
             this.lblloaikh.Size = new System.Drawing.Size(87, 13);
             this.lblloaikh.TabIndex = 7;
@@ -251,7 +251,7 @@
             // lblmailkh
             // 
             this.lblmailkh.AutoSize = true;
-            this.lblmailkh.Location = new System.Drawing.Point(71, 246);
+            this.lblmailkh.Location = new System.Drawing.Point(69, 280);
             this.lblmailkh.Name = "lblmailkh";
             this.lblmailkh.Size = new System.Drawing.Size(32, 13);
             this.lblmailkh.TabIndex = 6;
@@ -260,7 +260,7 @@
             // lblsdtkh
             // 
             this.lblsdtkh.AutoSize = true;
-            this.lblsdtkh.Location = new System.Drawing.Point(225, 125);
+            this.lblsdtkh.Location = new System.Drawing.Point(31, 162);
             this.lblsdtkh.Name = "lblsdtkh";
             this.lblsdtkh.Size = new System.Drawing.Size(70, 13);
             this.lblsdtkh.TabIndex = 5;
@@ -269,7 +269,7 @@
             // lblcmndkh
             // 
             this.lblcmndkh.AutoSize = true;
-            this.lblcmndkh.Location = new System.Drawing.Point(48, 125);
+            this.lblcmndkh.Location = new System.Drawing.Point(46, 121);
             this.lblcmndkh.Name = "lblcmndkh";
             this.lblcmndkh.Size = new System.Drawing.Size(55, 13);
             this.lblcmndkh.TabIndex = 4;
@@ -278,7 +278,7 @@
             // lbldiachikh
             // 
             this.lbldiachikh.AutoSize = true;
-            this.lbldiachikh.Location = new System.Drawing.Point(63, 167);
+            this.lbldiachikh.Location = new System.Drawing.Point(61, 207);
             this.lbldiachikh.Name = "lbldiachikh";
             this.lbldiachikh.Size = new System.Drawing.Size(40, 13);
             this.lbldiachikh.TabIndex = 3;
@@ -287,7 +287,7 @@
             // lblgioitinhkh
             // 
             this.lblgioitinhkh.AutoSize = true;
-            this.lblgioitinhkh.Location = new System.Drawing.Point(242, 82);
+            this.lblgioitinhkh.Location = new System.Drawing.Point(240, 80);
             this.lblgioitinhkh.Name = "lblgioitinhkh";
             this.lblgioitinhkh.Size = new System.Drawing.Size(47, 13);
             this.lblgioitinhkh.TabIndex = 2;
@@ -296,7 +296,7 @@
             // lblngaysinhkh
             // 
             this.lblngaysinhkh.AutoSize = true;
-            this.lblngaysinhkh.Location = new System.Drawing.Point(49, 82);
+            this.lblngaysinhkh.Location = new System.Drawing.Point(47, 80);
             this.lblngaysinhkh.Name = "lblngaysinhkh";
             this.lblngaysinhkh.Size = new System.Drawing.Size(54, 13);
             this.lblngaysinhkh.TabIndex = 1;
@@ -305,7 +305,7 @@
             // lbltenkh
             // 
             this.lbltenkh.AutoSize = true;
-            this.lbltenkh.Location = new System.Drawing.Point(49, 39);
+            this.lbltenkh.Location = new System.Drawing.Point(47, 39);
             this.lbltenkh.Name = "lbltenkh";
             this.lbltenkh.Size = new System.Drawing.Size(54, 13);
             this.lbltenkh.TabIndex = 0;
@@ -317,9 +317,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbdskh.Controls.Add(this.dtgdskh);
-            this.gbdskh.Location = new System.Drawing.Point(447, 12);
+            this.gbdskh.Location = new System.Drawing.Point(436, 12);
             this.gbdskh.Name = "gbdskh";
-            this.gbdskh.Size = new System.Drawing.Size(526, 476);
+            this.gbdskh.Size = new System.Drawing.Size(537, 432);
             this.gbdskh.TabIndex = 2;
             this.gbdskh.TabStop = false;
             this.gbdskh.Text = "Danh sách khách hàng";
@@ -352,7 +352,7 @@
             this.dtgdskh.Name = "dtgdskh";
             this.dtgdskh.ReadOnly = true;
             this.dtgdskh.RowHeadersVisible = false;
-            this.dtgdskh.Size = new System.Drawing.Size(514, 451);
+            this.dtgdskh.Size = new System.Drawing.Size(525, 407);
             this.dtgdskh.TabIndex = 0;
             // 
             // stt
@@ -360,63 +360,63 @@
             this.stt.HeaderText = "STT";
             this.stt.Name = "stt";
             this.stt.ReadOnly = true;
-            this.stt.Width = 53;
+            this.stt.Width = 52;
             // 
             // tenkh
             // 
             this.tenkh.HeaderText = "Họ và tên";
             this.tenkh.Name = "tenkh";
             this.tenkh.ReadOnly = true;
-            this.tenkh.Width = 79;
+            this.tenkh.Width = 78;
             // 
             // ngaysinhkh
             // 
             this.ngaysinhkh.HeaderText = "Ngày sinh";
             this.ngaysinhkh.Name = "ngaysinhkh";
             this.ngaysinhkh.ReadOnly = true;
-            this.ngaysinhkh.Width = 79;
+            this.ngaysinhkh.Width = 78;
             // 
             // gioitinh
             // 
             this.gioitinh.HeaderText = "Giới tính";
             this.gioitinh.Name = "gioitinh";
             this.gioitinh.ReadOnly = true;
-            this.gioitinh.Width = 72;
+            this.gioitinh.Width = 71;
             // 
             // cmndkh
             // 
             this.cmndkh.HeaderText = "Số CMND";
             this.cmndkh.Name = "cmndkh";
             this.cmndkh.ReadOnly = true;
-            this.cmndkh.Width = 80;
+            this.cmndkh.Width = 79;
             // 
             // sdtkh
             // 
             this.sdtkh.HeaderText = "Số điện thoại";
             this.sdtkh.Name = "sdtkh";
             this.sdtkh.ReadOnly = true;
-            this.sdtkh.Width = 95;
+            this.sdtkh.Width = 94;
             // 
             // diachikh
             // 
             this.diachikh.HeaderText = "Địa chỉ";
             this.diachikh.Name = "diachikh";
             this.diachikh.ReadOnly = true;
-            this.diachikh.Width = 65;
+            this.diachikh.Width = 64;
             // 
             // mailkh
             // 
             this.mailkh.HeaderText = "Email";
             this.mailkh.Name = "mailkh";
             this.mailkh.ReadOnly = true;
-            this.mailkh.Width = 57;
+            this.mailkh.Width = 56;
             // 
             // loaikh
             // 
             this.loaikh.HeaderText = "Loại khách hàng";
             this.loaikh.Name = "loaikh";
             this.loaikh.ReadOnly = true;
-            this.loaikh.Width = 112;
+            this.loaikh.Width = 111;
             // 
             // fkh
             // 
@@ -425,7 +425,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(985, 500);
+            this.ClientSize = new System.Drawing.Size(985, 456);
             this.Controls.Add(this.gbdskh);
             this.Controls.Add(this.gbthongtinkh);
             this.Controls.Add(this.gbchucnangkh);
@@ -433,7 +433,6 @@
             this.Name = "fkh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Khách hàng";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.gbchucnangkh.ResumeLayout(false);
             this.gbthongtinkh.ResumeLayout(false);
             this.gbthongtinkh.PerformLayout();

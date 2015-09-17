@@ -53,7 +53,7 @@
             this.gbthongtinloaikh.Controls.Add(this.lbltenloaikh);
             this.gbthongtinloaikh.Location = new System.Drawing.Point(12, 83);
             this.gbthongtinloaikh.Name = "gbthongtinloaikh";
-            this.gbthongtinloaikh.Size = new System.Drawing.Size(386, 264);
+            this.gbthongtinloaikh.Size = new System.Drawing.Size(375, 264);
             this.gbthongtinloaikh.TabIndex = 0;
             this.gbthongtinloaikh.TabStop = false;
             this.gbthongtinloaikh.Text = "Thông tin loại khách hàng";
@@ -76,11 +76,11 @@
             this.idloaikh});
             this.dtgdsloaikh.EnableHeadersVisualStyles = false;
             this.dtgdsloaikh.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.dtgdsloaikh.Location = new System.Drawing.Point(19, 61);
+            this.dtgdsloaikh.Location = new System.Drawing.Point(6, 61);
             this.dtgdsloaikh.Name = "dtgdsloaikh";
             this.dtgdsloaikh.ReadOnly = true;
             this.dtgdsloaikh.RowHeadersVisible = false;
-            this.dtgdsloaikh.Size = new System.Drawing.Size(356, 197);
+            this.dtgdsloaikh.Size = new System.Drawing.Size(363, 197);
             this.dtgdsloaikh.TabIndex = 3;
             // 
             // sttcl
@@ -131,7 +131,7 @@
             this.gbchucnangloaikh.Controls.Add(this.btnaddloaikh);
             this.gbchucnangloaikh.Location = new System.Drawing.Point(12, 12);
             this.gbchucnangloaikh.Name = "gbchucnangloaikh";
-            this.gbchucnangloaikh.Size = new System.Drawing.Size(386, 65);
+            this.gbchucnangloaikh.Size = new System.Drawing.Size(375, 65);
             this.gbchucnangloaikh.TabIndex = 1;
             this.gbchucnangloaikh.TabStop = false;
             this.gbchucnangloaikh.Text = "Chức năng";
@@ -140,7 +140,7 @@
             // 
             this.btnchitietloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnchitietloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitietloaikh.Location = new System.Drawing.Point(293, 25);
+            this.btnchitietloaikh.Location = new System.Drawing.Point(281, 25);
             this.btnchitietloaikh.Name = "btnchitietloaikh";
             this.btnchitietloaikh.Size = new System.Drawing.Size(75, 23);
             this.btnchitietloaikh.TabIndex = 3;
@@ -152,7 +152,7 @@
             this.btndelloaikh.BackColor = System.Drawing.Color.White;
             this.btndelloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelloaikh.Location = new System.Drawing.Point(202, 25);
+            this.btndelloaikh.Location = new System.Drawing.Point(194, 25);
             this.btndelloaikh.Name = "btndelloaikh";
             this.btndelloaikh.Size = new System.Drawing.Size(75, 23);
             this.btndelloaikh.TabIndex = 2;
@@ -164,7 +164,7 @@
             this.btneditloaikh.BackColor = System.Drawing.Color.White;
             this.btneditloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneditloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btneditloaikh.Location = new System.Drawing.Point(111, 25);
+            this.btneditloaikh.Location = new System.Drawing.Point(107, 25);
             this.btneditloaikh.Name = "btneditloaikh";
             this.btneditloaikh.Size = new System.Drawing.Size(75, 23);
             this.btneditloaikh.TabIndex = 1;
@@ -190,7 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(412, 359);
+            this.ClientSize = new System.Drawing.Size(399, 359);
             this.Controls.Add(this.gbthongtinloaikh);
             this.Controls.Add(this.gbchucnangloaikh);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

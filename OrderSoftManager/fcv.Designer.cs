@@ -37,10 +37,10 @@
             this.txttencv = new System.Windows.Forms.TextBox();
             this.lbltencl = new System.Windows.Forms.Label();
             this.gbchucnangcv = new System.Windows.Forms.GroupBox();
-            this.btnrefeshcv = new System.Windows.Forms.Button();
             this.btndelcv = new System.Windows.Forms.Button();
             this.btneditcv = new System.Windows.Forms.Button();
             this.btnaddcv = new System.Windows.Forms.Button();
+            this.btnchitietcv = new System.Windows.Forms.Button();
             this.gbthongtincv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdscv)).BeginInit();
             this.gbchucnangcv.SuspendLayout();
@@ -51,9 +51,9 @@
             this.gbthongtincv.Controls.Add(this.dtgdscv);
             this.gbthongtincv.Controls.Add(this.txttencv);
             this.gbthongtincv.Controls.Add(this.lbltencl);
-            this.gbthongtincv.Location = new System.Drawing.Point(12, 12);
+            this.gbthongtincv.Location = new System.Drawing.Point(12, 72);
             this.gbthongtincv.Name = "gbthongtincv";
-            this.gbthongtincv.Size = new System.Drawing.Size(244, 170);
+            this.gbthongtincv.Size = new System.Drawing.Size(364, 175);
             this.gbthongtincv.TabIndex = 0;
             this.gbthongtincv.TabStop = false;
             this.gbthongtincv.Text = "Thông tin chức vụ";
@@ -81,7 +81,7 @@
             this.dtgdscv.Name = "dtgdscv";
             this.dtgdscv.ReadOnly = true;
             this.dtgdscv.RowHeadersVisible = false;
-            this.dtgdscv.Size = new System.Drawing.Size(232, 108);
+            this.dtgdscv.Size = new System.Drawing.Size(352, 113);
             this.dtgdscv.TabIndex = 1;
             // 
             // sttcl
@@ -125,38 +125,26 @@
             // 
             // gbchucnangcv
             // 
-            this.gbchucnangcv.Controls.Add(this.btnrefeshcv);
+            this.gbchucnangcv.Controls.Add(this.btnchitietcv);
             this.gbchucnangcv.Controls.Add(this.btndelcv);
             this.gbchucnangcv.Controls.Add(this.btneditcv);
             this.gbchucnangcv.Controls.Add(this.btnaddcv);
-            this.gbchucnangcv.Location = new System.Drawing.Point(262, 12);
+            this.gbchucnangcv.Location = new System.Drawing.Point(12, 12);
             this.gbchucnangcv.Name = "gbchucnangcv";
-            this.gbchucnangcv.Size = new System.Drawing.Size(115, 170);
+            this.gbchucnangcv.Size = new System.Drawing.Size(364, 54);
             this.gbchucnangcv.TabIndex = 1;
             this.gbchucnangcv.TabStop = false;
             this.gbchucnangcv.Text = "Chức năng";
-            // 
-            // btnrefeshcv
-            // 
-            this.btnrefeshcv.BackColor = System.Drawing.Color.White;
-            this.btnrefeshcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrefeshcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnrefeshcv.Location = new System.Drawing.Point(20, 25);
-            this.btnrefeshcv.Name = "btnrefeshcv";
-            this.btnrefeshcv.Size = new System.Drawing.Size(75, 23);
-            this.btnrefeshcv.TabIndex = 0;
-            this.btnrefeshcv.Text = "Mới";
-            this.btnrefeshcv.UseVisualStyleBackColor = false;
             // 
             // btndelcv
             // 
             this.btndelcv.BackColor = System.Drawing.Color.White;
             this.btndelcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelcv.Location = new System.Drawing.Point(20, 130);
+            this.btndelcv.Location = new System.Drawing.Point(186, 21);
             this.btndelcv.Name = "btndelcv";
             this.btndelcv.Size = new System.Drawing.Size(75, 23);
-            this.btndelcv.TabIndex = 3;
+            this.btndelcv.TabIndex = 2;
             this.btndelcv.Text = "Xóa";
             this.btndelcv.UseVisualStyleBackColor = false;
             // 
@@ -165,10 +153,10 @@
             this.btneditcv.BackColor = System.Drawing.Color.White;
             this.btneditcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneditcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btneditcv.Location = new System.Drawing.Point(20, 95);
+            this.btneditcv.Location = new System.Drawing.Point(102, 21);
             this.btneditcv.Name = "btneditcv";
             this.btneditcv.Size = new System.Drawing.Size(75, 23);
-            this.btneditcv.TabIndex = 2;
+            this.btneditcv.TabIndex = 1;
             this.btneditcv.Text = "Sửa";
             this.btneditcv.UseVisualStyleBackColor = false;
             // 
@@ -177,21 +165,33 @@
             this.btnaddcv.BackColor = System.Drawing.Color.White;
             this.btnaddcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaddcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnaddcv.Location = new System.Drawing.Point(20, 60);
+            this.btnaddcv.Location = new System.Drawing.Point(18, 21);
             this.btnaddcv.Name = "btnaddcv";
             this.btnaddcv.Size = new System.Drawing.Size(75, 23);
-            this.btnaddcv.TabIndex = 1;
+            this.btnaddcv.TabIndex = 0;
             this.btnaddcv.Text = "Thêm";
             this.btnaddcv.UseVisualStyleBackColor = false;
             // 
+            // btnchitietcv
+            // 
+            this.btnchitietcv.BackColor = System.Drawing.Color.White;
+            this.btnchitietcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnchitietcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnchitietcv.Location = new System.Drawing.Point(270, 21);
+            this.btnchitietcv.Name = "btnchitietcv";
+            this.btnchitietcv.Size = new System.Drawing.Size(75, 23);
+            this.btnchitietcv.TabIndex = 3;
+            this.btnchitietcv.Text = "Chi tiết";
+            this.btnchitietcv.UseVisualStyleBackColor = false;
+            // 
             // fcv
             // 
-            this.AcceptButton = this.btnrefeshcv;
+            this.AcceptButton = this.btnaddcv;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(388, 193);
+            this.ClientSize = new System.Drawing.Size(388, 259);
             this.Controls.Add(this.gbthongtincv);
             this.Controls.Add(this.gbchucnangcv);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -217,9 +217,9 @@
         private System.Windows.Forms.Button btndelcv;
         private System.Windows.Forms.Button btneditcv;
         private System.Windows.Forms.Button btnaddcv;
-        private System.Windows.Forms.Button btnrefeshcv;
         private System.Windows.Forms.DataGridViewTextBoxColumn sttcl;
         private System.Windows.Forms.DataGridViewTextBoxColumn tencv;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcv;
+        private System.Windows.Forms.Button btnchitietcv;
     }
 }

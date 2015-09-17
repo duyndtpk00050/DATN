@@ -110,7 +110,7 @@
             this.dateTimePicker1.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(83, 20);
-            this.dateTimePicker1.TabIndex = 18;
+            this.dateTimePicker1.TabIndex = 2;
             this.dateTimePicker1.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
             // 
             // numtongtienhdnhap
@@ -129,7 +129,7 @@
             this.numtongtienhdnhap.Name = "numtongtienhdnhap";
             this.numtongtienhdnhap.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.numtongtienhdnhap.Size = new System.Drawing.Size(145, 20);
-            this.numtongtienhdnhap.TabIndex = 5;
+            this.numtongtienhdnhap.TabIndex = 3;
             // 
             // cbbtrangthaihdnhap
             // 
@@ -168,7 +168,7 @@
             this.cbbnvnhaphd.Location = new System.Drawing.Point(414, 26);
             this.cbbnvnhaphd.Name = "cbbnvnhaphd";
             this.cbbnvnhaphd.Size = new System.Drawing.Size(171, 21);
-            this.cbbnvnhaphd.TabIndex = 1;
+            this.cbbnvnhaphd.TabIndex = 4;
             // 
             // cbbncchdnhap
             // 
@@ -177,7 +177,7 @@
             this.cbbncchdnhap.Location = new System.Drawing.Point(414, 63);
             this.cbbncchdnhap.Name = "cbbncchdnhap";
             this.cbbncchdnhap.Size = new System.Drawing.Size(171, 21);
-            this.cbbncchdnhap.TabIndex = 4;
+            this.cbbncchdnhap.TabIndex = 5;
             // 
             // cbbhdnhap
             // 
@@ -186,7 +186,7 @@
             this.cbbhdnhap.Location = new System.Drawing.Point(99, 26);
             this.cbbhdnhap.Name = "cbbhdnhap";
             this.cbbhdnhap.Size = new System.Drawing.Size(204, 21);
-            this.cbbhdnhap.TabIndex = 2;
+            this.cbbhdnhap.TabIndex = 0;
             // 
             // dtpngaynhaphd
             // 
@@ -196,7 +196,7 @@
             this.dtpngaynhaphd.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
             this.dtpngaynhaphd.Name = "dtpngaynhaphd";
             this.dtpngaynhaphd.Size = new System.Drawing.Size(90, 20);
-            this.dtpngaynhaphd.TabIndex = 0;
+            this.dtpngaynhaphd.TabIndex = 1;
             this.dtpngaynhaphd.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
             // 
             // lbltongtienhdnhap
@@ -248,10 +248,10 @@
             // 
             this.btninhdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninhdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btninhdnhap.Location = new System.Drawing.Point(18, 64);
+            this.btninhdnhap.Location = new System.Drawing.Point(19, 64);
             this.btninhdnhap.Name = "btninhdnhap";
             this.btninhdnhap.Size = new System.Drawing.Size(75, 23);
-            this.btninhdnhap.TabIndex = 3;
+            this.btninhdnhap.TabIndex = 1;
             this.btninhdnhap.Text = "In";
             this.btninhdnhap.UseVisualStyleBackColor = true;
             // 
@@ -271,7 +271,7 @@
             // 
             this.btnchitiethdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnchitiethdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitiethdnhap.Location = new System.Drawing.Point(18, 100);
+            this.btnchitiethdnhap.Location = new System.Drawing.Point(19, 100);
             this.btnchitiethdnhap.Name = "btnchitiethdnhap";
             this.btnchitiethdnhap.Size = new System.Drawing.Size(75, 23);
             this.btnchitiethdnhap.TabIndex = 2;
@@ -282,10 +282,10 @@
             // 
             this.btntimhdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntimhdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btntimhdnhap.Location = new System.Drawing.Point(18, 28);
+            this.btntimhdnhap.Location = new System.Drawing.Point(19, 28);
             this.btntimhdnhap.Name = "btntimhdnhap";
             this.btntimhdnhap.Size = new System.Drawing.Size(75, 23);
-            this.btntimhdnhap.TabIndex = 1;
+            this.btntimhdnhap.TabIndex = 0;
             this.btntimhdnhap.Text = "Tìm";
             this.btntimhdnhap.UseVisualStyleBackColor = true;
             // 
@@ -298,7 +298,7 @@
             this.gbdshdnhap.Location = new System.Drawing.Point(12, 156);
             this.gbdshdnhap.Name = "gbdshdnhap";
             this.gbdshdnhap.Size = new System.Drawing.Size(725, 331);
-            this.gbdshdnhap.TabIndex = 1;
+            this.gbdshdnhap.TabIndex = 2;
             this.gbdshdnhap.TabStop = false;
             this.gbdshdnhap.Text = "Danh sách hóa đơn nhập";
             // 

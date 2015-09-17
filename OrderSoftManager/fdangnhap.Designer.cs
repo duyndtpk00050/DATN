@@ -33,8 +33,8 @@
             this.btnquenmk = new System.Windows.Forms.Button();
             this.btndn = new System.Windows.Forms.Button();
             this.cbghinho = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtmk = new System.Windows.Forms.TextBox();
+            this.txttendn = new System.Windows.Forms.TextBox();
             this.lblmk = new System.Windows.Forms.Label();
             this.lbltennvdn = new System.Windows.Forms.Label();
             this.pblogin = new System.Windows.Forms.PictureBox();
@@ -47,14 +47,14 @@
             this.gbdn.Controls.Add(this.btnquenmk);
             this.gbdn.Controls.Add(this.btndn);
             this.gbdn.Controls.Add(this.cbghinho);
-            this.gbdn.Controls.Add(this.textBox2);
-            this.gbdn.Controls.Add(this.textBox1);
+            this.gbdn.Controls.Add(this.txtmk);
+            this.gbdn.Controls.Add(this.txttendn);
             this.gbdn.Controls.Add(this.lblmk);
             this.gbdn.Controls.Add(this.lbltennvdn);
             this.gbdn.Location = new System.Drawing.Point(195, 12);
             this.gbdn.Name = "gbdn";
             this.gbdn.Size = new System.Drawing.Size(300, 174);
-            this.gbdn.TabIndex = 1;
+            this.gbdn.TabIndex = 0;
             this.gbdn.TabStop = false;
             this.gbdn.Text = "Đăng nhập hệ thống";
             // 
@@ -91,19 +91,19 @@
             this.cbghinho.Text = "Ghi nhớ tài khoản và mật khẩu";
             this.cbghinho.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txtmk
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtmk.Location = new System.Drawing.Point(101, 68);
+            this.txtmk.Name = "txtmk";
+            this.txtmk.Size = new System.Drawing.Size(182, 20);
+            this.txtmk.TabIndex = 1;
             // 
-            // textBox1
+            // txttendn
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
-            this.textBox1.TabIndex = 0;
+            this.txttendn.Location = new System.Drawing.Point(101, 34);
+            this.txttendn.Name = "txttendn";
+            this.txttendn.Size = new System.Drawing.Size(182, 20);
+            this.txttendn.TabIndex = 0;
             // 
             // lblmk
             // 
@@ -162,8 +162,8 @@
         private System.Windows.Forms.Button btnquenmk;
         private System.Windows.Forms.Button btndn;
         private System.Windows.Forms.CheckBox cbghinho;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtmk;
+        private System.Windows.Forms.TextBox txttendn;
         private System.Windows.Forms.Label lblmk;
         private System.Windows.Forms.Label lbltennvdn;
         private System.Windows.Forms.PictureBox pblogin;
