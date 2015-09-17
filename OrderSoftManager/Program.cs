@@ -15,7 +15,7 @@ namespace OrderSoftManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fnhaphang());
+            Application.Run(new fbanhang());
         }
     }
 }
