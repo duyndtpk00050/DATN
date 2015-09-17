@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace OrderSoftManager
 {
-    public partial class fchitietcl : Form
+    public partial class fchamluong : Form
     {
-        public fchitietcl()
+        public fchamluong()
         {
             InitializeComponent();
         }
