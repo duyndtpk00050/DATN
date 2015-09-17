@@ -47,7 +47,6 @@
             this.gbchucnanghdnhap = new System.Windows.Forms.GroupBox();
             this.btnchitiethdnhap = new System.Windows.Forms.Button();
             this.btntimhdnhap = new System.Windows.Forms.Button();
-            this.btnrefreshhdnhap = new System.Windows.Forms.Button();
             this.gbdshdnhap = new System.Windows.Forms.GroupBox();
             this.dtgdshdnhap = new System.Windows.Forms.DataGridView();
             this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,7 +67,6 @@
             // 
             this.gbtimhdnhap.Controls.Add(this.numtongtienhdnhap);
             this.gbtimhdnhap.Controls.Add(this.cbbtrangthaihdnhap);
-            this.gbtimhdnhap.Controls.Add(this.btninhdnhap);
             this.gbtimhdnhap.Controls.Add(this.lbltrangthaihdnhap);
             this.gbtimhdnhap.Controls.Add(this.lbldvgiahdnhap);
             this.gbtimhdnhap.Controls.Add(this.cbbnvnhaphd);
@@ -85,7 +83,7 @@
             this.gbtimhdnhap.Size = new System.Drawing.Size(606, 138);
             this.gbtimhdnhap.TabIndex = 0;
             this.gbtimhdnhap.TabStop = false;
-            this.gbtimhdnhap.Text = "Tìm kiếm";
+            this.gbtimhdnhap.Text = "Thông tin";
             // 
             // numtongtienhdnhap
             // 
@@ -94,7 +92,7 @@
             0,
             0,
             0});
-            this.numtongtienhdnhap.Location = new System.Drawing.Point(101, 99);
+            this.numtongtienhdnhap.Location = new System.Drawing.Point(100, 100);
             this.numtongtienhdnhap.Maximum = new decimal(new int[] {
             1410065408,
             2,
@@ -107,11 +105,9 @@
             // 
             // cbbtrangthaihdnhap
             // 
-            this.cbbtrangthaihdnhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbtrangthaihdnhap.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbtrangthaihdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbtrangthaihdnhap.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbtrangthaihdnhap.FormattingEnabled = true;
-            this.cbbtrangthaihdnhap.Location = new System.Drawing.Point(389, 99);
+            this.cbbtrangthaihdnhap.Location = new System.Drawing.Point(388, 100);
             this.cbbtrangthaihdnhap.Name = "cbbtrangthaihdnhap";
             this.cbbtrangthaihdnhap.Size = new System.Drawing.Size(197, 21);
             this.cbbtrangthaihdnhap.TabIndex = 6;
@@ -120,9 +116,9 @@
             // 
             this.btninhdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninhdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btninhdnhap.Location = new System.Drawing.Point(252, 61);
+            this.btninhdnhap.Location = new System.Drawing.Point(18, 64);
             this.btninhdnhap.Name = "btninhdnhap";
-            this.btninhdnhap.Size = new System.Drawing.Size(32, 23);
+            this.btninhdnhap.Size = new System.Drawing.Size(75, 23);
             this.btninhdnhap.TabIndex = 3;
             this.btninhdnhap.Text = "In";
             this.btninhdnhap.UseVisualStyleBackColor = true;
@@ -130,7 +126,7 @@
             // lbltrangthaihdnhap
             // 
             this.lbltrangthaihdnhap.AutoSize = true;
-            this.lbltrangthaihdnhap.Location = new System.Drawing.Point(300, 103);
+            this.lbltrangthaihdnhap.Location = new System.Drawing.Point(299, 104);
             this.lbltrangthaihdnhap.Name = "lbltrangthaihdnhap";
             this.lbltrangthaihdnhap.Size = new System.Drawing.Size(55, 13);
             this.lbltrangthaihdnhap.TabIndex = 17;
@@ -140,7 +136,7 @@
             // 
             this.lbldvgiahdnhap.BackColor = System.Drawing.Color.White;
             this.lbldvgiahdnhap.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbldvgiahdnhap.Location = new System.Drawing.Point(252, 98);
+            this.lbldvgiahdnhap.Location = new System.Drawing.Point(251, 99);
             this.lbldvgiahdnhap.Name = "lbldvgiahdnhap";
             this.lbldvgiahdnhap.Size = new System.Drawing.Size(32, 23);
             this.lbldvgiahdnhap.TabIndex = 16;
@@ -149,39 +145,36 @@
             // 
             // cbbnvnhaphd
             // 
-            this.cbbnvnhaphd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbnvnhaphd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbnvnhaphd.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbnvnhaphd.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cbbnvnhaphd.FormattingEnabled = true;
-            this.cbbnvnhaphd.Location = new System.Drawing.Point(389, 25);
+            this.cbbnvnhaphd.Location = new System.Drawing.Point(388, 26);
             this.cbbnvnhaphd.Name = "cbbnvnhaphd";
             this.cbbnvnhaphd.Size = new System.Drawing.Size(197, 21);
             this.cbbnvnhaphd.TabIndex = 1;
             // 
             // cbbncchdnhap
             // 
-            this.cbbncchdnhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbncchdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbncchdnhap.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbncchdnhap.FormattingEnabled = true;
-            this.cbbncchdnhap.Location = new System.Drawing.Point(389, 62);
+            this.cbbncchdnhap.Location = new System.Drawing.Point(388, 63);
             this.cbbncchdnhap.Name = "cbbncchdnhap";
             this.cbbncchdnhap.Size = new System.Drawing.Size(197, 21);
             this.cbbncchdnhap.TabIndex = 4;
             // 
             // cbbhdnhap
             // 
-            this.cbbhdnhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbhdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbhdnhap.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.cbbhdnhap.FormattingEnabled = true;
-            this.cbbhdnhap.Location = new System.Drawing.Point(101, 62);
+            this.cbbhdnhap.Location = new System.Drawing.Point(99, 26);
             this.cbbhdnhap.Name = "cbbhdnhap";
-            this.cbbhdnhap.Size = new System.Drawing.Size(145, 21);
+            this.cbbhdnhap.Size = new System.Drawing.Size(183, 21);
             this.cbbhdnhap.TabIndex = 2;
             // 
             // dtpngaynhaphd
             // 
             this.dtpngaynhaphd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpngaynhaphd.Location = new System.Drawing.Point(100, 25);
+            this.dtpngaynhaphd.Location = new System.Drawing.Point(99, 63);
             this.dtpngaynhaphd.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpngaynhaphd.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
             this.dtpngaynhaphd.Name = "dtpngaynhaphd";
@@ -192,7 +185,7 @@
             // lbltongtienhdnhap
             // 
             this.lbltongtienhdnhap.AutoSize = true;
-            this.lbltongtienhdnhap.Location = new System.Drawing.Point(19, 103);
+            this.lbltongtienhdnhap.Location = new System.Drawing.Point(18, 104);
             this.lbltongtienhdnhap.Name = "lbltongtienhdnhap";
             this.lbltongtienhdnhap.Size = new System.Drawing.Size(52, 13);
             this.lbltongtienhdnhap.TabIndex = 4;
@@ -201,7 +194,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 66);
+            this.label4.Location = new System.Drawing.Point(17, 30);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 3;
@@ -210,7 +203,7 @@
             // lblnvnhaphd
             // 
             this.lblnvnhaphd.AutoSize = true;
-            this.lblnvnhaphd.Location = new System.Drawing.Point(300, 29);
+            this.lblnvnhaphd.Location = new System.Drawing.Point(299, 30);
             this.lblnvnhaphd.Name = "lblnvnhaphd";
             this.lblnvnhaphd.Size = new System.Drawing.Size(83, 13);
             this.lblnvnhaphd.TabIndex = 2;
@@ -219,7 +212,7 @@
             // lblncchdnhap
             // 
             this.lblncchdnhap.AutoSize = true;
-            this.lblncchdnhap.Location = new System.Drawing.Point(300, 66);
+            this.lblncchdnhap.Location = new System.Drawing.Point(299, 67);
             this.lblncchdnhap.Name = "lblncchdnhap";
             this.lblncchdnhap.Size = new System.Drawing.Size(75, 13);
             this.lblncchdnhap.TabIndex = 1;
@@ -228,7 +221,7 @@
             // lblngaynhaphd
             // 
             this.lblngaynhaphd.AutoSize = true;
-            this.lblngaynhaphd.Location = new System.Drawing.Point(19, 29);
+            this.lblngaynhaphd.Location = new System.Drawing.Point(18, 67);
             this.lblngaynhaphd.Name = "lblngaynhaphd";
             this.lblngaynhaphd.Size = new System.Drawing.Size(59, 13);
             this.lblngaynhaphd.TabIndex = 0;
@@ -238,7 +231,7 @@
             // 
             this.gbchucnanghdnhap.Controls.Add(this.btnchitiethdnhap);
             this.gbchucnanghdnhap.Controls.Add(this.btntimhdnhap);
-            this.gbchucnanghdnhap.Controls.Add(this.btnrefreshhdnhap);
+            this.gbchucnanghdnhap.Controls.Add(this.btninhdnhap);
             this.gbchucnanghdnhap.Location = new System.Drawing.Point(624, 12);
             this.gbchucnanghdnhap.Name = "gbchucnanghdnhap";
             this.gbchucnanghdnhap.Size = new System.Drawing.Size(113, 138);
@@ -250,34 +243,23 @@
             // 
             this.btnchitiethdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnchitiethdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitiethdnhap.Location = new System.Drawing.Point(22, 95);
+            this.btnchitiethdnhap.Location = new System.Drawing.Point(18, 100);
             this.btnchitiethdnhap.Name = "btnchitiethdnhap";
             this.btnchitiethdnhap.Size = new System.Drawing.Size(75, 23);
             this.btnchitiethdnhap.TabIndex = 2;
-            this.btnchitiethdnhap.Text = "Chi tiêt";
+            this.btnchitiethdnhap.Text = "Sửa";
             this.btnchitiethdnhap.UseVisualStyleBackColor = true;
             // 
             // btntimhdnhap
             // 
             this.btntimhdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntimhdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btntimhdnhap.Location = new System.Drawing.Point(22, 60);
+            this.btntimhdnhap.Location = new System.Drawing.Point(18, 28);
             this.btntimhdnhap.Name = "btntimhdnhap";
             this.btntimhdnhap.Size = new System.Drawing.Size(75, 23);
             this.btntimhdnhap.TabIndex = 1;
             this.btntimhdnhap.Text = "Tìm";
             this.btntimhdnhap.UseVisualStyleBackColor = true;
-            // 
-            // btnrefreshhdnhap
-            // 
-            this.btnrefreshhdnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrefreshhdnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnrefreshhdnhap.Location = new System.Drawing.Point(22, 25);
-            this.btnrefreshhdnhap.Name = "btnrefreshhdnhap";
-            this.btnrefreshhdnhap.Size = new System.Drawing.Size(75, 23);
-            this.btnrefreshhdnhap.TabIndex = 0;
-            this.btnrefreshhdnhap.Text = "Mới";
-            this.btnrefreshhdnhap.UseVisualStyleBackColor = true;
             // 
             // gbdshdnhap
             // 
@@ -326,48 +308,49 @@
             this.stt.HeaderText = "STT";
             this.stt.Name = "stt";
             this.stt.ReadOnly = true;
-            this.stt.Width = 53;
+            this.stt.Width = 52;
             // 
             // tenhdnhap
             // 
             this.tenhdnhap.HeaderText = "Tên hóa đơn";
             this.tenhdnhap.Name = "tenhdnhap";
             this.tenhdnhap.ReadOnly = true;
-            this.tenhdnhap.Width = 94;
+            this.tenhdnhap.Width = 93;
             // 
             // ngaynhaphd
             // 
             this.ngaynhaphd.HeaderText = "Ngày nhập";
             this.ngaynhaphd.Name = "ngaynhaphd";
             this.ngaynhaphd.ReadOnly = true;
-            this.ngaynhaphd.Width = 84;
+            this.ngaynhaphd.Width = 83;
             // 
             // ncchdnhap
             // 
             this.ncchdnhap.HeaderText = "Nhà cung cấp";
             this.ncchdnhap.Name = "ncchdnhap";
             this.ncchdnhap.ReadOnly = true;
+            this.ncchdnhap.Width = 99;
             // 
             // tongtienhdnhap
             // 
             this.tongtienhdnhap.HeaderText = "Tổng tiền";
             this.tongtienhdnhap.Name = "tongtienhdnhap";
             this.tongtienhdnhap.ReadOnly = true;
-            this.tongtienhdnhap.Width = 77;
+            this.tongtienhdnhap.Width = 76;
             // 
             // trangthaihdnhap
             // 
             this.trangthaihdnhap.HeaderText = "Trạng thái";
             this.trangthaihdnhap.Name = "trangthaihdnhap";
             this.trangthaihdnhap.ReadOnly = true;
-            this.trangthaihdnhap.Width = 80;
+            this.trangthaihdnhap.Width = 79;
             // 
             // nvnhap
             // 
             this.nvnhap.HeaderText = "Nhân viên nhập hóa đơn";
             this.nvnhap.Name = "nvnhap";
             this.nvnhap.ReadOnly = true;
-            this.nvnhap.Width = 151;
+            this.nvnhap.Width = 150;
             // 
             // fhdnhap
             // 
@@ -376,7 +359,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(749, 499);
+            this.ClientSize = new System.Drawing.Size(747, 499);
             this.Controls.Add(this.gbdshdnhap);
             this.Controls.Add(this.gbchucnanghdnhap);
             this.Controls.Add(this.gbtimhdnhap);
@@ -406,7 +389,6 @@
         private System.Windows.Forms.Label lblnvnhaphd;
         private System.Windows.Forms.Label lblncchdnhap;
         private System.Windows.Forms.Label lblngaynhaphd;
-        private System.Windows.Forms.Button btnrefreshhdnhap;
         private System.Windows.Forms.Button btnchitiethdnhap;
         private System.Windows.Forms.Button btntimhdnhap;
         private System.Windows.Forms.DateTimePicker dtpngaynhaphd;

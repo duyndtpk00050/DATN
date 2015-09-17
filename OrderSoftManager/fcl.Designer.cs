@@ -53,15 +53,15 @@
             // 
             // gbchucnangcl
             // 
-            this.gbchucnangcl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gbchucnangcl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbchucnangcl.Controls.Add(this.btnchitietcl);
             this.gbchucnangcl.Controls.Add(this.btndelcl);
             this.gbchucnangcl.Controls.Add(this.btneditcl);
             this.gbchucnangcl.Controls.Add(this.btnaddcl);
             this.gbchucnangcl.Location = new System.Drawing.Point(12, 12);
             this.gbchucnangcl.Name = "gbchucnangcl";
-            this.gbchucnangcl.Size = new System.Drawing.Size(115, 170);
+            this.gbchucnangcl.Size = new System.Drawing.Size(363, 69);
             this.gbchucnangcl.TabIndex = 1;
             this.gbchucnangcl.TabStop = false;
             this.gbchucnangcl.Text = "Chức năng";
@@ -70,9 +70,9 @@
             // 
             this.btnchitietcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnchitietcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitietcl.Location = new System.Drawing.Point(19, 133);
+            this.btnchitietcl.Location = new System.Drawing.Point(280, 27);
             this.btnchitietcl.Name = "btnchitietcl";
-            this.btnchitietcl.Size = new System.Drawing.Size(75, 23);
+            this.btnchitietcl.Size = new System.Drawing.Size(65, 23);
             this.btnchitietcl.TabIndex = 3;
             this.btnchitietcl.Text = "Chi tiết";
             this.btnchitietcl.UseVisualStyleBackColor = true;
@@ -82,9 +82,9 @@
             this.btndelcl.BackColor = System.Drawing.Color.White;
             this.btndelcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelcl.Location = new System.Drawing.Point(19, 97);
+            this.btndelcl.Location = new System.Drawing.Point(201, 27);
             this.btndelcl.Name = "btndelcl";
-            this.btndelcl.Size = new System.Drawing.Size(75, 23);
+            this.btndelcl.Size = new System.Drawing.Size(65, 23);
             this.btndelcl.TabIndex = 2;
             this.btndelcl.Text = "Xóa";
             this.btndelcl.UseVisualStyleBackColor = false;
@@ -94,9 +94,9 @@
             this.btneditcl.BackColor = System.Drawing.Color.White;
             this.btneditcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneditcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btneditcl.Location = new System.Drawing.Point(19, 61);
+            this.btneditcl.Location = new System.Drawing.Point(111, 27);
             this.btneditcl.Name = "btneditcl";
-            this.btneditcl.Size = new System.Drawing.Size(75, 23);
+            this.btneditcl.Size = new System.Drawing.Size(65, 23);
             this.btneditcl.TabIndex = 1;
             this.btneditcl.Text = "Sửa";
             this.btneditcl.UseVisualStyleBackColor = false;
@@ -106,11 +106,11 @@
             this.btnaddcl.BackColor = System.Drawing.Color.White;
             this.btnaddcl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaddcl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnaddcl.Location = new System.Drawing.Point(19, 25);
+            this.btnaddcl.Location = new System.Drawing.Point(19, 27);
             this.btnaddcl.Name = "btnaddcl";
             this.btnaddcl.Size = new System.Drawing.Size(75, 23);
             this.btnaddcl.TabIndex = 0;
-            this.btnaddcl.Text = "Mới \\ Thêm";
+            this.btnaddcl.Text = "Thêm mới";
             this.btnaddcl.UseVisualStyleBackColor = false;
             // 
             // dtgdscl
@@ -132,11 +132,11 @@
             this.idcl});
             this.dtgdscl.EnableHeadersVisualStyles = false;
             this.dtgdscl.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.dtgdscl.Location = new System.Drawing.Point(205, 19);
+            this.dtgdscl.Location = new System.Drawing.Point(6, 102);
             this.dtgdscl.Name = "dtgdscl";
             this.dtgdscl.ReadOnly = true;
             this.dtgdscl.RowHeadersVisible = false;
-            this.dtgdscl.Size = new System.Drawing.Size(233, 145);
+            this.dtgdscl.Size = new System.Drawing.Size(351, 140);
             this.dtgdscl.TabIndex = 3;
             // 
             // sttcl
@@ -145,7 +145,7 @@
             this.sttcl.HeaderText = "STT";
             this.sttcl.Name = "sttcl";
             this.sttcl.ReadOnly = true;
-            this.sttcl.Width = 53;
+            this.sttcl.Width = 52;
             // 
             // tencl
             // 
@@ -153,7 +153,7 @@
             this.tencl.HeaderText = "Tên ca";
             this.tencl.Name = "tencl";
             this.tencl.ReadOnly = true;
-            this.tencl.Width = 66;
+            this.tencl.Width = 65;
             // 
             // thoigiancl
             // 
@@ -161,7 +161,7 @@
             this.thoigiancl.HeaderText = "Thời gian ca làm";
             this.thoigiancl.Name = "thoigiancl";
             this.thoigiancl.ReadOnly = true;
-            this.thoigiancl.Width = 110;
+            this.thoigiancl.Width = 109;
             // 
             // idcl
             // 
@@ -183,9 +183,9 @@
             this.gbthongtincl.Controls.Add(this.lblcuoicl);
             this.gbthongtincl.Controls.Add(this.lbldaucl);
             this.gbthongtincl.Controls.Add(this.lbltencl);
-            this.gbthongtincl.Location = new System.Drawing.Point(133, 12);
+            this.gbthongtincl.Location = new System.Drawing.Point(12, 87);
             this.gbthongtincl.Name = "gbthongtincl";
-            this.gbthongtincl.Size = new System.Drawing.Size(444, 170);
+            this.gbthongtincl.Size = new System.Drawing.Size(363, 248);
             this.gbthongtincl.TabIndex = 0;
             this.gbthongtincl.TabStop = false;
             this.gbthongtincl.Text = "Thông tin ca làm";
@@ -193,30 +193,30 @@
             // dtpcuoicl
             // 
             this.dtpcuoicl.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpcuoicl.Location = new System.Drawing.Point(80, 111);
+            this.dtpcuoicl.Location = new System.Drawing.Point(264, 63);
             this.dtpcuoicl.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpcuoicl.MinDate = new System.DateTime(2015, 1, 1, 0, 0, 0, 0);
             this.dtpcuoicl.Name = "dtpcuoicl";
             this.dtpcuoicl.ShowUpDown = true;
-            this.dtpcuoicl.Size = new System.Drawing.Size(106, 20);
+            this.dtpcuoicl.Size = new System.Drawing.Size(81, 20);
             this.dtpcuoicl.TabIndex = 2;
             this.dtpcuoicl.Value = new System.DateTime(2015, 9, 13, 19, 8, 17, 0);
             // 
             // dtpdaucl
             // 
             this.dtpdaucl.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpdaucl.Location = new System.Drawing.Point(80, 74);
+            this.dtpdaucl.Location = new System.Drawing.Point(85, 63);
             this.dtpdaucl.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
             this.dtpdaucl.MinDate = new System.DateTime(2015, 1, 1, 0, 0, 0, 0);
             this.dtpdaucl.Name = "dtpdaucl";
             this.dtpdaucl.ShowUpDown = true;
-            this.dtpdaucl.Size = new System.Drawing.Size(106, 20);
+            this.dtpdaucl.Size = new System.Drawing.Size(91, 20);
             this.dtpdaucl.TabIndex = 1;
             this.dtpdaucl.Value = new System.DateTime(2015, 9, 13, 19, 8, 17, 0);
             // 
             // txttencl
             // 
-            this.txttencl.Location = new System.Drawing.Point(80, 37);
+            this.txttencl.Location = new System.Drawing.Point(85, 29);
             this.txttencl.Name = "txttencl";
             this.txttencl.Size = new System.Drawing.Size(106, 20);
             this.txttencl.TabIndex = 0;
@@ -224,7 +224,7 @@
             // lblcuoicl
             // 
             this.lblcuoicl.AutoSize = true;
-            this.lblcuoicl.Location = new System.Drawing.Point(12, 116);
+            this.lblcuoicl.Location = new System.Drawing.Point(196, 67);
             this.lblcuoicl.Name = "lblcuoicl";
             this.lblcuoicl.Size = new System.Drawing.Size(62, 13);
             this.lblcuoicl.TabIndex = 2;
@@ -233,7 +233,7 @@
             // lbldaucl
             // 
             this.lbldaucl.AutoSize = true;
-            this.lbldaucl.Location = new System.Drawing.Point(14, 78);
+            this.lbldaucl.Location = new System.Drawing.Point(14, 67);
             this.lbldaucl.Name = "lbldaucl";
             this.lbldaucl.Size = new System.Drawing.Size(60, 13);
             this.lbldaucl.TabIndex = 1;
@@ -242,7 +242,7 @@
             // lbltencl
             // 
             this.lbltencl.AutoSize = true;
-            this.lbltencl.Location = new System.Drawing.Point(33, 40);
+            this.lbltencl.Location = new System.Drawing.Point(33, 33);
             this.lbltencl.Name = "lbltencl";
             this.lbltencl.Size = new System.Drawing.Size(41, 13);
             this.lbltencl.TabIndex = 0;
@@ -255,7 +255,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(589, 194);
+            this.ClientSize = new System.Drawing.Size(387, 347);
             this.Controls.Add(this.gbthongtincl);
             this.Controls.Add(this.gbchucnangcl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

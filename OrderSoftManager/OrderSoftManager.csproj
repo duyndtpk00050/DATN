@@ -146,6 +146,12 @@
     <Compile Include="fphanquyen.Designer.cs">
       <DependentUpon>fphanquyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="fthongtin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fthongtin.Designer.cs">
+      <DependentUpon>fthongtin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fbanhang.resx">
@@ -198,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fphanquyen.resx">
       <DependentUpon>fphanquyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fthongtin.resx">
+      <DependentUpon>fthongtin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -254,6 +263,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

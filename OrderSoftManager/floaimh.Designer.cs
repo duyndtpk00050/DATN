@@ -54,9 +54,9 @@
             this.gbthongtinloaimh.Controls.Add(this.dtgdsloaimh);
             this.gbthongtinloaimh.Controls.Add(this.txttencl);
             this.gbthongtinloaimh.Controls.Add(this.lbltenloaimh);
-            this.gbthongtinloaimh.Location = new System.Drawing.Point(133, 12);
+            this.gbthongtinloaimh.Location = new System.Drawing.Point(12, 86);
             this.gbthongtinloaimh.Name = "gbthongtinloaimh";
-            this.gbthongtinloaimh.Size = new System.Drawing.Size(265, 172);
+            this.gbthongtinloaimh.Size = new System.Drawing.Size(387, 183);
             this.gbthongtinloaimh.TabIndex = 0;
             this.gbthongtinloaimh.TabStop = false;
             this.gbthongtinloaimh.Text = "Danh sách loai mặt hàng";
@@ -83,7 +83,7 @@
             this.dtgdsloaimh.Name = "dtgdsloaimh";
             this.dtgdsloaimh.ReadOnly = true;
             this.dtgdsloaimh.RowHeadersVisible = false;
-            this.dtgdsloaimh.Size = new System.Drawing.Size(253, 105);
+            this.dtgdsloaimh.Size = new System.Drawing.Size(375, 116);
             this.dtgdsloaimh.TabIndex = 3;
             // 
             // sttloaimh
@@ -92,7 +92,7 @@
             this.sttloaimh.HeaderText = "STT";
             this.sttloaimh.Name = "sttloaimh";
             this.sttloaimh.ReadOnly = true;
-            this.sttloaimh.Width = 53;
+            this.sttloaimh.Width = 52;
             // 
             // tenloaimh
             // 
@@ -100,7 +100,7 @@
             this.tenloaimh.HeaderText = "Loại mặt hàng";
             this.tenloaimh.Name = "tenloaimh";
             this.tenloaimh.ReadOnly = true;
-            this.tenloaimh.Width = 99;
+            this.tenloaimh.Width = 98;
             // 
             // idloaimh
             // 
@@ -114,7 +114,7 @@
             // 
             this.txttencl.Location = new System.Drawing.Point(93, 25);
             this.txttencl.Name = "txttencl";
-            this.txttencl.Size = new System.Drawing.Size(159, 20);
+            this.txttencl.Size = new System.Drawing.Size(236, 20);
             this.txttencl.TabIndex = 0;
             // 
             // lbltenloaimh
@@ -128,15 +128,15 @@
             // 
             // gbchucnangcl
             // 
-            this.gbchucnangcl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.gbchucnangcl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbchucnangcl.Controls.Add(this.btnchitietloaimh);
             this.gbchucnangcl.Controls.Add(this.btndelloaimh);
             this.gbchucnangcl.Controls.Add(this.btneditloaimh);
             this.gbchucnangcl.Controls.Add(this.btnaddloaimh);
             this.gbchucnangcl.Location = new System.Drawing.Point(12, 12);
             this.gbchucnangcl.Name = "gbchucnangcl";
-            this.gbchucnangcl.Size = new System.Drawing.Size(115, 172);
+            this.gbchucnangcl.Size = new System.Drawing.Size(387, 68);
             this.gbchucnangcl.TabIndex = 1;
             this.gbchucnangcl.TabStop = false;
             this.gbchucnangcl.Text = "Chức năng";
@@ -145,7 +145,7 @@
             // 
             this.btnchitietloaimh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnchitietloaimh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitietloaimh.Location = new System.Drawing.Point(19, 133);
+            this.btnchitietloaimh.Location = new System.Drawing.Point(295, 25);
             this.btnchitietloaimh.Name = "btnchitietloaimh";
             this.btnchitietloaimh.Size = new System.Drawing.Size(75, 23);
             this.btnchitietloaimh.TabIndex = 3;
@@ -157,7 +157,7 @@
             this.btndelloaimh.BackColor = System.Drawing.Color.White;
             this.btndelloaimh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelloaimh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelloaimh.Location = new System.Drawing.Point(19, 97);
+            this.btndelloaimh.Location = new System.Drawing.Point(203, 25);
             this.btndelloaimh.Name = "btndelloaimh";
             this.btndelloaimh.Size = new System.Drawing.Size(75, 23);
             this.btndelloaimh.TabIndex = 2;
@@ -169,7 +169,7 @@
             this.btneditloaimh.BackColor = System.Drawing.Color.White;
             this.btneditloaimh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneditloaimh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btneditloaimh.Location = new System.Drawing.Point(19, 61);
+            this.btneditloaimh.Location = new System.Drawing.Point(111, 25);
             this.btneditloaimh.Name = "btneditloaimh";
             this.btneditloaimh.Size = new System.Drawing.Size(75, 23);
             this.btneditloaimh.TabIndex = 1;
@@ -185,7 +185,7 @@
             this.btnaddloaimh.Name = "btnaddloaimh";
             this.btnaddloaimh.Size = new System.Drawing.Size(75, 23);
             this.btnaddloaimh.TabIndex = 0;
-            this.btnaddloaimh.Text = "Mới \\ Thêm";
+            this.btnaddloaimh.Text = "Thêm mới";
             this.btnaddloaimh.UseVisualStyleBackColor = false;
             // 
             // floaimh
@@ -194,7 +194,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(410, 196);
+            this.ClientSize = new System.Drawing.Size(413, 280);
             this.Controls.Add(this.gbthongtinloaimh);
             this.Controls.Add(this.gbchucnangcl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -90,14 +90,14 @@
             this.sttcl.HeaderText = "STT";
             this.sttcl.Name = "sttcl";
             this.sttcl.ReadOnly = true;
-            this.sttcl.Width = 53;
+            this.sttcl.Width = 52;
             // 
             // tencv
             // 
             this.tencv.HeaderText = "Tên chức vụ";
             this.tencv.Name = "tencv";
             this.tencv.ReadOnly = true;
-            this.tencv.Width = 93;
+            this.tencv.Width = 92;
             // 
             // idcv
             // 
@@ -153,7 +153,7 @@
             this.btndelcv.BackColor = System.Drawing.Color.White;
             this.btndelcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelcv.Location = new System.Drawing.Point(20, 128);
+            this.btndelcv.Location = new System.Drawing.Point(20, 130);
             this.btndelcv.Name = "btndelcv";
             this.btndelcv.Size = new System.Drawing.Size(75, 23);
             this.btndelcv.TabIndex = 3;
@@ -165,7 +165,7 @@
             this.btneditcv.BackColor = System.Drawing.Color.White;
             this.btneditcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneditcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btneditcv.Location = new System.Drawing.Point(20, 92);
+            this.btneditcv.Location = new System.Drawing.Point(20, 95);
             this.btneditcv.Name = "btneditcv";
             this.btneditcv.Size = new System.Drawing.Size(75, 23);
             this.btneditcv.TabIndex = 2;
@@ -177,7 +177,7 @@
             this.btnaddcv.BackColor = System.Drawing.Color.White;
             this.btnaddcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaddcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnaddcv.Location = new System.Drawing.Point(20, 56);
+            this.btnaddcv.Location = new System.Drawing.Point(20, 60);
             this.btnaddcv.Name = "btnaddcv";
             this.btnaddcv.Size = new System.Drawing.Size(75, 23);
             this.btnaddcv.TabIndex = 1;

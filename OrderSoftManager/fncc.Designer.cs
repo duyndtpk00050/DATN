@@ -76,7 +76,7 @@
             // 
             this.btndelncc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelncc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelncc.Location = new System.Drawing.Point(290, 25);
+            this.btndelncc.Location = new System.Drawing.Point(289, 25);
             this.btndelncc.Name = "btndelncc";
             this.btndelncc.Size = new System.Drawing.Size(78, 23);
             this.btndelncc.TabIndex = 3;
@@ -98,7 +98,7 @@
             // 
             this.btnaddncc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnaddncc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnaddncc.Location = new System.Drawing.Point(108, 25);
+            this.btnaddncc.Location = new System.Drawing.Point(109, 25);
             this.btnaddncc.Name = "btnaddncc";
             this.btnaddncc.Size = new System.Drawing.Size(78, 23);
             this.btnaddncc.TabIndex = 1;
@@ -109,7 +109,7 @@
             // 
             this.btnrefreshncc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnrefreshncc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnrefreshncc.Location = new System.Drawing.Point(17, 25);
+            this.btnrefreshncc.Location = new System.Drawing.Point(19, 25);
             this.btnrefreshncc.Name = "btnrefreshncc";
             this.btnrefreshncc.Size = new System.Drawing.Size(78, 23);
             this.btnrefreshncc.TabIndex = 0;
@@ -139,28 +139,28 @@
             // 
             // txtfaxncc
             // 
-            this.txtfaxncc.Location = new System.Drawing.Point(127, 247);
+            this.txtfaxncc.Location = new System.Drawing.Point(127, 238);
             this.txtfaxncc.Name = "txtfaxncc";
             this.txtfaxncc.Size = new System.Drawing.Size(238, 20);
             this.txtfaxncc.TabIndex = 4;
             // 
             // txtsdtncc
             // 
-            this.txtsdtncc.Location = new System.Drawing.Point(127, 204);
+            this.txtsdtncc.Location = new System.Drawing.Point(127, 197);
             this.txtsdtncc.Name = "txtsdtncc";
             this.txtsdtncc.Size = new System.Drawing.Size(238, 20);
             this.txtsdtncc.TabIndex = 3;
             // 
             // txtmailncc
             // 
-            this.txtmailncc.Location = new System.Drawing.Point(127, 161);
+            this.txtmailncc.Location = new System.Drawing.Point(127, 156);
             this.txtmailncc.Name = "txtmailncc";
             this.txtmailncc.Size = new System.Drawing.Size(238, 20);
             this.txtmailncc.TabIndex = 2;
             // 
             // txtdiachincc
             // 
-            this.txtdiachincc.Location = new System.Drawing.Point(127, 72);
+            this.txtdiachincc.Location = new System.Drawing.Point(127, 69);
             this.txtdiachincc.Multiline = true;
             this.txtdiachincc.Name = "txtdiachincc";
             this.txtdiachincc.Size = new System.Drawing.Size(238, 66);
@@ -168,7 +168,7 @@
             // 
             // txttenncc
             // 
-            this.txttenncc.Location = new System.Drawing.Point(127, 29);
+            this.txttenncc.Location = new System.Drawing.Point(127, 28);
             this.txttenncc.Name = "txttenncc";
             this.txttenncc.Size = new System.Drawing.Size(238, 20);
             this.txttenncc.TabIndex = 0;
@@ -176,7 +176,7 @@
             // lblsdtncc
             // 
             this.lblsdtncc.AutoSize = true;
-            this.lblsdtncc.Location = new System.Drawing.Point(39, 208);
+            this.lblsdtncc.Location = new System.Drawing.Point(39, 201);
             this.lblsdtncc.Name = "lblsdtncc";
             this.lblsdtncc.Size = new System.Drawing.Size(70, 13);
             this.lblsdtncc.TabIndex = 7;
@@ -185,7 +185,7 @@
             // lblfaxncc
             // 
             this.lblfaxncc.AutoSize = true;
-            this.lblfaxncc.Location = new System.Drawing.Point(85, 251);
+            this.lblfaxncc.Location = new System.Drawing.Point(85, 242);
             this.lblfaxncc.Name = "lblfaxncc";
             this.lblfaxncc.Size = new System.Drawing.Size(24, 13);
             this.lblfaxncc.TabIndex = 6;
@@ -194,7 +194,7 @@
             // lblmailncc
             // 
             this.lblmailncc.AutoSize = true;
-            this.lblmailncc.Location = new System.Drawing.Point(77, 165);
+            this.lblmailncc.Location = new System.Drawing.Point(77, 160);
             this.lblmailncc.Name = "lblmailncc";
             this.lblmailncc.Size = new System.Drawing.Size(32, 13);
             this.lblmailncc.TabIndex = 5;
@@ -212,7 +212,7 @@
             // lbltenncc
             // 
             this.lbltenncc.AutoSize = true;
-            this.lbltenncc.Location = new System.Drawing.Point(14, 33);
+            this.lbltenncc.Location = new System.Drawing.Point(14, 32);
             this.lbltenncc.Name = "lbltenncc";
             this.lbltenncc.Size = new System.Drawing.Size(95, 13);
             this.lbltenncc.TabIndex = 3;
@@ -264,49 +264,48 @@
             this.sttncc.HeaderText = "STT";
             this.sttncc.Name = "sttncc";
             this.sttncc.ReadOnly = true;
-            this.sttncc.Width = 53;
+            this.sttncc.Width = 52;
             // 
             // tenncc
             // 
             this.tenncc.HeaderText = "Tên";
             this.tenncc.Name = "tenncc";
             this.tenncc.ReadOnly = true;
-            this.tenncc.Width = 51;
+            this.tenncc.Width = 50;
             // 
             // diachincc
             // 
             this.diachincc.HeaderText = "Địa chỉ";
             this.diachincc.Name = "diachincc";
             this.diachincc.ReadOnly = true;
-            this.diachincc.Width = 65;
+            this.diachincc.Width = 64;
             // 
             // mailncc
             // 
             this.mailncc.HeaderText = "Email";
             this.mailncc.Name = "mailncc";
             this.mailncc.ReadOnly = true;
-            this.mailncc.Width = 57;
+            this.mailncc.Width = 56;
             // 
             // sdtncc
             // 
             this.sdtncc.HeaderText = "Số điện thoại";
             this.sdtncc.Name = "sdtncc";
             this.sdtncc.ReadOnly = true;
-            this.sdtncc.Width = 95;
+            this.sdtncc.Width = 94;
             // 
             // sofaxncc
             // 
             this.sofaxncc.HeaderText = "Fax";
             this.sofaxncc.Name = "sofaxncc";
             this.sofaxncc.ReadOnly = true;
-            this.sofaxncc.Width = 49;
+            this.sofaxncc.Width = 48;
             // 
             // fncc
             // 
             this.AcceptButton = this.btnaddncc;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 374);
             this.Controls.Add(this.gbdsncc);

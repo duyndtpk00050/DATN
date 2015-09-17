@@ -51,9 +51,9 @@
             this.gbthongtinloaikh.Controls.Add(this.dtgdsloaikh);
             this.gbthongtinloaikh.Controls.Add(this.txttenloaikh);
             this.gbthongtinloaikh.Controls.Add(this.lbltenloaikh);
-            this.gbthongtinloaikh.Location = new System.Drawing.Point(133, 12);
+            this.gbthongtinloaikh.Location = new System.Drawing.Point(12, 83);
             this.gbthongtinloaikh.Name = "gbthongtinloaikh";
-            this.gbthongtinloaikh.Size = new System.Drawing.Size(215, 170);
+            this.gbthongtinloaikh.Size = new System.Drawing.Size(386, 264);
             this.gbthongtinloaikh.TabIndex = 0;
             this.gbthongtinloaikh.TabStop = false;
             this.gbthongtinloaikh.Text = "Thông tin loại khách hàng";
@@ -80,7 +80,7 @@
             this.dtgdsloaikh.Name = "dtgdsloaikh";
             this.dtgdsloaikh.ReadOnly = true;
             this.dtgdsloaikh.RowHeadersVisible = false;
-            this.dtgdsloaikh.Size = new System.Drawing.Size(185, 103);
+            this.dtgdsloaikh.Size = new System.Drawing.Size(356, 197);
             this.dtgdsloaikh.TabIndex = 3;
             // 
             // sttcl
@@ -89,7 +89,7 @@
             this.sttcl.HeaderText = "STT";
             this.sttcl.Name = "sttcl";
             this.sttcl.ReadOnly = true;
-            this.sttcl.Width = 53;
+            this.sttcl.Width = 52;
             // 
             // tenloaikh
             // 
@@ -97,7 +97,7 @@
             this.tenloaikh.HeaderText = "Tên loại khách hàng";
             this.tenloaikh.Name = "tenloaikh";
             this.tenloaikh.ReadOnly = true;
-            this.tenloaikh.Width = 130;
+            this.tenloaikh.Width = 129;
             // 
             // idloaikh
             // 
@@ -111,7 +111,7 @@
             // 
             this.txttenloaikh.Location = new System.Drawing.Point(77, 26);
             this.txttenloaikh.Name = "txttenloaikh";
-            this.txttenloaikh.Size = new System.Drawing.Size(127, 20);
+            this.txttenloaikh.Size = new System.Drawing.Size(232, 20);
             this.txttenloaikh.TabIndex = 0;
             // 
             // lbltenloaikh
@@ -131,7 +131,7 @@
             this.gbchucnangloaikh.Controls.Add(this.btnaddloaikh);
             this.gbchucnangloaikh.Location = new System.Drawing.Point(12, 12);
             this.gbchucnangloaikh.Name = "gbchucnangloaikh";
-            this.gbchucnangloaikh.Size = new System.Drawing.Size(115, 170);
+            this.gbchucnangloaikh.Size = new System.Drawing.Size(386, 65);
             this.gbchucnangloaikh.TabIndex = 1;
             this.gbchucnangloaikh.TabStop = false;
             this.gbchucnangloaikh.Text = "Chức năng";
@@ -140,7 +140,7 @@
             // 
             this.btnchitietloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnchitietloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitietloaikh.Location = new System.Drawing.Point(20, 133);
+            this.btnchitietloaikh.Location = new System.Drawing.Point(293, 25);
             this.btnchitietloaikh.Name = "btnchitietloaikh";
             this.btnchitietloaikh.Size = new System.Drawing.Size(75, 23);
             this.btnchitietloaikh.TabIndex = 3;
@@ -152,7 +152,7 @@
             this.btndelloaikh.BackColor = System.Drawing.Color.White;
             this.btndelloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndelloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btndelloaikh.Location = new System.Drawing.Point(20, 97);
+            this.btndelloaikh.Location = new System.Drawing.Point(202, 25);
             this.btndelloaikh.Name = "btndelloaikh";
             this.btndelloaikh.Size = new System.Drawing.Size(75, 23);
             this.btndelloaikh.TabIndex = 2;
@@ -164,7 +164,7 @@
             this.btneditloaikh.BackColor = System.Drawing.Color.White;
             this.btneditloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btneditloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btneditloaikh.Location = new System.Drawing.Point(20, 61);
+            this.btneditloaikh.Location = new System.Drawing.Point(111, 25);
             this.btneditloaikh.Name = "btneditloaikh";
             this.btneditloaikh.Size = new System.Drawing.Size(75, 23);
             this.btneditloaikh.TabIndex = 1;
@@ -180,7 +180,7 @@
             this.btnaddloaikh.Name = "btnaddloaikh";
             this.btnaddloaikh.Size = new System.Drawing.Size(75, 23);
             this.btnaddloaikh.TabIndex = 0;
-            this.btnaddloaikh.Text = "Mới \\ Thêm";
+            this.btnaddloaikh.Text = "Thêm mới";
             this.btnaddloaikh.UseVisualStyleBackColor = false;
             // 
             // floaikh
@@ -190,7 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(359, 192);
+            this.ClientSize = new System.Drawing.Size(412, 359);
             this.Controls.Add(this.gbthongtinloaikh);
             this.Controls.Add(this.gbchucnangloaikh);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
