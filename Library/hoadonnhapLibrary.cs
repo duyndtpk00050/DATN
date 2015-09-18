@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class hoadonnhap
+    public class hoadonnhapLibrary
     {
         private int _idhdnhap;
 

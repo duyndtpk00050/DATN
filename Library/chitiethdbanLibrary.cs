@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class chitiethdban
+    public class chitiethdbanLibrary
     {
         private int _idchitiethdban;
 

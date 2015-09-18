@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class hoadonban
+    public class hoadonbanLibrary
     {
         private int _idhdban;
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class khachhang
+    public class khachhangLibrary
     {
         private int _idkh;
 

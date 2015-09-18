@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class luong
+    public class luongLibrary
     {
         private int _idluong;
 

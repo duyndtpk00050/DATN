@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class nhanvien
+    public class nhanvienLibrary
     {
         private int _idnv;
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class nhacungcap
+    public class nhacungcapLibrary
     {
         private int _idncc;
 

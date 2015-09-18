@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class chucvu
+    public class chucvuLibrary
     {
         private int _idcv;
 

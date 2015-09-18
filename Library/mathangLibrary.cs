@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class mathang
+    public class mathangLibrary
     {
         private int _idmh;
 

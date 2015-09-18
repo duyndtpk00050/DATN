@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library
 {
-    public class loaimathang
+    public class loaimathangLibrary
     {
         private int _idloaimh;
 
