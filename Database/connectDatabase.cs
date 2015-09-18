@@ -18,10 +18,20 @@ namespace Database
         {
             conn = new SqlConnection(str);
         }
+        /// <summary>
+        /// hàm để mở kết nối, nếu có lỗi xảy ra sẽ ném lỗi về Bussiness
+        /// </summary>
         public void openConn()
         {
-            if (conn.State == ConnectionState.Closed)
-                conn.Open();
+            try
+            {
+                if (conn.State == ConnectionState.Closed)
+                    conn.Open();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
