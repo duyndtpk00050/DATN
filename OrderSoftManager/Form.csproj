@@ -293,10 +293,6 @@
       <Project>{cd89a902-a126-45c4-9808-f42f61f4889c}</Project>
       <Name>Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Database\Database.csproj">
-      <Project>{e6974878-0373-450b-85ff-07d7fd5e43e0}</Project>
-      <Name>Database</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Library\Library.csproj">
       <Project>{bb5f7743-53d2-4694-bb02-3954a889c87f}</Project>
       <Name>Library</Name>
