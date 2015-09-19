@@ -37,10 +37,10 @@
             this.txttencv = new System.Windows.Forms.TextBox();
             this.lbltencl = new System.Windows.Forms.Label();
             this.gbchucnangcv = new System.Windows.Forms.GroupBox();
+            this.btnchitietcv = new System.Windows.Forms.Button();
             this.btndelcv = new System.Windows.Forms.Button();
             this.btneditcv = new System.Windows.Forms.Button();
             this.btnaddcv = new System.Windows.Forms.Button();
-            this.btnchitietcv = new System.Windows.Forms.Button();
             this.gbthongtincv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdscv)).BeginInit();
             this.gbchucnangcv.SuspendLayout();
@@ -83,6 +83,7 @@
             this.dtgdscv.RowHeadersVisible = false;
             this.dtgdscv.Size = new System.Drawing.Size(352, 113);
             this.dtgdscv.TabIndex = 1;
+            this.dtgdscv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgdscv_CellContentClick);
             // 
             // sttcl
             // 
@@ -136,6 +137,18 @@
             this.gbchucnangcv.TabStop = false;
             this.gbchucnangcv.Text = "Chức năng";
             // 
+            // btnchitietcv
+            // 
+            this.btnchitietcv.BackColor = System.Drawing.Color.White;
+            this.btnchitietcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnchitietcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnchitietcv.Location = new System.Drawing.Point(270, 21);
+            this.btnchitietcv.Name = "btnchitietcv";
+            this.btnchitietcv.Size = new System.Drawing.Size(75, 23);
+            this.btnchitietcv.TabIndex = 3;
+            this.btnchitietcv.Text = "Chi tiết";
+            this.btnchitietcv.UseVisualStyleBackColor = false;
+            // 
             // btndelcv
             // 
             this.btndelcv.BackColor = System.Drawing.Color.White;
@@ -171,18 +184,6 @@
             this.btnaddcv.TabIndex = 0;
             this.btnaddcv.Text = "Thêm";
             this.btnaddcv.UseVisualStyleBackColor = false;
-            // 
-            // btnchitietcv
-            // 
-            this.btnchitietcv.BackColor = System.Drawing.Color.White;
-            this.btnchitietcv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnchitietcv.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnchitietcv.Location = new System.Drawing.Point(270, 21);
-            this.btnchitietcv.Name = "btnchitietcv";
-            this.btnchitietcv.Size = new System.Drawing.Size(75, 23);
-            this.btnchitietcv.TabIndex = 3;
-            this.btnchitietcv.Text = "Chi tiết";
-            this.btnchitietcv.UseVisualStyleBackColor = false;
             // 
             // fcv
             // 

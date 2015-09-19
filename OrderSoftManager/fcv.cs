@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+using Business;
+using Library;
+
 namespace OrderSoftManager
 {
     public partial class fcv : Form
@@ -14,6 +17,11 @@ namespace OrderSoftManager
         public fcv()
         {
             InitializeComponent();
+        }
+
+        private void dtgdscv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
