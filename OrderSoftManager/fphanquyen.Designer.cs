@@ -72,14 +72,13 @@
             this.chbquyennv.CheckOnClick = true;
             this.chbquyennv.FormattingEnabled = true;
             this.chbquyennv.Items.AddRange(new object[] {
-            "Admin",
             "Quản lý",
             "Kinh doanh",
             "Kế toán",
             "Kho"});
-            this.chbquyennv.Location = new System.Drawing.Point(17, 27);
+            this.chbquyennv.Location = new System.Drawing.Point(22, 35);
             this.chbquyennv.Name = "chbquyennv";
-            this.chbquyennv.Size = new System.Drawing.Size(105, 75);
+            this.chbquyennv.Size = new System.Drawing.Size(95, 75);
             this.chbquyennv.TabIndex = 0;
             // 
             // gbdsquyennv
