@@ -15,7 +15,6 @@ namespace Business
         connectDatabase conn = null;
         public chucvuBussiness()
         {
-            conn = new connectDatabase();
         }
     }
 }
