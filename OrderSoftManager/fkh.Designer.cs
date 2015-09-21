@@ -35,10 +35,10 @@
             this.btnaddkh = new System.Windows.Forms.Button();
             this.btnrefeshkh = new System.Windows.Forms.Button();
             this.gbthongtinkh = new System.Windows.Forms.GroupBox();
-            this.btnxemloaikh = new System.Windows.Forms.Button();
-            this.cbbloaikh = new System.Windows.Forms.ComboBox();
-            this.cbbgioitinhkh = new System.Windows.Forms.ComboBox();
-            this.dtpngaysinhkh = new System.Windows.Forms.DateTimePicker();
+            this.btnviewloaikh = new System.Windows.Forms.Button();
+            this.cbloaikh = new System.Windows.Forms.ComboBox();
+            this.cbgioitinhkh = new System.Windows.Forms.ComboBox();
+            this.dtngaysinhkh = new System.Windows.Forms.DateTimePicker();
             this.txtmailkh = new System.Windows.Forms.TextBox();
             this.txtsdtkh = new System.Windows.Forms.TextBox();
             this.txtcmndkh = new System.Windows.Forms.TextBox();
@@ -123,17 +123,17 @@
             this.btnrefeshkh.Name = "btnrefeshkh";
             this.btnrefeshkh.Size = new System.Drawing.Size(83, 23);
             this.btnrefeshkh.TabIndex = 0;
-            this.btnrefeshkh.Text = "Mới";
+            this.btnrefeshkh.Text = "Làm mới";
             this.btnrefeshkh.UseVisualStyleBackColor = true;
             // 
             // gbthongtinkh
             // 
             this.gbthongtinkh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.gbthongtinkh.Controls.Add(this.btnxemloaikh);
-            this.gbthongtinkh.Controls.Add(this.cbbloaikh);
-            this.gbthongtinkh.Controls.Add(this.cbbgioitinhkh);
-            this.gbthongtinkh.Controls.Add(this.dtpngaysinhkh);
+            this.gbthongtinkh.Controls.Add(this.btnviewloaikh);
+            this.gbthongtinkh.Controls.Add(this.cbloaikh);
+            this.gbthongtinkh.Controls.Add(this.cbgioitinhkh);
+            this.gbthongtinkh.Controls.Add(this.dtngaysinhkh);
             this.gbthongtinkh.Controls.Add(this.txtmailkh);
             this.gbthongtinkh.Controls.Add(this.txtsdtkh);
             this.gbthongtinkh.Controls.Add(this.txtcmndkh);
@@ -154,54 +154,54 @@
             this.gbthongtinkh.TabStop = false;
             this.gbthongtinkh.Text = "Thông tin khách hàng";
             // 
-            // btnxemloaikh
+            // btnviewloaikh
             // 
-            this.btnxemloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnxemloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnxemloaikh.Location = new System.Drawing.Point(329, 316);
-            this.btnxemloaikh.Name = "btnxemloaikh";
-            this.btnxemloaikh.Size = new System.Drawing.Size(67, 23);
-            this.btnxemloaikh.TabIndex = 8;
-            this.btnxemloaikh.Text = "Xem";
-            this.btnxemloaikh.UseVisualStyleBackColor = true;
-            this.btnxemloaikh.Click += new System.EventHandler(this.btnxemloaikh_Click);
+            this.btnviewloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnviewloaikh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnviewloaikh.Location = new System.Drawing.Point(329, 316);
+            this.btnviewloaikh.Name = "btnviewloaikh";
+            this.btnviewloaikh.Size = new System.Drawing.Size(67, 23);
+            this.btnviewloaikh.TabIndex = 8;
+            this.btnviewloaikh.Text = "Xem";
+            this.btnviewloaikh.UseVisualStyleBackColor = true;
+            this.btnviewloaikh.Click += new System.EventHandler(this.btnxemloaikh_Click);
             // 
-            // cbbloaikh
+            // cbloaikh
             // 
-            this.cbbloaikh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbloaikh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbloaikh.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cbbloaikh.FormattingEnabled = true;
-            this.cbbloaikh.Location = new System.Drawing.Point(107, 317);
-            this.cbbloaikh.Name = "cbbloaikh";
-            this.cbbloaikh.Size = new System.Drawing.Size(216, 21);
-            this.cbbloaikh.TabIndex = 7;
+            this.cbloaikh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbloaikh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbloaikh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbloaikh.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cbloaikh.FormattingEnabled = true;
+            this.cbloaikh.Location = new System.Drawing.Point(107, 317);
+            this.cbloaikh.Name = "cbloaikh";
+            this.cbloaikh.Size = new System.Drawing.Size(216, 21);
+            this.cbloaikh.TabIndex = 7;
             // 
-            // cbbgioitinhkh
+            // cbgioitinhkh
             // 
-            this.cbbgioitinhkh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbgioitinhkh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbgioitinhkh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbgioitinhkh.FormattingEnabled = true;
-            this.cbbgioitinhkh.Items.AddRange(new object[] {
+            this.cbgioitinhkh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbgioitinhkh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbgioitinhkh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbgioitinhkh.FormattingEnabled = true;
+            this.cbgioitinhkh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbbgioitinhkh.Location = new System.Drawing.Point(299, 76);
-            this.cbbgioitinhkh.Name = "cbbgioitinhkh";
-            this.cbbgioitinhkh.Size = new System.Drawing.Size(100, 21);
-            this.cbbgioitinhkh.TabIndex = 2;
+            this.cbgioitinhkh.Location = new System.Drawing.Point(299, 76);
+            this.cbgioitinhkh.Name = "cbgioitinhkh";
+            this.cbgioitinhkh.Size = new System.Drawing.Size(100, 21);
+            this.cbgioitinhkh.TabIndex = 2;
             // 
-            // dtpngaysinhkh
+            // dtngaysinhkh
             // 
-            this.dtpngaysinhkh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpngaysinhkh.Location = new System.Drawing.Point(107, 76);
-            this.dtpngaysinhkh.MaxDate = new System.DateTime(1997, 12, 31, 0, 0, 0, 0);
-            this.dtpngaysinhkh.MinDate = new System.DateTime(1940, 1, 1, 0, 0, 0, 0);
-            this.dtpngaysinhkh.Name = "dtpngaysinhkh";
-            this.dtpngaysinhkh.Size = new System.Drawing.Size(100, 20);
-            this.dtpngaysinhkh.TabIndex = 1;
-            this.dtpngaysinhkh.Value = new System.DateTime(1997, 12, 31, 0, 0, 0, 0);
+            this.dtngaysinhkh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtngaysinhkh.Location = new System.Drawing.Point(107, 76);
+            this.dtngaysinhkh.MaxDate = new System.DateTime(1997, 12, 31, 0, 0, 0, 0);
+            this.dtngaysinhkh.MinDate = new System.DateTime(1940, 1, 1, 0, 0, 0, 0);
+            this.dtngaysinhkh.Name = "dtngaysinhkh";
+            this.dtngaysinhkh.Size = new System.Drawing.Size(100, 20);
+            this.dtngaysinhkh.TabIndex = 1;
+            this.dtngaysinhkh.Value = new System.DateTime(1997, 12, 31, 0, 0, 0, 0);
             // 
             // txtmailkh
             // 
@@ -448,9 +448,9 @@
         private System.Windows.Forms.GroupBox gbthongtinkh;
         private System.Windows.Forms.GroupBox gbdskh;
         private System.Windows.Forms.Button btnrefeshkh;
-        private System.Windows.Forms.ComboBox cbbloaikh;
-        private System.Windows.Forms.ComboBox cbbgioitinhkh;
-        private System.Windows.Forms.DateTimePicker dtpngaysinhkh;
+        private System.Windows.Forms.ComboBox cbloaikh;
+        private System.Windows.Forms.ComboBox cbgioitinhkh;
+        private System.Windows.Forms.DateTimePicker dtngaysinhkh;
         private System.Windows.Forms.TextBox txtmailkh;
         private System.Windows.Forms.TextBox txtsdtkh;
         private System.Windows.Forms.TextBox txtcmndkh;
@@ -467,7 +467,7 @@
         private System.Windows.Forms.Button btndelkh;
         private System.Windows.Forms.Button btneditkh;
         private System.Windows.Forms.Button btnaddkh;
-        private System.Windows.Forms.Button btnxemloaikh;
+        private System.Windows.Forms.Button btnviewloaikh;
         private System.Windows.Forms.DataGridViewTextBoxColumn stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinhkh;

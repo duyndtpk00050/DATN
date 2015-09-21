@@ -31,22 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmh));
             this.gbthongtinmh = new System.Windows.Forms.GroupBox();
             this.btnchonanhmh = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
+            this.picmh = new System.Windows.Forms.PictureBox();
+            this.numsoluongmh = new System.Windows.Forms.NumericUpDown();
+            this.lblsoluongmh = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
+            this.numgiabanmh = new System.Windows.Forms.NumericUpDown();
+            this.lblgiabanmh = new System.Windows.Forms.Label();
             this.cbbloaimh = new System.Windows.Forms.ComboBox();
-            this.btnadddvmh = new System.Windows.Forms.Button();
             this.cbbdvtinhmh = new System.Windows.Forms.ComboBox();
             this.lbldvgiamh = new System.Windows.Forms.Label();
-            this.numgiamh = new System.Windows.Forms.NumericUpDown();
+            this.numgianhapmh = new System.Windows.Forms.NumericUpDown();
             this.txtthongtinmh = new System.Windows.Forms.TextBox();
             this.txttenmh = new System.Windows.Forms.TextBox();
             this.lblloaimh = new System.Windows.Forms.Label();
             this.lbldvtinhmh = new System.Windows.Forms.Label();
-            this.lblgiamh = new System.Windows.Forms.Label();
+            this.lblgianhapmh = new System.Windows.Forms.Label();
             this.lblthongtinmh = new System.Windows.Forms.Label();
             this.lbltenmh = new System.Windows.Forms.Label();
             this.gbchucnangmh = new System.Windows.Forms.GroupBox();
@@ -67,10 +66,10 @@
             this.dvtinhmh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbthongtinmh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numgiamh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numsoluongmh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numgiabanmh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numgianhapmh)).BeginInit();
             this.gbchucnangmh.SuspendLayout();
             this.gbdsmh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsmh)).BeginInit();
@@ -81,22 +80,21 @@
             this.gbthongtinmh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gbthongtinmh.Controls.Add(this.btnchonanhmh);
-            this.gbthongtinmh.Controls.Add(this.pictureBox1);
-            this.gbthongtinmh.Controls.Add(this.numericUpDown2);
-            this.gbthongtinmh.Controls.Add(this.label3);
+            this.gbthongtinmh.Controls.Add(this.picmh);
+            this.gbthongtinmh.Controls.Add(this.numsoluongmh);
+            this.gbthongtinmh.Controls.Add(this.lblsoluongmh);
             this.gbthongtinmh.Controls.Add(this.label1);
-            this.gbthongtinmh.Controls.Add(this.numericUpDown1);
-            this.gbthongtinmh.Controls.Add(this.label2);
+            this.gbthongtinmh.Controls.Add(this.numgiabanmh);
+            this.gbthongtinmh.Controls.Add(this.lblgiabanmh);
             this.gbthongtinmh.Controls.Add(this.cbbloaimh);
-            this.gbthongtinmh.Controls.Add(this.btnadddvmh);
             this.gbthongtinmh.Controls.Add(this.cbbdvtinhmh);
             this.gbthongtinmh.Controls.Add(this.lbldvgiamh);
-            this.gbthongtinmh.Controls.Add(this.numgiamh);
+            this.gbthongtinmh.Controls.Add(this.numgianhapmh);
             this.gbthongtinmh.Controls.Add(this.txtthongtinmh);
             this.gbthongtinmh.Controls.Add(this.txttenmh);
             this.gbthongtinmh.Controls.Add(this.lblloaimh);
             this.gbthongtinmh.Controls.Add(this.lbldvtinhmh);
-            this.gbthongtinmh.Controls.Add(this.lblgiamh);
+            this.gbthongtinmh.Controls.Add(this.lblgianhapmh);
             this.gbthongtinmh.Controls.Add(this.lblthongtinmh);
             this.gbthongtinmh.Controls.Add(this.lbltenmh);
             this.gbthongtinmh.Location = new System.Drawing.Point(12, 75);
@@ -117,43 +115,43 @@
             this.btnchonanhmh.Text = "Chọn ảnh";
             this.btnchonanhmh.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // picmh
             // 
-            this.pictureBox1.Image = global::OrderSoftManager.Properties.Resources.product;
-            this.pictureBox1.Location = new System.Drawing.Point(291, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 117);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 27;
-            this.pictureBox1.TabStop = false;
+            this.picmh.Image = global::OrderSoftManager.Properties.Resources.product;
+            this.picmh.Location = new System.Drawing.Point(291, 19);
+            this.picmh.Name = "picmh";
+            this.picmh.Size = new System.Drawing.Size(100, 117);
+            this.picmh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picmh.TabIndex = 27;
+            this.picmh.TabStop = false;
             // 
-            // numericUpDown2
+            // numsoluongmh
             // 
-            this.numericUpDown2.Increment = new decimal(new int[] {
+            this.numsoluongmh.Increment = new decimal(new int[] {
             5000,
             0,
             0,
             0});
-            this.numericUpDown2.Location = new System.Drawing.Point(128, 263);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numsoluongmh.Location = new System.Drawing.Point(128, 263);
+            this.numsoluongmh.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numericUpDown2.Size = new System.Drawing.Size(181, 20);
-            this.numericUpDown2.TabIndex = 4;
-            this.numericUpDown2.ThousandsSeparator = true;
+            this.numsoluongmh.Name = "numsoluongmh";
+            this.numsoluongmh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numsoluongmh.Size = new System.Drawing.Size(181, 20);
+            this.numsoluongmh.TabIndex = 4;
+            this.numsoluongmh.ThousandsSeparator = true;
             // 
-            // label3
+            // lblsoluongmh
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 267);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Số lượng";
+            this.lblsoluongmh.AutoSize = true;
+            this.lblsoluongmh.Location = new System.Drawing.Point(19, 267);
+            this.lblsoluongmh.Name = "lblsoluongmh";
+            this.lblsoluongmh.Size = new System.Drawing.Size(49, 13);
+            this.lblsoluongmh.TabIndex = 26;
+            this.lblsoluongmh.Text = "Số lượng";
             // 
             // label1
             // 
@@ -165,33 +163,33 @@
             this.label1.Text = "VNĐ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // numericUpDown1
+            // numgiabanmh
             // 
-            this.numericUpDown1.Increment = new decimal(new int[] {
+            this.numgiabanmh.Increment = new decimal(new int[] {
             5000,
             0,
             0,
             0});
-            this.numericUpDown1.Location = new System.Drawing.Point(128, 341);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numgiabanmh.Location = new System.Drawing.Point(128, 341);
+            this.numgiabanmh.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numericUpDown1.Size = new System.Drawing.Size(181, 20);
-            this.numericUpDown1.TabIndex = 6;
-            this.numericUpDown1.ThousandsSeparator = true;
+            this.numgiabanmh.Name = "numgiabanmh";
+            this.numgiabanmh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numgiabanmh.Size = new System.Drawing.Size(181, 20);
+            this.numgiabanmh.TabIndex = 6;
+            this.numgiabanmh.ThousandsSeparator = true;
             // 
-            // label2
+            // lblgiabanmh
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 345);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Giá bán";
+            this.lblgiabanmh.AutoSize = true;
+            this.lblgiabanmh.Location = new System.Drawing.Point(19, 345);
+            this.lblgiabanmh.Name = "lblgiabanmh";
+            this.lblgiabanmh.Size = new System.Drawing.Size(44, 13);
+            this.lblgiabanmh.TabIndex = 23;
+            this.lblgiabanmh.Text = "Giá bán";
             // 
             // cbbloaimh
             // 
@@ -202,17 +200,6 @@
             this.cbbloaimh.Name = "cbbloaimh";
             this.cbbloaimh.Size = new System.Drawing.Size(144, 21);
             this.cbbloaimh.TabIndex = 0;
-            // 
-            // btnadddvmh
-            // 
-            this.btnadddvmh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnadddvmh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnadddvmh.Location = new System.Drawing.Point(321, 379);
-            this.btnadddvmh.Name = "btnadddvmh";
-            this.btnadddvmh.Size = new System.Drawing.Size(70, 23);
-            this.btnadddvmh.TabIndex = 8;
-            this.btnadddvmh.Text = "Thêm";
-            this.btnadddvmh.UseVisualStyleBackColor = true;
             // 
             // cbbdvtinhmh
             // 
@@ -234,24 +221,24 @@
             this.lbldvgiamh.Text = "VNĐ";
             this.lbldvgiamh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // numgiamh
+            // numgianhapmh
             // 
-            this.numgiamh.Increment = new decimal(new int[] {
+            this.numgianhapmh.Increment = new decimal(new int[] {
             5000,
             0,
             0,
             0});
-            this.numgiamh.Location = new System.Drawing.Point(128, 302);
-            this.numgiamh.Maximum = new decimal(new int[] {
+            this.numgianhapmh.Location = new System.Drawing.Point(128, 302);
+            this.numgianhapmh.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.numgiamh.Name = "numgiamh";
-            this.numgiamh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numgiamh.Size = new System.Drawing.Size(181, 20);
-            this.numgiamh.TabIndex = 5;
-            this.numgiamh.ThousandsSeparator = true;
+            this.numgianhapmh.Name = "numgianhapmh";
+            this.numgianhapmh.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numgianhapmh.Size = new System.Drawing.Size(181, 20);
+            this.numgianhapmh.TabIndex = 5;
+            this.numgianhapmh.ThousandsSeparator = true;
             // 
             // txtthongtinmh
             // 
@@ -287,14 +274,14 @@
             this.lbldvtinhmh.TabIndex = 4;
             this.lbldvtinhmh.Text = "Đơn vị tính";
             // 
-            // lblgiamh
+            // lblgianhapmh
             // 
-            this.lblgiamh.AutoSize = true;
-            this.lblgiamh.Location = new System.Drawing.Point(19, 306);
-            this.lblgiamh.Name = "lblgiamh";
-            this.lblgiamh.Size = new System.Drawing.Size(50, 13);
-            this.lblgiamh.TabIndex = 3;
-            this.lblgiamh.Text = "Giá nhập";
+            this.lblgianhapmh.AutoSize = true;
+            this.lblgianhapmh.Location = new System.Drawing.Point(19, 306);
+            this.lblgianhapmh.Name = "lblgianhapmh";
+            this.lblgianhapmh.Size = new System.Drawing.Size(50, 13);
+            this.lblgianhapmh.TabIndex = 3;
+            this.lblgianhapmh.Text = "Giá nhập";
             // 
             // lblthongtinmh
             // 
@@ -508,10 +495,10 @@
             this.Text = "Mặt hàng";
             this.gbthongtinmh.ResumeLayout(false);
             this.gbthongtinmh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numgiamh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picmh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numsoluongmh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numgiabanmh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numgianhapmh)).EndInit();
             this.gbchucnangmh.ResumeLayout(false);
             this.gbdsmh.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsmh)).EndInit();
@@ -527,26 +514,25 @@
         private System.Windows.Forms.DataGridView dtgdsmh;
         private System.Windows.Forms.Label lblloaimh;
         private System.Windows.Forms.Label lbldvtinhmh;
-        private System.Windows.Forms.Label lblgiamh;
+        private System.Windows.Forms.Label lblgianhapmh;
         private System.Windows.Forms.Label lblthongtinmh;
         private System.Windows.Forms.Label lbltenmh;
         private System.Windows.Forms.ComboBox cbbdvtinhmh;
         private System.Windows.Forms.Label lbldvgiamh;
-        private System.Windows.Forms.NumericUpDown numgiamh;
+        private System.Windows.Forms.NumericUpDown numgianhapmh;
         private System.Windows.Forms.TextBox txtthongtinmh;
         private System.Windows.Forms.TextBox txttenmh;
         private System.Windows.Forms.Button btneditmh;
         private System.Windows.Forms.Button btnrefreshmh;
-        private System.Windows.Forms.Button btnadddvmh;
         private System.Windows.Forms.Button btndelmh;
         private System.Windows.Forms.ComboBox cbbloaimh;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.NumericUpDown numgiabanmh;
+        private System.Windows.Forms.Label lblgiabanmh;
         private System.Windows.Forms.Button btnchonanhmh;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox picmh;
+        private System.Windows.Forms.NumericUpDown numsoluongmh;
+        private System.Windows.Forms.Label lblsoluongmh;
         private System.Windows.Forms.DataGridViewTextBoxColumn sttmh;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaimh;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenmh;

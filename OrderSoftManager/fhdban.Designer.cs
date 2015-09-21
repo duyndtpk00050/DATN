@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fhdban));
-            this.gbdshdnhap = new System.Windows.Forms.GroupBox();
+            this.gbdshdban = new System.Windows.Forms.GroupBox();
             this.dtgdshdban = new System.Windows.Forms.DataGridView();
             this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,41 +44,41 @@
             this.btnchitiethdban = new System.Windows.Forms.Button();
             this.btntimhdban = new System.Windows.Forms.Button();
             this.btnprinthdban = new System.Windows.Forms.Button();
-            this.gbtimhdban = new System.Windows.Forms.GroupBox();
+            this.gbthongtinhdban = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpngaysauhdban = new System.Windows.Forms.DateTimePicker();
+            this.dtngaycuoihdban = new System.Windows.Forms.DateTimePicker();
             this.numtongtienhdban = new System.Windows.Forms.NumericUpDown();
             this.cbbtrangthaihdban = new System.Windows.Forms.ComboBox();
-            this.lbltrangthaihdnhap = new System.Windows.Forms.Label();
+            this.lbltrangthaihdban = new System.Windows.Forms.Label();
             this.lbldvgiahdnhap = new System.Windows.Forms.Label();
-            this.cbbnvnhaphd = new System.Windows.Forms.ComboBox();
+            this.cbbnvtaohd = new System.Windows.Forms.ComboBox();
             this.cbbkhhdban = new System.Windows.Forms.ComboBox();
             this.cbbhdban = new System.Windows.Forms.ComboBox();
-            this.dtpngaydauhdban = new System.Windows.Forms.DateTimePicker();
-            this.lbltongtienhdnhap = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblnvnhaphd = new System.Windows.Forms.Label();
-            this.lblncchdnhap = new System.Windows.Forms.Label();
-            this.lblngaynhaphd = new System.Windows.Forms.Label();
-            this.gbdshdnhap.SuspendLayout();
+            this.dtngaydauhdban = new System.Windows.Forms.DateTimePicker();
+            this.lbltongtienhdban = new System.Windows.Forms.Label();
+            this.lblhdban = new System.Windows.Forms.Label();
+            this.lblnvtaohd = new System.Windows.Forms.Label();
+            this.lblkhhdban = new System.Windows.Forms.Label();
+            this.lblngayhdban = new System.Windows.Forms.Label();
+            this.gbdshdban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdshdban)).BeginInit();
             this.gbchucnanghdban.SuspendLayout();
-            this.gbtimhdban.SuspendLayout();
+            this.gbthongtinhdban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numtongtienhdban)).BeginInit();
             this.SuspendLayout();
             // 
-            // gbdshdnhap
+            // gbdshdban
             // 
-            this.gbdshdnhap.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.gbdshdban.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gbdshdnhap.Controls.Add(this.dtgdshdban);
-            this.gbdshdnhap.Location = new System.Drawing.Point(12, 156);
-            this.gbdshdnhap.Name = "gbdshdnhap";
-            this.gbdshdnhap.Size = new System.Drawing.Size(726, 312);
-            this.gbdshdnhap.TabIndex = 2;
-            this.gbdshdnhap.TabStop = false;
-            this.gbdshdnhap.Text = "Danh sách hóa đơn nhập";
+            this.gbdshdban.Controls.Add(this.dtgdshdban);
+            this.gbdshdban.Location = new System.Drawing.Point(12, 156);
+            this.gbdshdban.Name = "gbdshdban";
+            this.gbdshdban.Size = new System.Drawing.Size(726, 312);
+            this.gbdshdban.TabIndex = 2;
+            this.gbdshdban.TabStop = false;
+            this.gbdshdban.Text = "Danh sách hóa đơn bán";
             // 
             // dtgdshdban
             // 
@@ -219,29 +219,29 @@
             this.btnprinthdban.Text = "In";
             this.btnprinthdban.UseVisualStyleBackColor = true;
             // 
-            // gbtimhdban
+            // gbthongtinhdban
             // 
-            this.gbtimhdban.Controls.Add(this.label1);
-            this.gbtimhdban.Controls.Add(this.dtpngaysauhdban);
-            this.gbtimhdban.Controls.Add(this.numtongtienhdban);
-            this.gbtimhdban.Controls.Add(this.cbbtrangthaihdban);
-            this.gbtimhdban.Controls.Add(this.lbltrangthaihdnhap);
-            this.gbtimhdban.Controls.Add(this.lbldvgiahdnhap);
-            this.gbtimhdban.Controls.Add(this.cbbnvnhaphd);
-            this.gbtimhdban.Controls.Add(this.cbbkhhdban);
-            this.gbtimhdban.Controls.Add(this.cbbhdban);
-            this.gbtimhdban.Controls.Add(this.dtpngaydauhdban);
-            this.gbtimhdban.Controls.Add(this.lbltongtienhdnhap);
-            this.gbtimhdban.Controls.Add(this.label4);
-            this.gbtimhdban.Controls.Add(this.lblnvnhaphd);
-            this.gbtimhdban.Controls.Add(this.lblncchdnhap);
-            this.gbtimhdban.Controls.Add(this.lblngaynhaphd);
-            this.gbtimhdban.Location = new System.Drawing.Point(12, 12);
-            this.gbtimhdban.Name = "gbtimhdban";
-            this.gbtimhdban.Size = new System.Drawing.Size(606, 138);
-            this.gbtimhdban.TabIndex = 0;
-            this.gbtimhdban.TabStop = false;
-            this.gbtimhdban.Text = "Thông tin";
+            this.gbthongtinhdban.Controls.Add(this.label1);
+            this.gbthongtinhdban.Controls.Add(this.dtngaycuoihdban);
+            this.gbthongtinhdban.Controls.Add(this.numtongtienhdban);
+            this.gbthongtinhdban.Controls.Add(this.cbbtrangthaihdban);
+            this.gbthongtinhdban.Controls.Add(this.lbltrangthaihdban);
+            this.gbthongtinhdban.Controls.Add(this.lbldvgiahdnhap);
+            this.gbthongtinhdban.Controls.Add(this.cbbnvtaohd);
+            this.gbthongtinhdban.Controls.Add(this.cbbkhhdban);
+            this.gbthongtinhdban.Controls.Add(this.cbbhdban);
+            this.gbthongtinhdban.Controls.Add(this.dtngaydauhdban);
+            this.gbthongtinhdban.Controls.Add(this.lbltongtienhdban);
+            this.gbthongtinhdban.Controls.Add(this.lblhdban);
+            this.gbthongtinhdban.Controls.Add(this.lblnvtaohd);
+            this.gbthongtinhdban.Controls.Add(this.lblkhhdban);
+            this.gbthongtinhdban.Controls.Add(this.lblngayhdban);
+            this.gbthongtinhdban.Location = new System.Drawing.Point(12, 12);
+            this.gbthongtinhdban.Name = "gbthongtinhdban";
+            this.gbthongtinhdban.Size = new System.Drawing.Size(606, 138);
+            this.gbthongtinhdban.TabIndex = 0;
+            this.gbthongtinhdban.TabStop = false;
+            this.gbthongtinhdban.Text = "Thông tin";
             // 
             // label1
             // 
@@ -254,16 +254,16 @@
             this.label1.Text = "-";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dtpngaysauhdban
+            // dtngaycuoihdban
             // 
-            this.dtpngaysauhdban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpngaysauhdban.Location = new System.Drawing.Point(220, 63);
-            this.dtpngaysauhdban.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
-            this.dtpngaysauhdban.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
-            this.dtpngaysauhdban.Name = "dtpngaysauhdban";
-            this.dtpngaysauhdban.Size = new System.Drawing.Size(83, 20);
-            this.dtpngaysauhdban.TabIndex = 2;
-            this.dtpngaysauhdban.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
+            this.dtngaycuoihdban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtngaycuoihdban.Location = new System.Drawing.Point(220, 63);
+            this.dtngaycuoihdban.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dtngaycuoihdban.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
+            this.dtngaycuoihdban.Name = "dtngaycuoihdban";
+            this.dtngaycuoihdban.Size = new System.Drawing.Size(83, 20);
+            this.dtngaycuoihdban.TabIndex = 2;
+            this.dtngaycuoihdban.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
             // 
             // numtongtienhdban
             // 
@@ -292,14 +292,14 @@
             this.cbbtrangthaihdban.Size = new System.Drawing.Size(171, 21);
             this.cbbtrangthaihdban.TabIndex = 6;
             // 
-            // lbltrangthaihdnhap
+            // lbltrangthaihdban
             // 
-            this.lbltrangthaihdnhap.AutoSize = true;
-            this.lbltrangthaihdnhap.Location = new System.Drawing.Point(325, 103);
-            this.lbltrangthaihdnhap.Name = "lbltrangthaihdnhap";
-            this.lbltrangthaihdnhap.Size = new System.Drawing.Size(55, 13);
-            this.lbltrangthaihdnhap.TabIndex = 17;
-            this.lbltrangthaihdnhap.Text = "Trạng thái";
+            this.lbltrangthaihdban.AutoSize = true;
+            this.lbltrangthaihdban.Location = new System.Drawing.Point(325, 103);
+            this.lbltrangthaihdban.Name = "lbltrangthaihdban";
+            this.lbltrangthaihdban.Size = new System.Drawing.Size(55, 13);
+            this.lbltrangthaihdban.TabIndex = 17;
+            this.lbltrangthaihdban.Text = "Trạng thái";
             // 
             // lbldvgiahdnhap
             // 
@@ -312,15 +312,15 @@
             this.lbldvgiahdnhap.Text = "VNĐ";
             this.lbldvgiahdnhap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // cbbnvnhaphd
+            // cbbnvtaohd
             // 
-            this.cbbnvnhaphd.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.cbbnvnhaphd.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.cbbnvnhaphd.FormattingEnabled = true;
-            this.cbbnvnhaphd.Location = new System.Drawing.Point(414, 26);
-            this.cbbnvnhaphd.Name = "cbbnvnhaphd";
-            this.cbbnvnhaphd.Size = new System.Drawing.Size(171, 21);
-            this.cbbnvnhaphd.TabIndex = 4;
+            this.cbbnvtaohd.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cbbnvtaohd.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.cbbnvtaohd.FormattingEnabled = true;
+            this.cbbnvtaohd.Location = new System.Drawing.Point(414, 26);
+            this.cbbnvtaohd.Name = "cbbnvtaohd";
+            this.cbbnvtaohd.Size = new System.Drawing.Size(171, 21);
+            this.cbbnvtaohd.TabIndex = 4;
             // 
             // cbbkhhdban
             // 
@@ -340,61 +340,61 @@
             this.cbbhdban.Size = new System.Drawing.Size(204, 21);
             this.cbbhdban.TabIndex = 0;
             // 
-            // dtpngaydauhdban
+            // dtngaydauhdban
             // 
-            this.dtpngaydauhdban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpngaydauhdban.Location = new System.Drawing.Point(99, 63);
-            this.dtpngaydauhdban.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
-            this.dtpngaydauhdban.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
-            this.dtpngaydauhdban.Name = "dtpngaydauhdban";
-            this.dtpngaydauhdban.Size = new System.Drawing.Size(90, 20);
-            this.dtpngaydauhdban.TabIndex = 1;
-            this.dtpngaydauhdban.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
+            this.dtngaydauhdban.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtngaydauhdban.Location = new System.Drawing.Point(99, 63);
+            this.dtngaydauhdban.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dtngaydauhdban.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
+            this.dtngaydauhdban.Name = "dtngaydauhdban";
+            this.dtngaydauhdban.Size = new System.Drawing.Size(90, 20);
+            this.dtngaydauhdban.TabIndex = 1;
+            this.dtngaydauhdban.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
             // 
-            // lbltongtienhdnhap
+            // lbltongtienhdban
             // 
-            this.lbltongtienhdnhap.AutoSize = true;
-            this.lbltongtienhdnhap.Location = new System.Drawing.Point(18, 104);
-            this.lbltongtienhdnhap.Name = "lbltongtienhdnhap";
-            this.lbltongtienhdnhap.Size = new System.Drawing.Size(52, 13);
-            this.lbltongtienhdnhap.TabIndex = 4;
-            this.lbltongtienhdnhap.Text = "Tổng tiền";
+            this.lbltongtienhdban.AutoSize = true;
+            this.lbltongtienhdban.Location = new System.Drawing.Point(18, 104);
+            this.lbltongtienhdban.Name = "lbltongtienhdban";
+            this.lbltongtienhdban.Size = new System.Drawing.Size(52, 13);
+            this.lbltongtienhdban.TabIndex = 4;
+            this.lbltongtienhdban.Text = "Tổng tiền";
             // 
-            // label4
+            // lblhdban
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Hóa đơn bán";
+            this.lblhdban.AutoSize = true;
+            this.lblhdban.Location = new System.Drawing.Point(17, 30);
+            this.lblhdban.Name = "lblhdban";
+            this.lblhdban.Size = new System.Drawing.Size(70, 13);
+            this.lblhdban.TabIndex = 3;
+            this.lblhdban.Text = "Hóa đơn bán";
             // 
-            // lblnvnhaphd
+            // lblnvtaohd
             // 
-            this.lblnvnhaphd.AutoSize = true;
-            this.lblnvnhaphd.Location = new System.Drawing.Point(325, 29);
-            this.lblnvnhaphd.Name = "lblnvnhaphd";
-            this.lblnvnhaphd.Size = new System.Drawing.Size(83, 13);
-            this.lblnvnhaphd.TabIndex = 2;
-            this.lblnvnhaphd.Text = "Nhân viên nhập";
+            this.lblnvtaohd.AutoSize = true;
+            this.lblnvtaohd.Location = new System.Drawing.Point(325, 29);
+            this.lblnvtaohd.Name = "lblnvtaohd";
+            this.lblnvtaohd.Size = new System.Drawing.Size(74, 13);
+            this.lblnvtaohd.TabIndex = 2;
+            this.lblnvtaohd.Text = "Nhân viên tạo";
             // 
-            // lblncchdnhap
+            // lblkhhdban
             // 
-            this.lblncchdnhap.AutoSize = true;
-            this.lblncchdnhap.Location = new System.Drawing.Point(325, 66);
-            this.lblncchdnhap.Name = "lblncchdnhap";
-            this.lblncchdnhap.Size = new System.Drawing.Size(65, 13);
-            this.lblncchdnhap.TabIndex = 1;
-            this.lblncchdnhap.Text = "Khách hàng";
+            this.lblkhhdban.AutoSize = true;
+            this.lblkhhdban.Location = new System.Drawing.Point(325, 66);
+            this.lblkhhdban.Name = "lblkhhdban";
+            this.lblkhhdban.Size = new System.Drawing.Size(65, 13);
+            this.lblkhhdban.TabIndex = 1;
+            this.lblkhhdban.Text = "Khách hàng";
             // 
-            // lblngaynhaphd
+            // lblngayhdban
             // 
-            this.lblngaynhaphd.AutoSize = true;
-            this.lblngaynhaphd.Location = new System.Drawing.Point(18, 67);
-            this.lblngaynhaphd.Name = "lblngaynhaphd";
-            this.lblngaynhaphd.Size = new System.Drawing.Size(53, 13);
-            this.lblngaynhaphd.TabIndex = 0;
-            this.lblngaynhaphd.Text = "Ngày bán";
+            this.lblngayhdban.AutoSize = true;
+            this.lblngayhdban.Location = new System.Drawing.Point(18, 67);
+            this.lblngayhdban.Name = "lblngayhdban";
+            this.lblngayhdban.Size = new System.Drawing.Size(53, 13);
+            this.lblngayhdban.TabIndex = 0;
+            this.lblngayhdban.Text = "Ngày bán";
             // 
             // fhdban
             // 
@@ -402,18 +402,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(750, 480);
-            this.Controls.Add(this.gbdshdnhap);
+            this.Controls.Add(this.gbdshdban);
             this.Controls.Add(this.gbchucnanghdban);
-            this.Controls.Add(this.gbtimhdban);
+            this.Controls.Add(this.gbthongtinhdban);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fhdban";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hóa đơn bán";
-            this.gbdshdnhap.ResumeLayout(false);
+            this.gbdshdban.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgdshdban)).EndInit();
             this.gbchucnanghdban.ResumeLayout(false);
-            this.gbtimhdban.ResumeLayout(false);
-            this.gbtimhdban.PerformLayout();
+            this.gbthongtinhdban.ResumeLayout(false);
+            this.gbthongtinhdban.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numtongtienhdban)).EndInit();
             this.ResumeLayout(false);
 
@@ -421,28 +421,28 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbdshdnhap;
+        private System.Windows.Forms.GroupBox gbdshdban;
         private System.Windows.Forms.DataGridView dtgdshdban;
         private System.Windows.Forms.GroupBox gbchucnanghdban;
         private System.Windows.Forms.Button btnchitiethdban;
         private System.Windows.Forms.Button btntimhdban;
         private System.Windows.Forms.Button btnprinthdban;
-        private System.Windows.Forms.GroupBox gbtimhdban;
+        private System.Windows.Forms.GroupBox gbthongtinhdban;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dtpngaysauhdban;
+        private System.Windows.Forms.DateTimePicker dtngaycuoihdban;
         private System.Windows.Forms.NumericUpDown numtongtienhdban;
         private System.Windows.Forms.ComboBox cbbtrangthaihdban;
-        private System.Windows.Forms.Label lbltrangthaihdnhap;
+        private System.Windows.Forms.Label lbltrangthaihdban;
         private System.Windows.Forms.Label lbldvgiahdnhap;
-        private System.Windows.Forms.ComboBox cbbnvnhaphd;
+        private System.Windows.Forms.ComboBox cbbnvtaohd;
         private System.Windows.Forms.ComboBox cbbkhhdban;
         private System.Windows.Forms.ComboBox cbbhdban;
-        private System.Windows.Forms.DateTimePicker dtpngaydauhdban;
-        private System.Windows.Forms.Label lbltongtienhdnhap;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblnvnhaphd;
-        private System.Windows.Forms.Label lblncchdnhap;
-        private System.Windows.Forms.Label lblngaynhaphd;
+        private System.Windows.Forms.DateTimePicker dtngaydauhdban;
+        private System.Windows.Forms.Label lbltongtienhdban;
+        private System.Windows.Forms.Label lblhdban;
+        private System.Windows.Forms.Label lblnvtaohd;
+        private System.Windows.Forms.Label lblkhhdban;
+        private System.Windows.Forms.Label lblngayhdban;
         private System.Windows.Forms.DataGridViewTextBoxColumn stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenhdnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaybanhd;

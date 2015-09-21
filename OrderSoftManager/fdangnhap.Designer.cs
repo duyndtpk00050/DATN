@@ -32,25 +32,25 @@
             this.gbdn = new System.Windows.Forms.GroupBox();
             this.btnquenmk = new System.Windows.Forms.Button();
             this.btndn = new System.Windows.Forms.Button();
-            this.cbghinho = new System.Windows.Forms.CheckBox();
+            this.chbghinho = new System.Windows.Forms.CheckBox();
             this.txtmk = new System.Windows.Forms.TextBox();
             this.txttendn = new System.Windows.Forms.TextBox();
             this.lblmk = new System.Windows.Forms.Label();
-            this.lbltennvdn = new System.Windows.Forms.Label();
-            this.pblogin = new System.Windows.Forms.PictureBox();
+            this.lbltendn = new System.Windows.Forms.Label();
+            this.piclogin = new System.Windows.Forms.PictureBox();
             this.gbdn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pblogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclogin)).BeginInit();
             this.SuspendLayout();
             // 
             // gbdn
             // 
             this.gbdn.Controls.Add(this.btnquenmk);
             this.gbdn.Controls.Add(this.btndn);
-            this.gbdn.Controls.Add(this.cbghinho);
+            this.gbdn.Controls.Add(this.chbghinho);
             this.gbdn.Controls.Add(this.txtmk);
             this.gbdn.Controls.Add(this.txttendn);
             this.gbdn.Controls.Add(this.lblmk);
-            this.gbdn.Controls.Add(this.lbltennvdn);
+            this.gbdn.Controls.Add(this.lbltendn);
             this.gbdn.Location = new System.Drawing.Point(195, 12);
             this.gbdn.Name = "gbdn";
             this.gbdn.Size = new System.Drawing.Size(300, 174);
@@ -80,16 +80,16 @@
             this.btndn.Text = "Đăng nhập";
             this.btndn.UseVisualStyleBackColor = true;
             // 
-            // cbghinho
+            // chbghinho
             // 
-            this.cbghinho.AutoSize = true;
-            this.cbghinho.ForeColor = System.Drawing.Color.Gray;
-            this.cbghinho.Location = new System.Drawing.Point(101, 102);
-            this.cbghinho.Name = "cbghinho";
-            this.cbghinho.Size = new System.Drawing.Size(172, 17);
-            this.cbghinho.TabIndex = 3;
-            this.cbghinho.Text = "Ghi nhớ tài khoản và mật khẩu";
-            this.cbghinho.UseVisualStyleBackColor = true;
+            this.chbghinho.AutoSize = true;
+            this.chbghinho.ForeColor = System.Drawing.Color.Gray;
+            this.chbghinho.Location = new System.Drawing.Point(101, 102);
+            this.chbghinho.Name = "chbghinho";
+            this.chbghinho.Size = new System.Drawing.Size(172, 17);
+            this.chbghinho.TabIndex = 3;
+            this.chbghinho.Text = "Ghi nhớ tài khoản và mật khẩu";
+            this.chbghinho.UseVisualStyleBackColor = true;
             // 
             // txtmk
             // 
@@ -114,24 +114,24 @@
             this.lblmk.TabIndex = 1;
             this.lblmk.Text = "Mật khẩu";
             // 
-            // lbltennvdn
+            // lbltendn
             // 
-            this.lbltennvdn.AutoSize = true;
-            this.lbltennvdn.Location = new System.Drawing.Point(14, 38);
-            this.lbltennvdn.Name = "lbltennvdn";
-            this.lbltennvdn.Size = new System.Drawing.Size(81, 13);
-            this.lbltennvdn.TabIndex = 0;
-            this.lbltennvdn.Text = "Tên đăng nhập";
+            this.lbltendn.AutoSize = true;
+            this.lbltendn.Location = new System.Drawing.Point(14, 38);
+            this.lbltendn.Name = "lbltendn";
+            this.lbltendn.Size = new System.Drawing.Size(81, 13);
+            this.lbltendn.TabIndex = 0;
+            this.lbltendn.Text = "Tên đăng nhập";
             // 
-            // pblogin
+            // piclogin
             // 
-            this.pblogin.Image = global::OrderSoftManager.Properties.Resources.login;
-            this.pblogin.Location = new System.Drawing.Point(12, 16);
-            this.pblogin.Name = "pblogin";
-            this.pblogin.Size = new System.Drawing.Size(177, 170);
-            this.pblogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pblogin.TabIndex = 2;
-            this.pblogin.TabStop = false;
+            this.piclogin.Image = global::OrderSoftManager.Properties.Resources.login;
+            this.piclogin.Location = new System.Drawing.Point(12, 16);
+            this.piclogin.Name = "piclogin";
+            this.piclogin.Size = new System.Drawing.Size(177, 170);
+            this.piclogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.piclogin.TabIndex = 2;
+            this.piclogin.TabStop = false;
             // 
             // fdangnhap
             // 
@@ -141,7 +141,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(510, 202);
-            this.Controls.Add(this.pblogin);
+            this.Controls.Add(this.piclogin);
             this.Controls.Add(this.gbdn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -151,7 +151,7 @@
             this.Text = "Phần mềm Quản lý bán hàng Phong Vân";
             this.gbdn.ResumeLayout(false);
             this.gbdn.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pblogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.piclogin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -161,11 +161,11 @@
         private System.Windows.Forms.GroupBox gbdn;
         private System.Windows.Forms.Button btnquenmk;
         private System.Windows.Forms.Button btndn;
-        private System.Windows.Forms.CheckBox cbghinho;
+        private System.Windows.Forms.CheckBox chbghinho;
         private System.Windows.Forms.TextBox txtmk;
         private System.Windows.Forms.TextBox txttendn;
         private System.Windows.Forms.Label lblmk;
-        private System.Windows.Forms.Label lbltennvdn;
-        private System.Windows.Forms.PictureBox pblogin;
+        private System.Windows.Forms.Label lbltendn;
+        private System.Windows.Forms.PictureBox piclogin;
     }
 }

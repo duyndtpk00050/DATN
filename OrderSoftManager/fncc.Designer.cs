@@ -113,7 +113,7 @@
             this.btnrefreshncc.Name = "btnrefreshncc";
             this.btnrefreshncc.Size = new System.Drawing.Size(78, 23);
             this.btnrefreshncc.TabIndex = 0;
-            this.btnrefreshncc.Text = "Mới";
+            this.btnrefreshncc.Text = "Làm mới";
             this.btnrefreshncc.UseVisualStyleBackColor = true;
             // 
             // gbthongtinncc

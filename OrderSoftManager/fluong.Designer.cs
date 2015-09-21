@@ -43,7 +43,7 @@
             this.lblnvnhanluong = new System.Windows.Forms.Label();
             this.lbltienluong = new System.Windows.Forms.Label();
             this.cbbthangluong = new System.Windows.Forms.ComboBox();
-            this.lbltimthangluong = new System.Windows.Forms.Label();
+            this.lblthangluong = new System.Windows.Forms.Label();
             this.btntimluongnv = new System.Windows.Forms.Button();
             this.btninbienlailuong = new System.Windows.Forms.Button();
             this.gbdsngaylamnv = new System.Windows.Forms.GroupBox();
@@ -82,7 +82,7 @@
             this.gbtimluongnv.Controls.Add(this.lblnvnhanluong);
             this.gbtimluongnv.Controls.Add(this.lbltienluong);
             this.gbtimluongnv.Controls.Add(this.cbbthangluong);
-            this.gbtimluongnv.Controls.Add(this.lbltimthangluong);
+            this.gbtimluongnv.Controls.Add(this.lblthangluong);
             this.gbtimluongnv.Location = new System.Drawing.Point(12, 12);
             this.gbtimluongnv.Name = "gbtimluongnv";
             this.gbtimluongnv.Size = new System.Drawing.Size(737, 102);
@@ -209,14 +209,14 @@
             this.cbbthangluong.Size = new System.Drawing.Size(158, 21);
             this.cbbthangluong.TabIndex = 5;
             // 
-            // lbltimthangluong
+            // lblthangluong
             // 
-            this.lbltimthangluong.AutoSize = true;
-            this.lbltimthangluong.Location = new System.Drawing.Point(513, 68);
-            this.lbltimthangluong.Name = "lbltimthangluong";
-            this.lbltimthangluong.Size = new System.Drawing.Size(38, 13);
-            this.lbltimthangluong.TabIndex = 7;
-            this.lbltimthangluong.Text = "Tháng";
+            this.lblthangluong.AutoSize = true;
+            this.lblthangluong.Location = new System.Drawing.Point(513, 68);
+            this.lblthangluong.Name = "lblthangluong";
+            this.lblthangluong.Size = new System.Drawing.Size(38, 13);
+            this.lblthangluong.TabIndex = 7;
+            this.lblthangluong.Text = "Tháng";
             // 
             // btntimluongnv
             // 
@@ -410,7 +410,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn trangthainhanluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn idnv;
         private System.Windows.Forms.DataGridView dtgdsluongnv;
-        private System.Windows.Forms.Label lbltimthangluong;
+        private System.Windows.Forms.Label lblthangluong;
         private System.Windows.Forms.ComboBox cbbthangluong;
         private System.Windows.Forms.GroupBox gbchucnangluong;
         private System.Windows.Forms.DateTimePicker dtpngaytraluong;

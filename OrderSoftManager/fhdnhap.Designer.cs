@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fhdnhap));
             this.gbtimhdnhap = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtngaycuoihdnhap = new System.Windows.Forms.DateTimePicker();
             this.numtongtienhdnhap = new System.Windows.Forms.NumericUpDown();
             this.cbbtrangthaihdnhap = new System.Windows.Forms.ComboBox();
             this.lbltrangthaihdnhap = new System.Windows.Forms.Label();
@@ -39,9 +39,9 @@
             this.cbbnvnhaphd = new System.Windows.Forms.ComboBox();
             this.cbbncchdnhap = new System.Windows.Forms.ComboBox();
             this.cbbhdnhap = new System.Windows.Forms.ComboBox();
-            this.dtpngaynhaphd = new System.Windows.Forms.DateTimePicker();
+            this.dtpngaydauhdnhap = new System.Windows.Forms.DateTimePicker();
             this.lbltongtienhdnhap = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblhdnhap = new System.Windows.Forms.Label();
             this.lblnvnhaphd = new System.Windows.Forms.Label();
             this.lblncchdnhap = new System.Windows.Forms.Label();
             this.lblngaynhaphd = new System.Windows.Forms.Label();
@@ -70,7 +70,7 @@
             // gbtimhdnhap
             // 
             this.gbtimhdnhap.Controls.Add(this.label1);
-            this.gbtimhdnhap.Controls.Add(this.dateTimePicker1);
+            this.gbtimhdnhap.Controls.Add(this.dtngaycuoihdnhap);
             this.gbtimhdnhap.Controls.Add(this.numtongtienhdnhap);
             this.gbtimhdnhap.Controls.Add(this.cbbtrangthaihdnhap);
             this.gbtimhdnhap.Controls.Add(this.lbltrangthaihdnhap);
@@ -78,9 +78,9 @@
             this.gbtimhdnhap.Controls.Add(this.cbbnvnhaphd);
             this.gbtimhdnhap.Controls.Add(this.cbbncchdnhap);
             this.gbtimhdnhap.Controls.Add(this.cbbhdnhap);
-            this.gbtimhdnhap.Controls.Add(this.dtpngaynhaphd);
+            this.gbtimhdnhap.Controls.Add(this.dtpngaydauhdnhap);
             this.gbtimhdnhap.Controls.Add(this.lbltongtienhdnhap);
-            this.gbtimhdnhap.Controls.Add(this.label4);
+            this.gbtimhdnhap.Controls.Add(this.lblhdnhap);
             this.gbtimhdnhap.Controls.Add(this.lblnvnhaphd);
             this.gbtimhdnhap.Controls.Add(this.lblncchdnhap);
             this.gbtimhdnhap.Controls.Add(this.lblngaynhaphd);
@@ -102,16 +102,16 @@
             this.label1.Text = "-";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dateTimePicker1
+            // dtngaycuoihdnhap
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(220, 63);
-            this.dateTimePicker1.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
-            this.dateTimePicker1.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(83, 20);
-            this.dateTimePicker1.TabIndex = 2;
-            this.dateTimePicker1.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
+            this.dtngaycuoihdnhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtngaycuoihdnhap.Location = new System.Drawing.Point(220, 63);
+            this.dtngaycuoihdnhap.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dtngaycuoihdnhap.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
+            this.dtngaycuoihdnhap.Name = "dtngaycuoihdnhap";
+            this.dtngaycuoihdnhap.Size = new System.Drawing.Size(83, 20);
+            this.dtngaycuoihdnhap.TabIndex = 2;
+            this.dtngaycuoihdnhap.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
             // 
             // numtongtienhdnhap
             // 
@@ -188,16 +188,16 @@
             this.cbbhdnhap.Size = new System.Drawing.Size(204, 21);
             this.cbbhdnhap.TabIndex = 0;
             // 
-            // dtpngaynhaphd
+            // dtpngaydauhdnhap
             // 
-            this.dtpngaynhaphd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpngaynhaphd.Location = new System.Drawing.Point(99, 63);
-            this.dtpngaynhaphd.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
-            this.dtpngaynhaphd.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
-            this.dtpngaynhaphd.Name = "dtpngaynhaphd";
-            this.dtpngaynhaphd.Size = new System.Drawing.Size(90, 20);
-            this.dtpngaynhaphd.TabIndex = 1;
-            this.dtpngaynhaphd.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
+            this.dtpngaydauhdnhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpngaydauhdnhap.Location = new System.Drawing.Point(99, 63);
+            this.dtpngaydauhdnhap.MaxDate = new System.DateTime(2020, 12, 31, 0, 0, 0, 0);
+            this.dtpngaydauhdnhap.MinDate = new System.DateTime(2015, 9, 1, 0, 0, 0, 0);
+            this.dtpngaydauhdnhap.Name = "dtpngaydauhdnhap";
+            this.dtpngaydauhdnhap.Size = new System.Drawing.Size(90, 20);
+            this.dtpngaydauhdnhap.TabIndex = 1;
+            this.dtpngaydauhdnhap.Value = new System.DateTime(2015, 9, 15, 0, 0, 0, 0);
             // 
             // lbltongtienhdnhap
             // 
@@ -208,14 +208,14 @@
             this.lbltongtienhdnhap.TabIndex = 4;
             this.lbltongtienhdnhap.Text = "Tổng tiền";
             // 
-            // label4
+            // lblhdnhap
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Hóa đơn nhập";
+            this.lblhdnhap.AutoSize = true;
+            this.lblhdnhap.Location = new System.Drawing.Point(17, 30);
+            this.lblhdnhap.Name = "lblhdnhap";
+            this.lblhdnhap.Size = new System.Drawing.Size(76, 13);
+            this.lblhdnhap.TabIndex = 3;
+            this.lblhdnhap.Text = "Hóa đơn nhập";
             // 
             // lblnvnhaphd
             // 
@@ -398,7 +398,6 @@
             // 
             // fhdnhap
             // 
-            this.AcceptButton = this.btntimhdnhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -429,13 +428,13 @@
         private System.Windows.Forms.GroupBox gbdshdnhap;
         private System.Windows.Forms.DataGridView dtgdshdnhap;
         private System.Windows.Forms.Label lbltongtienhdnhap;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblhdnhap;
         private System.Windows.Forms.Label lblnvnhaphd;
         private System.Windows.Forms.Label lblncchdnhap;
         private System.Windows.Forms.Label lblngaynhaphd;
         private System.Windows.Forms.Button btnchitiethdnhap;
         private System.Windows.Forms.Button btntimhdnhap;
-        private System.Windows.Forms.DateTimePicker dtpngaynhaphd;
+        private System.Windows.Forms.DateTimePicker dtpngaydauhdnhap;
         private System.Windows.Forms.ComboBox cbbhdnhap;
         private System.Windows.Forms.ComboBox cbbnvnhaphd;
         private System.Windows.Forms.ComboBox cbbncchdnhap;
@@ -445,7 +444,7 @@
         private System.Windows.Forms.NumericUpDown numtongtienhdnhap;
         private System.Windows.Forms.ComboBox cbbtrangthaihdnhap;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtngaycuoihdnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenhdnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaynhaphd;

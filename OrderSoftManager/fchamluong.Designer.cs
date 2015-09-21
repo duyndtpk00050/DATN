@@ -29,42 +29,43 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fchamluong));
-            this.gbchucnangchitietcl = new System.Windows.Forms.GroupBox();
+            this.gbcnchamluong = new System.Windows.Forms.GroupBox();
             this.btnbangluong = new System.Windows.Forms.Button();
             this.btntinhluong = new System.Windows.Forms.Button();
-            this.txtnvchamluong = new System.Windows.Forms.TextBox();
-            this.lblcvchitietcl = new System.Windows.Forms.Label();
-            this.lblnvchitietcl = new System.Windows.Forms.Label();
-            this.gbchitietclnv = new System.Windows.Forms.GroupBox();
+            this.txtnvnhanluong = new System.Windows.Forms.TextBox();
+            this.lblcvchamluong = new System.Windows.Forms.Label();
+            this.lblnvnhanluong = new System.Windows.Forms.Label();
+            this.gbttchamluong = new System.Windows.Forms.GroupBox();
             this.btnviewcl = new System.Windows.Forms.Button();
-            this.lbltienluong = new System.Windows.Forms.Label();
-            this.numluongcb = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbltongtienluong = new System.Windows.Forms.Label();
+            this.numlcb = new System.Windows.Forms.NumericUpDown();
+            this.lbldvtinhluong = new System.Windows.Forms.Label();
+            this.lbllcb = new System.Windows.Forms.Label();
             this.lbltrangthainhanluong = new System.Windows.Forms.Label();
             this.lbldvluong = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbltienchamluong = new System.Windows.Forms.Label();
             this.cbbthangchamluong = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.clbngaychamluong = new System.Windows.Forms.CheckedListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cbbcachamluong = new System.Windows.Forms.ComboBox();
+            this.lblthangchamluong = new System.Windows.Forms.Label();
+            this.chlbngaychamluong = new System.Windows.Forms.CheckedListBox();
+            this.lblclchamluong = new System.Windows.Forms.Label();
+            this.cbbclchamluong = new System.Windows.Forms.ComboBox();
             this.cbbcvchamluong = new System.Windows.Forms.ComboBox();
-            this.gbchucnangchitietcl.SuspendLayout();
-            this.gbchitietclnv.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numluongcb)).BeginInit();
+            this.lblngaylam = new System.Windows.Forms.Label();
+            this.gbcnchamluong.SuspendLayout();
+            this.gbttchamluong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numlcb)).BeginInit();
             this.SuspendLayout();
             // 
-            // gbchucnangchitietcl
+            // gbcnchamluong
             // 
-            this.gbchucnangchitietcl.Controls.Add(this.btnbangluong);
-            this.gbchucnangchitietcl.Controls.Add(this.btntinhluong);
-            this.gbchucnangchitietcl.Location = new System.Drawing.Point(12, 12);
-            this.gbchucnangchitietcl.Name = "gbchucnangchitietcl";
-            this.gbchucnangchitietcl.Size = new System.Drawing.Size(456, 56);
-            this.gbchucnangchitietcl.TabIndex = 1;
-            this.gbchucnangchitietcl.TabStop = false;
-            this.gbchucnangchitietcl.Text = "Chức năng";
+            this.gbcnchamluong.Controls.Add(this.btnbangluong);
+            this.gbcnchamluong.Controls.Add(this.btntinhluong);
+            this.gbcnchamluong.Location = new System.Drawing.Point(12, 12);
+            this.gbcnchamluong.Name = "gbcnchamluong";
+            this.gbcnchamluong.Size = new System.Drawing.Size(456, 56);
+            this.gbcnchamluong.TabIndex = 1;
+            this.gbcnchamluong.TabStop = false;
+            this.gbcnchamluong.Text = "Chức năng";
             // 
             // btnbangluong
             // 
@@ -89,56 +90,57 @@
             this.btntinhluong.Text = "Tính lương";
             this.btntinhluong.UseVisualStyleBackColor = true;
             // 
-            // txtnvchamluong
+            // txtnvnhanluong
             // 
-            this.txtnvchamluong.Location = new System.Drawing.Point(78, 32);
-            this.txtnvchamluong.Name = "txtnvchamluong";
-            this.txtnvchamluong.Size = new System.Drawing.Size(215, 20);
-            this.txtnvchamluong.TabIndex = 0;
+            this.txtnvnhanluong.Location = new System.Drawing.Point(78, 32);
+            this.txtnvnhanluong.Name = "txtnvnhanluong";
+            this.txtnvnhanluong.Size = new System.Drawing.Size(215, 20);
+            this.txtnvnhanluong.TabIndex = 0;
             // 
-            // lblcvchitietcl
+            // lblcvchamluong
             // 
-            this.lblcvchitietcl.AutoSize = true;
-            this.lblcvchitietcl.Location = new System.Drawing.Point(16, 77);
-            this.lblcvchitietcl.Name = "lblcvchitietcl";
-            this.lblcvchitietcl.Size = new System.Drawing.Size(47, 13);
-            this.lblcvchitietcl.TabIndex = 2;
-            this.lblcvchitietcl.Text = "Chức vụ";
+            this.lblcvchamluong.AutoSize = true;
+            this.lblcvchamluong.Location = new System.Drawing.Point(16, 77);
+            this.lblcvchamluong.Name = "lblcvchamluong";
+            this.lblcvchamluong.Size = new System.Drawing.Size(47, 13);
+            this.lblcvchamluong.TabIndex = 2;
+            this.lblcvchamluong.Text = "Chức vụ";
             // 
-            // lblnvchitietcl
+            // lblnvnhanluong
             // 
-            this.lblnvchitietcl.AutoSize = true;
-            this.lblnvchitietcl.Location = new System.Drawing.Point(16, 36);
-            this.lblnvchitietcl.Name = "lblnvchitietcl";
-            this.lblnvchitietcl.Size = new System.Drawing.Size(56, 13);
-            this.lblnvchitietcl.TabIndex = 1;
-            this.lblnvchitietcl.Text = "Nhân viên";
+            this.lblnvnhanluong.AutoSize = true;
+            this.lblnvnhanluong.Location = new System.Drawing.Point(16, 36);
+            this.lblnvnhanluong.Name = "lblnvnhanluong";
+            this.lblnvnhanluong.Size = new System.Drawing.Size(56, 13);
+            this.lblnvnhanluong.TabIndex = 1;
+            this.lblnvnhanluong.Text = "Nhân viên";
             // 
-            // gbchitietclnv
+            // gbttchamluong
             // 
-            this.gbchitietclnv.Controls.Add(this.btnviewcl);
-            this.gbchitietclnv.Controls.Add(this.lbltienluong);
-            this.gbchitietclnv.Controls.Add(this.numluongcb);
-            this.gbchitietclnv.Controls.Add(this.label5);
-            this.gbchitietclnv.Controls.Add(this.label6);
-            this.gbchitietclnv.Controls.Add(this.lbltrangthainhanluong);
-            this.gbchitietclnv.Controls.Add(this.lbldvluong);
-            this.gbchitietclnv.Controls.Add(this.label3);
-            this.gbchitietclnv.Controls.Add(this.cbbthangchamluong);
-            this.gbchitietclnv.Controls.Add(this.label2);
-            this.gbchitietclnv.Controls.Add(this.clbngaychamluong);
-            this.gbchitietclnv.Controls.Add(this.label1);
-            this.gbchitietclnv.Controls.Add(this.cbbcachamluong);
-            this.gbchitietclnv.Controls.Add(this.cbbcvchamluong);
-            this.gbchitietclnv.Controls.Add(this.txtnvchamluong);
-            this.gbchitietclnv.Controls.Add(this.lblnvchitietcl);
-            this.gbchitietclnv.Controls.Add(this.lblcvchitietcl);
-            this.gbchitietclnv.Location = new System.Drawing.Point(12, 74);
-            this.gbchitietclnv.Name = "gbchitietclnv";
-            this.gbchitietclnv.Size = new System.Drawing.Size(456, 348);
-            this.gbchitietclnv.TabIndex = 0;
-            this.gbchitietclnv.TabStop = false;
-            this.gbchitietclnv.Text = "Thông tin chi tiêt ca làm nhân viên";
+            this.gbttchamluong.Controls.Add(this.lblngaylam);
+            this.gbttchamluong.Controls.Add(this.btnviewcl);
+            this.gbttchamluong.Controls.Add(this.lbltongtienluong);
+            this.gbttchamluong.Controls.Add(this.numlcb);
+            this.gbttchamluong.Controls.Add(this.lbldvtinhluong);
+            this.gbttchamluong.Controls.Add(this.lbllcb);
+            this.gbttchamluong.Controls.Add(this.lbltrangthainhanluong);
+            this.gbttchamluong.Controls.Add(this.lbldvluong);
+            this.gbttchamluong.Controls.Add(this.lbltienchamluong);
+            this.gbttchamluong.Controls.Add(this.cbbthangchamluong);
+            this.gbttchamluong.Controls.Add(this.lblthangchamluong);
+            this.gbttchamluong.Controls.Add(this.chlbngaychamluong);
+            this.gbttchamluong.Controls.Add(this.lblclchamluong);
+            this.gbttchamluong.Controls.Add(this.cbbclchamluong);
+            this.gbttchamluong.Controls.Add(this.cbbcvchamluong);
+            this.gbttchamluong.Controls.Add(this.txtnvnhanluong);
+            this.gbttchamluong.Controls.Add(this.lblnvnhanluong);
+            this.gbttchamluong.Controls.Add(this.lblcvchamluong);
+            this.gbttchamluong.Location = new System.Drawing.Point(12, 74);
+            this.gbttchamluong.Name = "gbttchamluong";
+            this.gbttchamluong.Size = new System.Drawing.Size(456, 348);
+            this.gbttchamluong.TabIndex = 0;
+            this.gbttchamluong.TabStop = false;
+            this.gbttchamluong.Text = "Thông tin ca làm nhân viên";
             // 
             // btnviewcl
             // 
@@ -152,42 +154,42 @@
             this.btnviewcl.UseVisualStyleBackColor = true;
             this.btnviewcl.Click += new System.EventHandler(this.btnviewcl_Click);
             // 
-            // lbltienluong
+            // lbltongtienluong
             // 
-            this.lbltienluong.BackColor = System.Drawing.SystemColors.Info;
-            this.lbltienluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbltienluong.Location = new System.Drawing.Point(78, 304);
-            this.lbltienluong.Name = "lbltienluong";
-            this.lbltienluong.Size = new System.Drawing.Size(146, 20);
-            this.lbltienluong.TabIndex = 36;
-            this.lbltienluong.Text = "0";
-            this.lbltienluong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbltongtienluong.BackColor = System.Drawing.SystemColors.Info;
+            this.lbltongtienluong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbltongtienluong.Location = new System.Drawing.Point(78, 304);
+            this.lbltongtienluong.Name = "lbltongtienluong";
+            this.lbltongtienluong.Size = new System.Drawing.Size(146, 20);
+            this.lbltongtienluong.TabIndex = 36;
+            this.lbltongtienluong.Text = "0";
+            this.lbltongtienluong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // numluongcb
+            // numlcb
             // 
-            this.numluongcb.Location = new System.Drawing.Point(310, 73);
-            this.numluongcb.Name = "numluongcb";
-            this.numluongcb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.numluongcb.Size = new System.Drawing.Size(96, 20);
-            this.numluongcb.TabIndex = 2;
+            this.numlcb.Location = new System.Drawing.Point(310, 73);
+            this.numlcb.Name = "numlcb";
+            this.numlcb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.numlcb.Size = new System.Drawing.Size(96, 20);
+            this.numlcb.TabIndex = 2;
             // 
-            // label5
+            // lbldvtinhluong
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(412, 77);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 13);
-            this.label5.TabIndex = 35;
-            this.label5.Text = "VNĐ";
+            this.lbldvtinhluong.AutoSize = true;
+            this.lbldvtinhluong.Location = new System.Drawing.Point(412, 77);
+            this.lbldvtinhluong.Name = "lbldvtinhluong";
+            this.lbldvtinhluong.Size = new System.Drawing.Size(30, 13);
+            this.lbldvtinhluong.TabIndex = 35;
+            this.lbldvtinhluong.Text = "VNĐ";
             // 
-            // label6
+            // lbllcb
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(266, 77);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 13);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "LCB";
+            this.lbllcb.AutoSize = true;
+            this.lbllcb.Location = new System.Drawing.Point(266, 77);
+            this.lbllcb.Name = "lbllcb";
+            this.lbllcb.Size = new System.Drawing.Size(27, 13);
+            this.lbllcb.TabIndex = 34;
+            this.lbllcb.Text = "LCB";
             // 
             // lbltrangthainhanluong
             // 
@@ -209,14 +211,14 @@
             this.lbldvluong.TabIndex = 30;
             this.lbldvluong.Text = "VNĐ";
             // 
-            // label3
+            // lbltienchamluong
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 308);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Tiền lương";
+            this.lbltienchamluong.AutoSize = true;
+            this.lbltienchamluong.Location = new System.Drawing.Point(15, 308);
+            this.lbltienchamluong.Name = "lbltienchamluong";
+            this.lbltienchamluong.Size = new System.Drawing.Size(57, 13);
+            this.lbltienchamluong.TabIndex = 12;
+            this.lbltienchamluong.Text = "Tiền lương";
             // 
             // cbbthangchamluong
             // 
@@ -230,22 +232,22 @@
             this.cbbthangchamluong.Size = new System.Drawing.Size(133, 21);
             this.cbbthangchamluong.TabIndex = 5;
             // 
-            // label2
+            // lblthangchamluong
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(266, 120);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Tháng";
+            this.lblthangchamluong.AutoSize = true;
+            this.lblthangchamluong.Location = new System.Drawing.Point(266, 120);
+            this.lblthangchamluong.Name = "lblthangchamluong";
+            this.lblthangchamluong.Size = new System.Drawing.Size(38, 13);
+            this.lblthangchamluong.TabIndex = 9;
+            this.lblthangchamluong.Text = "Tháng";
             // 
-            // clbngaychamluong
+            // chlbngaychamluong
             // 
-            this.clbngaychamluong.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.clbngaychamluong.CheckOnClick = true;
-            this.clbngaychamluong.ColumnWidth = 90;
-            this.clbngaychamluong.FormattingEnabled = true;
-            this.clbngaychamluong.Items.AddRange(new object[] {
+            this.chlbngaychamluong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.chlbngaychamluong.CheckOnClick = true;
+            this.chlbngaychamluong.ColumnWidth = 90;
+            this.chlbngaychamluong.FormattingEnabled = true;
+            this.chlbngaychamluong.Items.AddRange(new object[] {
             "Ngày 1",
             "Ngày 2",
             "Ngày 3",
@@ -277,31 +279,31 @@
             "Ngày 29",
             "Ngày 30",
             "Ngày 31"});
-            this.clbngaychamluong.Location = new System.Drawing.Point(78, 161);
-            this.clbngaychamluong.MultiColumn = true;
-            this.clbngaychamluong.Name = "clbngaychamluong";
-            this.clbngaychamluong.Size = new System.Drawing.Size(365, 120);
-            this.clbngaychamluong.TabIndex = 6;
+            this.chlbngaychamluong.Location = new System.Drawing.Point(78, 161);
+            this.chlbngaychamluong.MultiColumn = true;
+            this.chlbngaychamluong.Name = "chlbngaychamluong";
+            this.chlbngaychamluong.Size = new System.Drawing.Size(365, 120);
+            this.chlbngaychamluong.TabIndex = 6;
             // 
-            // label1
+            // lblclchamluong
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 120);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Ca làm";
+            this.lblclchamluong.AutoSize = true;
+            this.lblclchamluong.Location = new System.Drawing.Point(16, 120);
+            this.lblclchamluong.Name = "lblclchamluong";
+            this.lblclchamluong.Size = new System.Drawing.Size(39, 13);
+            this.lblclchamluong.TabIndex = 7;
+            this.lblclchamluong.Text = "Ca làm";
             // 
-            // cbbcachamluong
+            // cbbclchamluong
             // 
-            this.cbbcachamluong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cbbcachamluong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbcachamluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbcachamluong.FormattingEnabled = true;
-            this.cbbcachamluong.Location = new System.Drawing.Point(78, 116);
-            this.cbbcachamluong.Name = "cbbcachamluong";
-            this.cbbcachamluong.Size = new System.Drawing.Size(124, 21);
-            this.cbbcachamluong.TabIndex = 3;
+            this.cbbclchamluong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.cbbclchamluong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbclchamluong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbclchamluong.FormattingEnabled = true;
+            this.cbbclchamluong.Location = new System.Drawing.Point(78, 116);
+            this.cbbclchamluong.Name = "cbbclchamluong";
+            this.cbbclchamluong.Size = new System.Drawing.Size(124, 21);
+            this.cbbclchamluong.TabIndex = 3;
             // 
             // cbbcvchamluong
             // 
@@ -315,6 +317,15 @@
             this.cbbcvchamluong.Size = new System.Drawing.Size(170, 21);
             this.cbbcvchamluong.TabIndex = 1;
             // 
+            // lblngaylam
+            // 
+            this.lblngaylam.AutoSize = true;
+            this.lblngaylam.Location = new System.Drawing.Point(16, 161);
+            this.lblngaylam.Name = "lblngaylam";
+            this.lblngaylam.Size = new System.Drawing.Size(51, 13);
+            this.lblngaylam.TabIndex = 37;
+            this.lblngaylam.Text = "Ngày làm";
+            // 
             // fchamluong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -322,43 +333,44 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(482, 434);
-            this.Controls.Add(this.gbchitietclnv);
-            this.Controls.Add(this.gbchucnangchitietcl);
+            this.Controls.Add(this.gbttchamluong);
+            this.Controls.Add(this.gbcnchamluong);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "fchamluong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chấm lương";
-            this.gbchucnangchitietcl.ResumeLayout(false);
-            this.gbchitietclnv.ResumeLayout(false);
-            this.gbchitietclnv.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numluongcb)).EndInit();
+            this.gbcnchamluong.ResumeLayout(false);
+            this.gbttchamluong.ResumeLayout(false);
+            this.gbttchamluong.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numlcb)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox gbchucnangchitietcl;
-        private System.Windows.Forms.GroupBox gbchitietclnv;
-        private System.Windows.Forms.Label lblnvchitietcl;
-        private System.Windows.Forms.TextBox txtnvchamluong;
-        private System.Windows.Forms.Label lblcvchitietcl;
+        private System.Windows.Forms.GroupBox gbcnchamluong;
+        private System.Windows.Forms.GroupBox gbttchamluong;
+        private System.Windows.Forms.Label lblnvnhanluong;
+        private System.Windows.Forms.TextBox txtnvnhanluong;
+        private System.Windows.Forms.Label lblcvchamluong;
         private System.Windows.Forms.ComboBox cbbcvchamluong;
         private System.Windows.Forms.ComboBox cbbthangchamluong;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckedListBox clbngaychamluong;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbbcachamluong;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblthangchamluong;
+        private System.Windows.Forms.CheckedListBox chlbngaychamluong;
+        private System.Windows.Forms.Label lblclchamluong;
+        private System.Windows.Forms.ComboBox cbbclchamluong;
+        private System.Windows.Forms.Label lbltienchamluong;
         private System.Windows.Forms.Label lbldvluong;
         private System.Windows.Forms.Label lbltrangthainhanluong;
         private System.Windows.Forms.Button btntinhluong;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numluongcb;
-        private System.Windows.Forms.Label lbltienluong;
+        private System.Windows.Forms.Label lbldvtinhluong;
+        private System.Windows.Forms.Label lbllcb;
+        private System.Windows.Forms.NumericUpDown numlcb;
+        private System.Windows.Forms.Label lbltongtienluong;
         private System.Windows.Forms.Button btnviewcl;
         private System.Windows.Forms.Button btnbangluong;
+        private System.Windows.Forms.Label lblngaylam;
     }
 }
