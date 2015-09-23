@@ -15,5 +15,10 @@ namespace OrderSoftManager
         {
             InitializeComponent();
         }
+
+        private void floaikh_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

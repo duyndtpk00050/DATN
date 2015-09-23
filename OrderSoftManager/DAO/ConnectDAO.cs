@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace OrderSoftManager.DAO
+{
+    public static class ConnectDAO
+    {
+        /// <summary>
+        /// chuỗi kết nối đến CSDL
+        /// </summary>
+        public static string str = "datasource=(local); initial catalog = DATN; Trusted_Connection=Yes";
+
+        /// <summary>
+        /// hàm truy vấn Database
+        /// </summary>
+        /// <param name="caulenh">câu lệnh Select</param>
+        /// <returns>bảng dữ liệu</returns>
+        public static DataTable laydulieu(string caulenh)
+        {
+            ///khởi tạo lẹnh kết nối đên Database
+            SqlConnection ketnoiden = new SqlConnection(str);
+
+            ///mở kết nối
+            ketnoiden.Open();
+                        
+            ///thực hiện việc đọc dữ liệu từ Database
+            SqlDataAdapter da = new SqlDataAdapter(caulenh, ketnoiden);
+
+            ///dữ liệu đọc ra từ câu lệnh select được lưu vào 1 datatable trong dataset
+            DataTable dt = new DataTable();
+
+            ///đổ dữ liệu vào DataTable
+            da.Fill(dt);
+
+            ///đóng kết nối
+            ketnoiden.Close();
+
+            ///trả về một bảng chứa dữ liệu
+            return dt;
+        }
+         
+        /// <summary>
+        /// hàm truy vấn Database
+        /// </summary>
+        /// <param name="caulenh">câu lệnh Update, Insert, Delete</param>
+        /// <returns>kết quả thực thi</returns>
+        public static int thucthisql(string caulenh)
+        {
+            ///khởi tạo lẹnh kết nối đên Database
+            SqlConnection ketnoiden = new SqlConnection(str);
+
+            ///mở kết nối
+            ketnoiden.Open();
+
+            ///thực hiện việc đọc dữ liệu từ Database
+            SqlCommand cmd = new SqlCommand(caulenh, ketnoiden);
+
+            ///thực hiện việc ghi dữ liệu vào Database
+            int ketqua = cmd.ExecuteNonQuery();
+
+            ///trả về kết quả thực thi câu lệnh
+            return ketqua;
+        }
+    }
+}

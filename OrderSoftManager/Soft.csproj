@@ -44,186 +44,203 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fbanhang.cs">
+    <Compile Include="BUS\dnBUS.cs" />
+    <Compile Include="DAO\ConnectDAO.cs" />
+    <Compile Include="DTO\calamDTO.cs" />
+    <Compile Include="DTO\chitietcalamDTO.cs" />
+    <Compile Include="DTO\chitiethdbanDTO.cs" />
+    <Compile Include="DTO\chitiethdnhapDTO.cs" />
+    <Compile Include="DTO\chucvuDTO.cs" />
+    <Compile Include="DTO\dnDTO.cs" />
+    <Compile Include="DTO\hoadonbanDTO.cs" />
+    <Compile Include="DTO\hoadonnhapDTO.cs" />
+    <Compile Include="DTO\khachhangDTO.cs" />
+    <Compile Include="DTO\loaikhachhangDTO.cs" />
+    <Compile Include="DTO\loaimathangDTO.cs" />
+    <Compile Include="DTO\luongDTO.cs" />
+    <Compile Include="DTO\mathangDTO.cs" />
+    <Compile Include="DTO\nhacungcapDTO.cs" />
+    <Compile Include="DTO\nhanvienDTO.cs" />
+    <Compile Include="GUI\fbanhang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fbanhang.Designer.cs">
+    <Compile Include="GUI\fbanhang.Designer.cs">
       <DependentUpon>fbanhang.cs</DependentUpon>
     </Compile>
-    <Compile Include="fchamluong.cs">
+    <Compile Include="GUI\fchamluong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fchamluong.Designer.cs">
+    <Compile Include="GUI\fchamluong.Designer.cs">
       <DependentUpon>fchamluong.cs</DependentUpon>
     </Compile>
-    <Compile Include="fcv.cs">
+    <Compile Include="GUI\fcv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fcv.Designer.cs">
+    <Compile Include="GUI\fcv.Designer.cs">
       <DependentUpon>fcv.cs</DependentUpon>
     </Compile>
-    <Compile Include="fdoimk.cs">
+    <Compile Include="GUI\fdoimk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fdoimk.Designer.cs">
+    <Compile Include="GUI\fdoimk.Designer.cs">
       <DependentUpon>fdoimk.cs</DependentUpon>
     </Compile>
-    <Compile Include="fhdban.cs">
+    <Compile Include="GUI\fhdban.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fhdban.Designer.cs">
+    <Compile Include="GUI\fhdban.Designer.cs">
       <DependentUpon>fhdban.cs</DependentUpon>
     </Compile>
-    <Compile Include="fhdnhap.cs">
+    <Compile Include="GUI\fhdnhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fhdnhap.Designer.cs">
+    <Compile Include="GUI\fhdnhap.Designer.cs">
       <DependentUpon>fhdnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="fkh.cs">
+    <Compile Include="GUI\fkh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fkh.Designer.cs">
+    <Compile Include="GUI\fkh.Designer.cs">
       <DependentUpon>fkh.cs</DependentUpon>
     </Compile>
-    <Compile Include="floaikh.cs">
+    <Compile Include="GUI\floaikh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="floaikh.Designer.cs">
+    <Compile Include="GUI\floaikh.Designer.cs">
       <DependentUpon>floaikh.cs</DependentUpon>
     </Compile>
-    <Compile Include="floaimh.cs">
+    <Compile Include="GUI\floaimh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="floaimh.Designer.cs">
+    <Compile Include="GUI\floaimh.Designer.cs">
       <DependentUpon>floaimh.cs</DependentUpon>
     </Compile>
-    <Compile Include="fluong.cs">
+    <Compile Include="GUI\fluong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fluong.Designer.cs">
+    <Compile Include="GUI\fluong.Designer.cs">
       <DependentUpon>fluong.cs</DependentUpon>
     </Compile>
-    <Compile Include="fcl.cs">
+    <Compile Include="GUI\fcl.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fcl.Designer.cs">
+    <Compile Include="GUI\fcl.Designer.cs">
       <DependentUpon>fcl.cs</DependentUpon>
     </Compile>
-    <Compile Include="fdangnhap.cs">
+    <Compile Include="GUI\fdangnhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fdangnhap.Designer.cs">
+    <Compile Include="GUI\fdangnhap.Designer.cs">
       <DependentUpon>fdangnhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmain.cs">
+    <Compile Include="GUI\fmain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmain.Designer.cs">
+    <Compile Include="GUI\fmain.Designer.cs">
       <DependentUpon>fmain.cs</DependentUpon>
     </Compile>
-    <Compile Include="fmh.cs">
+    <Compile Include="GUI\fmh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmh.Designer.cs">
+    <Compile Include="GUI\fmh.Designer.cs">
       <DependentUpon>fmh.cs</DependentUpon>
     </Compile>
-    <Compile Include="fncc.cs">
+    <Compile Include="GUI\fncc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fncc.Designer.cs">
+    <Compile Include="GUI\fncc.Designer.cs">
       <DependentUpon>fncc.cs</DependentUpon>
     </Compile>
-    <Compile Include="fnhaphang.cs">
+    <Compile Include="GUI\fnhaphang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fnhaphang.Designer.cs">
+    <Compile Include="GUI\fnhaphang.Designer.cs">
       <DependentUpon>fnhaphang.cs</DependentUpon>
     </Compile>
-    <Compile Include="fnv.cs">
+    <Compile Include="GUI\fnv.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fnv.Designer.cs">
+    <Compile Include="GUI\fnv.Designer.cs">
       <DependentUpon>fnv.cs</DependentUpon>
     </Compile>
-    <Compile Include="fphanquyen.cs">
+    <Compile Include="GUI\fphanquyen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fphanquyen.Designer.cs">
+    <Compile Include="GUI\fphanquyen.Designer.cs">
       <DependentUpon>fphanquyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="fthongke.cs">
+    <Compile Include="GUI\fthongke.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fthongke.Designer.cs">
+    <Compile Include="GUI\fthongke.Designer.cs">
       <DependentUpon>fthongke.cs</DependentUpon>
     </Compile>
-    <Compile Include="fthongtin.cs">
+    <Compile Include="GUI\fthongtin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fthongtin.Designer.cs">
+    <Compile Include="GUI\fthongtin.Designer.cs">
       <DependentUpon>fthongtin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="fbanhang.resx">
+    <EmbeddedResource Include="GUI\fbanhang.resx">
       <DependentUpon>fbanhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fchamluong.resx">
+    <EmbeddedResource Include="GUI\fchamluong.resx">
       <DependentUpon>fchamluong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fcv.resx">
+    <EmbeddedResource Include="GUI\fcv.resx">
       <DependentUpon>fcv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fdoimk.resx">
+    <EmbeddedResource Include="GUI\fdoimk.resx">
       <DependentUpon>fdoimk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fhdban.resx">
+    <EmbeddedResource Include="GUI\fhdban.resx">
       <DependentUpon>fhdban.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fhdnhap.resx">
+    <EmbeddedResource Include="GUI\fhdnhap.resx">
       <DependentUpon>fhdnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fkh.resx">
+    <EmbeddedResource Include="GUI\fkh.resx">
       <DependentUpon>fkh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="floaikh.resx">
+    <EmbeddedResource Include="GUI\floaikh.resx">
       <DependentUpon>floaikh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="floaimh.resx">
+    <EmbeddedResource Include="GUI\floaimh.resx">
       <DependentUpon>floaimh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fluong.resx">
+    <EmbeddedResource Include="GUI\fluong.resx">
       <DependentUpon>fluong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fcl.resx">
+    <EmbeddedResource Include="GUI\fcl.resx">
       <DependentUpon>fcl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fdangnhap.resx">
+    <EmbeddedResource Include="GUI\fdangnhap.resx">
       <DependentUpon>fdangnhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmain.resx">
+    <EmbeddedResource Include="GUI\fmain.resx">
       <DependentUpon>fmain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmh.resx">
+    <EmbeddedResource Include="GUI\fmh.resx">
       <DependentUpon>fmh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fncc.resx">
+    <EmbeddedResource Include="GUI\fncc.resx">
       <DependentUpon>fncc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fnhaphang.resx">
+    <EmbeddedResource Include="GUI\fnhaphang.resx">
       <DependentUpon>fnhaphang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fnv.resx">
+    <EmbeddedResource Include="GUI\fnv.resx">
       <DependentUpon>fnv.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fphanquyen.resx">
+    <EmbeddedResource Include="GUI\fphanquyen.resx">
       <DependentUpon>fphanquyen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fthongke.resx">
+    <EmbeddedResource Include="GUI\fthongke.resx">
       <DependentUpon>fthongke.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fthongtin.resx">
+    <EmbeddedResource Include="GUI\fthongtin.resx">
       <DependentUpon>fthongtin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -288,6 +305,7 @@
   <ItemGroup>
     <None Include="Resources\product.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -39,20 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="calamLibrary.cs" />
-    <Compile Include="chitietcalamLibrary.cs" />
-    <Compile Include="chitiethdbanLibrary.cs" />
-    <Compile Include="chitiethdnhapLibrary.cs" />
-    <Compile Include="chucvuLibrary.cs" />
-    <Compile Include="hoadonbanLibrary.cs" />
-    <Compile Include="hoadonnhapLibrary.cs" />
-    <Compile Include="khachhangLibrary.cs" />
-    <Compile Include="loaikhachhangLibrary.cs" />
-    <Compile Include="loaimathangLibrary.cs" />
-    <Compile Include="luongLibrary.cs" />
-    <Compile Include="mathangLibrary.cs" />
-    <Compile Include="nhacungcapLibrary.cs" />
-    <Compile Include="nhanvienLibrary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

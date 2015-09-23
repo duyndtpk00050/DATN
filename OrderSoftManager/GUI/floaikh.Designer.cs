@@ -199,6 +199,7 @@
             this.Name = "floaikh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loại khách hàng";
+            this.Load += new System.EventHandler(this.floaikh_Load);
             this.gbthongtinloaikh.ResumeLayout(false);
             this.gbthongtinloaikh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsloaikh)).EndInit();
