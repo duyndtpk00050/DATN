@@ -200,6 +200,7 @@
             this.Name = "fcv";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chức vụ";
+            this.Load += new System.EventHandler(this.fcv_Load);
             this.gbthongtincv.ResumeLayout(false);
             this.gbthongtincv.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdscv)).EndInit();
