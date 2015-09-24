@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BUS\calamBUS.cs" />
     <Compile Include="BUS\dangnhapBUS.cs" />
+    <Compile Include="BUS\nhacungcapBUS.cs" />
     <Compile Include="DAL\ConnectDAL.cs" />
     <Compile Include="DTO\calamDTO.cs" />
     <Compile Include="DTO\chitietcalamDTO.cs" />

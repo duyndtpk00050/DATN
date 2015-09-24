@@ -51,8 +51,9 @@
             this.tenncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diachincc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mailncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdtncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sofaxncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdtncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbchucnangncc.SuspendLayout();
             this.gbthongtinncc.SuspendLayout();
             this.gbdsncc.SuspendLayout();
@@ -104,6 +105,7 @@
             this.btnaddncc.TabIndex = 1;
             this.btnaddncc.Text = "Thêm";
             this.btnaddncc.UseVisualStyleBackColor = true;
+            this.btnaddncc.Click += new System.EventHandler(this.btnaddncc_Click);
             // 
             // btnrefreshncc
             // 
@@ -115,6 +117,7 @@
             this.btnrefreshncc.TabIndex = 0;
             this.btnrefreshncc.Text = "Làm mới";
             this.btnrefreshncc.UseVisualStyleBackColor = true;
+            this.btnrefreshncc.Click += new System.EventHandler(this.btnrefreshncc_Click);
             // 
             // gbthongtinncc
             // 
@@ -233,30 +236,33 @@
             // 
             // dtgdsncc
             // 
+            this.dtgdsncc.AllowUserToAddRows = false;
+            this.dtgdsncc.AllowUserToDeleteRows = false;
+            this.dtgdsncc.AllowUserToResizeColumns = false;
             this.dtgdsncc.AllowUserToResizeRows = false;
-            this.dtgdsncc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgdsncc.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader;
-            this.dtgdsncc.BackgroundColor = System.Drawing.Color.White;
+            this.dtgdsncc.BackgroundColor = System.Drawing.Color.Silver;
             this.dtgdsncc.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgdsncc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtgdsncc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dtgdsncc.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
+            this.dtgdsncc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dtgdsncc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgdsncc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sttncc,
             this.tenncc,
             this.diachincc,
             this.mailncc,
+            this.sofaxncc,
             this.sdtncc,
-            this.sofaxncc});
+            this.idncc});
+            this.dtgdsncc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgdsncc.EnableHeadersVisualStyles = false;
             this.dtgdsncc.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.dtgdsncc.Location = new System.Drawing.Point(6, 19);
+            this.dtgdsncc.Location = new System.Drawing.Point(3, 16);
             this.dtgdsncc.Name = "dtgdsncc";
             this.dtgdsncc.ReadOnly = true;
             this.dtgdsncc.RowHeadersVisible = false;
-            this.dtgdsncc.Size = new System.Drawing.Size(371, 325);
+            this.dtgdsncc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dtgdsncc.Size = new System.Drawing.Size(377, 331);
             this.dtgdsncc.TabIndex = 0;
             // 
             // sttncc
@@ -264,42 +270,56 @@
             this.sttncc.HeaderText = "STT";
             this.sttncc.Name = "sttncc";
             this.sttncc.ReadOnly = true;
-            this.sttncc.Width = 52;
+            this.sttncc.Width = 51;
             // 
             // tenncc
             // 
+            this.tenncc.DataPropertyName = "tenncc";
             this.tenncc.HeaderText = "Tên";
             this.tenncc.Name = "tenncc";
             this.tenncc.ReadOnly = true;
-            this.tenncc.Width = 50;
+            this.tenncc.Width = 49;
             // 
             // diachincc
             // 
+            this.diachincc.DataPropertyName = "diachincc";
             this.diachincc.HeaderText = "Địa chỉ";
             this.diachincc.Name = "diachincc";
             this.diachincc.ReadOnly = true;
-            this.diachincc.Width = 64;
+            this.diachincc.Width = 63;
             // 
             // mailncc
             // 
+            this.mailncc.DataPropertyName = "emailncc";
             this.mailncc.HeaderText = "Email";
             this.mailncc.Name = "mailncc";
             this.mailncc.ReadOnly = true;
-            this.mailncc.Width = 56;
-            // 
-            // sdtncc
-            // 
-            this.sdtncc.HeaderText = "Số điện thoại";
-            this.sdtncc.Name = "sdtncc";
-            this.sdtncc.ReadOnly = true;
-            this.sdtncc.Width = 94;
+            this.mailncc.Width = 55;
             // 
             // sofaxncc
             // 
+            this.sofaxncc.DataPropertyName = "sofaxncc";
             this.sofaxncc.HeaderText = "Fax";
             this.sofaxncc.Name = "sofaxncc";
             this.sofaxncc.ReadOnly = true;
-            this.sofaxncc.Width = 48;
+            this.sofaxncc.Width = 47;
+            // 
+            // sdtncc
+            // 
+            this.sdtncc.DataPropertyName = "sdtncc";
+            this.sdtncc.HeaderText = "Số điện thoại";
+            this.sdtncc.Name = "sdtncc";
+            this.sdtncc.ReadOnly = true;
+            this.sdtncc.Width = 93;
+            // 
+            // idncc
+            // 
+            this.idncc.DataPropertyName = "idncc";
+            this.idncc.HeaderText = "idncc";
+            this.idncc.Name = "idncc";
+            this.idncc.ReadOnly = true;
+            this.idncc.Visible = false;
+            this.idncc.Width = 57;
             // 
             // fncc
             // 
@@ -315,6 +335,7 @@
             this.Name = "fncc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhà cung cấp";
+            this.Load += new System.EventHandler(this.fncc_Load);
             this.gbchucnangncc.ResumeLayout(false);
             this.gbthongtinncc.ResumeLayout(false);
             this.gbthongtinncc.PerformLayout();
@@ -333,13 +354,6 @@
         private System.Windows.Forms.Button btnrefreshncc;
         private System.Windows.Forms.GroupBox gbthongtinncc;
         private System.Windows.Forms.GroupBox gbdsncc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sttncc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenncc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diachincc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mailncc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sdtncc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sofaxncc;
-        private System.Windows.Forms.DataGridView dtgdsncc;
         private System.Windows.Forms.TextBox txtfaxncc;
         private System.Windows.Forms.TextBox txtsdtncc;
         private System.Windows.Forms.TextBox txtmailncc;
@@ -350,5 +364,13 @@
         private System.Windows.Forms.Label lblmailncc;
         private System.Windows.Forms.Label lbldiachincc;
         private System.Windows.Forms.Label lbltenncc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sttncc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenncc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diachincc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mailncc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sofaxncc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sdtncc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idncc;
+        private System.Windows.Forms.DataGridView dtgdsncc;
     }
 }

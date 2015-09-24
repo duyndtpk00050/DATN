@@ -13,7 +13,7 @@ namespace QLBanHang.DAL
         /// <summary>
         /// chuỗi kết nối đến CSDL
         /// </summary>
-        public string str = "Data Source=(local);Initial Catalog=DATN;Trusted_Connection=Yes";
+        public string str = @"Data Source=HASWELL\SQLEXPRESS;Initial Catalog=DATN;Trusted_Connection=Yes";
 
         /// <summary>
         /// hàm truy vấn Database
