@@ -8,7 +8,7 @@ namespace OrderSoftManager.DTO
     /// <summary>
     /// khai báo thuộc tính
     /// </summary>
-    public class dnDTO
+    public class dangnhapDTO
     {
         private string _taikhoan;
 
@@ -28,7 +28,7 @@ namespace OrderSoftManager.DTO
         /// <summary>
         /// phương thức làm trống
         /// </summary>
-        public dnDTO()
+        public dangnhapDTO()
         {
             Taikhoan = null;
             Matkhau = null;
@@ -39,7 +39,7 @@ namespace OrderSoftManager.DTO
         /// </summary>
         /// <param name="taikhoan">nhập tài khoản</param>
         /// <param name="matkhau">nhập mật khẩu</param>
-        public dnDTO(string taikhoan, string matkhau)
+        public dangnhapDTO(string taikhoan, string matkhau)
         {
             Taikhoan = taikhoan;
             Matkhau = matkhau;

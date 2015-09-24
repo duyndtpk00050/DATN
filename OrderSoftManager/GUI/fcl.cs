@@ -16,5 +16,19 @@ namespace OrderSoftManager
             InitializeComponent();
         }
 
+        private void fcl_Load(object sender, EventArgs e)
+        {
+            dataload();
+        }
+
+        private void dataload()
+        {
+            BUS.calamBUS data = new BUS.calamBUS();
+            dtgdscl.DataSource = data.showtable();
+            for (int i = 0; i < dtgdscl.Rows.Count; i++)
+            {
+                dtgdscl.Rows[i].Cells[0].Value = i + 1;
+            }
+        }
     }
 }

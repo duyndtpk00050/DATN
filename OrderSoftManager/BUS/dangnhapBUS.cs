@@ -7,8 +7,10 @@ using System.Data.SqlClient;
 
 namespace OrderSoftManager.BUS
 {
-    public class dnBUS
+    public class dangnhapBUS
     {
-           
+        DAL.ConnectDAL ketnoi = new DAL.ConnectDAL();
+
+
     }
 }

@@ -35,10 +35,6 @@
             this.btneditcl = new System.Windows.Forms.Button();
             this.btnaddcl = new System.Windows.Forms.Button();
             this.dtgdscl = new System.Windows.Forms.DataGridView();
-            this.sttcl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tencl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thoigiancl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idcl = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbthongtincl = new System.Windows.Forms.GroupBox();
             this.dtpcuoicl = new System.Windows.Forms.DateTimePicker();
             this.dtpdaucl = new System.Windows.Forms.DateTimePicker();
@@ -46,6 +42,10 @@
             this.lblcuoicl = new System.Windows.Forms.Label();
             this.lbldaucl = new System.Windows.Forms.Label();
             this.lbltencl = new System.Windows.Forms.Label();
+            this.sttcl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tencl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thoigiancl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idcl = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbchucnangcl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdscl)).BeginInit();
             this.gbthongtincl.SuspendLayout();
@@ -115,6 +115,8 @@
             // 
             // dtgdscl
             // 
+            this.dtgdscl.AllowUserToAddRows = false;
+            this.dtgdscl.AllowUserToDeleteRows = false;
             this.dtgdscl.AllowUserToResizeRows = false;
             this.dtgdscl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -136,40 +138,8 @@
             this.dtgdscl.Name = "dtgdscl";
             this.dtgdscl.ReadOnly = true;
             this.dtgdscl.RowHeadersVisible = false;
-            this.dtgdscl.Size = new System.Drawing.Size(351, 140);
+            this.dtgdscl.Size = new System.Drawing.Size(351, 156);
             this.dtgdscl.TabIndex = 3;
-            // 
-            // sttcl
-            // 
-            this.sttcl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.sttcl.HeaderText = "STT";
-            this.sttcl.Name = "sttcl";
-            this.sttcl.ReadOnly = true;
-            this.sttcl.Width = 52;
-            // 
-            // tencl
-            // 
-            this.tencl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.tencl.HeaderText = "Tên ca";
-            this.tencl.Name = "tencl";
-            this.tencl.ReadOnly = true;
-            this.tencl.Width = 65;
-            // 
-            // thoigiancl
-            // 
-            this.thoigiancl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.thoigiancl.HeaderText = "Thời gian ca làm";
-            this.thoigiancl.Name = "thoigiancl";
-            this.thoigiancl.ReadOnly = true;
-            this.thoigiancl.Width = 109;
-            // 
-            // idcl
-            // 
-            this.idcl.HeaderText = "idcl";
-            this.idcl.Name = "idcl";
-            this.idcl.ReadOnly = true;
-            this.idcl.Visible = false;
-            this.idcl.Width = 48;
             // 
             // gbthongtincl
             // 
@@ -185,7 +155,7 @@
             this.gbthongtincl.Controls.Add(this.lbltencl);
             this.gbthongtincl.Location = new System.Drawing.Point(12, 87);
             this.gbthongtincl.Name = "gbthongtincl";
-            this.gbthongtincl.Size = new System.Drawing.Size(363, 248);
+            this.gbthongtincl.Size = new System.Drawing.Size(363, 264);
             this.gbthongtincl.TabIndex = 0;
             this.gbthongtincl.TabStop = false;
             this.gbthongtincl.Text = "Thông tin ca làm";
@@ -248,6 +218,41 @@
             this.lbltencl.TabIndex = 0;
             this.lbltencl.Text = "Tên ca";
             // 
+            // sttcl
+            // 
+            this.sttcl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.sttcl.HeaderText = "STT";
+            this.sttcl.Name = "sttcl";
+            this.sttcl.ReadOnly = true;
+            this.sttcl.Width = 52;
+            // 
+            // tencl
+            // 
+            this.tencl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tencl.DataPropertyName = "tencl";
+            this.tencl.HeaderText = "Tên ca";
+            this.tencl.Name = "tencl";
+            this.tencl.ReadOnly = true;
+            this.tencl.Width = 65;
+            // 
+            // thoigiancl
+            // 
+            this.thoigiancl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.thoigiancl.DataPropertyName = "thoigiancl";
+            this.thoigiancl.HeaderText = "Thời gian ca làm";
+            this.thoigiancl.Name = "thoigiancl";
+            this.thoigiancl.ReadOnly = true;
+            this.thoigiancl.Width = 109;
+            // 
+            // idcl
+            // 
+            this.idcl.DataPropertyName = "idcl";
+            this.idcl.HeaderText = "idcl";
+            this.idcl.Name = "idcl";
+            this.idcl.ReadOnly = true;
+            this.idcl.Visible = false;
+            this.idcl.Width = 47;
+            // 
             // fcl
             // 
             this.AcceptButton = this.btnaddcl;
@@ -255,7 +260,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(387, 347);
+            this.ClientSize = new System.Drawing.Size(387, 363);
             this.Controls.Add(this.gbthongtincl);
             this.Controls.Add(this.gbchucnangcl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -263,6 +268,7 @@
             this.Name = "fcl";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ca làm việc";
+            this.Load += new System.EventHandler(this.fcl_Load);
             this.gbchucnangcl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgdscl)).EndInit();
             this.gbthongtincl.ResumeLayout(false);
@@ -280,15 +286,15 @@
         private System.Windows.Forms.Button btneditcl;
         private System.Windows.Forms.Button btnaddcl;
         private System.Windows.Forms.Button btnchitietcl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sttcl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tencl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn thoigiancl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idcl;
         private System.Windows.Forms.Label lblcuoicl;
         private System.Windows.Forms.Label lbldaucl;
         private System.Windows.Forms.Label lbltencl;
         private System.Windows.Forms.DateTimePicker dtpcuoicl;
         private System.Windows.Forms.DateTimePicker dtpdaucl;
         private System.Windows.Forms.TextBox txttencl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sttcl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tencl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thoigiancl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idcl;
     }
 }

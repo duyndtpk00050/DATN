@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Library
+namespace DTO
 {
-    public class nhanvienLibrary
+    public class nhanvienDTO
     {
         private int _idnv;
 

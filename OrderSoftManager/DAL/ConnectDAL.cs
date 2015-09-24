@@ -4,41 +4,50 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
-namespace OrderSoftManager.DAO
+namespace OrderSoftManager.DAL
 {
-    public static class ConnectDAO
+    public class ConnectDAL
     {
         /// <summary>
         /// chuỗi kết nối đến CSDL
         /// </summary>
-        public static string str = "datasource=(local); initial catalog = DATN; Trusted_Connection=Yes";
+        public string str = "Data Source=(local);Initial Catalog=DATN;Trusted_Connection=Yes";
 
         /// <summary>
         /// hàm truy vấn Database
         /// </summary>
         /// <param name="caulenh">câu lệnh Select</param>
         /// <returns>bảng dữ liệu</returns>
-        public static DataTable laydulieu(string caulenh)
+        public DataTable laydulieu(string caulenh)
         {
-            ///khởi tạo lẹnh kết nối đên Database
-            SqlConnection ketnoiden = new SqlConnection(str);
+            DataTable dt = null;
+            try
+            {
+                ///khởi tạo lẹnh kết nối đên Database
+                SqlConnection ketnoiden = new SqlConnection(str);
 
-            ///mở kết nối
-            ketnoiden.Open();
-                        
-            ///thực hiện việc đọc dữ liệu từ Database
-            SqlDataAdapter da = new SqlDataAdapter(caulenh, ketnoiden);
+                ///mở kết nối
+                ketnoiden.Open();
 
-            ///dữ liệu đọc ra từ câu lệnh select được lưu vào 1 datatable trong dataset
-            DataTable dt = new DataTable();
 
-            ///đổ dữ liệu vào DataTable
-            da.Fill(dt);
+                ///thực hiện việc đọc dữ liệu từ Database
+                SqlDataAdapter da = new SqlDataAdapter(caulenh, ketnoiden);
 
-            ///đóng kết nối
-            ketnoiden.Close();
+                ///dữ liệu đọc ra từ câu lệnh select được lưu vào 1 datatable trong dataset
+                dt = new DataTable();
 
+                ///đổ dữ liệu vào DataTable
+                da.Fill(dt);
+
+                ///đóng kết nối
+                ketnoiden.Close();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
             ///trả về một bảng chứa dữ liệu
             return dt;
         }
@@ -48,7 +57,7 @@ namespace OrderSoftManager.DAO
         /// </summary>
         /// <param name="caulenh">câu lệnh Update, Insert, Delete</param>
         /// <returns>kết quả thực thi</returns>
-        public static int thucthisql(string caulenh)
+        public int thucthisql(string caulenh)
         {
             ///khởi tạo lẹnh kết nối đên Database
             SqlConnection ketnoiden = new SqlConnection(str);

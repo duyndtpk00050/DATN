@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Library
+namespace DTO
 {
-    public class calamLibrary
+    public class calamDTO
     {
         private int _idcl;
 
@@ -27,6 +27,17 @@ namespace Library
         {
             get { return _thoigiancl; }
             set { _thoigiancl = value; }
+        }
+
+        public calamDTO()
+        {
+            Tencl = null;
+            Thoigiancl = null;
+        }
+        public calamDTO(string tencl, string thoigiancl)
+        {
+            Tencl = tencl;
+            Thoigiancl = thoigiancl;
         }
     }
 }

@@ -44,14 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BUS\dnBUS.cs" />
-    <Compile Include="DAO\ConnectDAO.cs" />
+    <Compile Include="BUS\calamBUS.cs" />
+    <Compile Include="BUS\dangnhapBUS.cs" />
+    <Compile Include="DAL\ConnectDAL.cs" />
     <Compile Include="DTO\calamDTO.cs" />
     <Compile Include="DTO\chitietcalamDTO.cs" />
     <Compile Include="DTO\chitiethdbanDTO.cs" />
     <Compile Include="DTO\chitiethdnhapDTO.cs" />
     <Compile Include="DTO\chucvuDTO.cs" />
-    <Compile Include="DTO\dnDTO.cs" />
+    <Compile Include="DTO\dangnhapDTO.cs" />
     <Compile Include="DTO\hoadonbanDTO.cs" />
     <Compile Include="DTO\hoadonnhapDTO.cs" />
     <Compile Include="DTO\khachhangDTO.cs" />

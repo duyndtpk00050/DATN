@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Library
+namespace DTO
 {
-    public class nhacungcapLibrary
+    public class nhacungcapDTO
     {
         private int _idncc;
 

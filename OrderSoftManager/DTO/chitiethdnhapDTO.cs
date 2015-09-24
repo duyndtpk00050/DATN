@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Library
+namespace DTO
 {
-    public class chitiethdnhapLibrary
+    public class chitiethdnhapDTO
     {
         private int _idchititethdnhap;
 
