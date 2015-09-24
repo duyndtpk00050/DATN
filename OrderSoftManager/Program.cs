@@ -15,7 +15,7 @@ namespace QLBanHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new fcl());
+            Application.Run(new fncc());
         }
     }
 }

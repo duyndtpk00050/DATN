@@ -12,10 +12,10 @@ namespace QLBanHang
 {
     public partial class fhdnhap : Form
     {
-        SqlConnection conn;
-        DataSet ds;
-        DataView dv;
-        DataTable dt;
+        //SqlConnection conn =null;
+        //DataSet ds = null;
+        //DataView dv = null;
+        //DataTable dt = null;
 
         private void getdata()
         {
@@ -25,12 +25,12 @@ namespace QLBanHang
             conn.Open();
             cmd.CommandText = "Select* from dbo.hoadonnhap";
 
-            ds = new DataSet();
+            //ds = new DataSet();
 
             SqlDataAdapter da = new SqlDataAdapter();
             da.SelectCommand = cmd;
-            da.Fill(ds.Tables["dbo.hoadonnhap"]);
-            dtgdshdnhap.DataSource = dv;
+            //da.Fill(ds.Tables["dbo.hoadonnhap"]);
+            //dtgdshdnhap.DataSource = dv;
 
         }
         public fhdnhap()
