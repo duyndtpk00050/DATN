@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace QLBanHang
+namespace QLBanHang.DTO
 {
     public class loaimathangDTO
     {
