@@ -301,6 +301,7 @@
             this.gbdshdnhap.TabIndex = 2;
             this.gbdshdnhap.TabStop = false;
             this.gbdshdnhap.Text = "Danh sách hóa đơn nhập";
+            this.gbdshdnhap.Enter += new System.EventHandler(this.gbdshdnhap_Enter);
             // 
             // dtgdshdnhap
             // 
@@ -332,6 +333,7 @@
             this.dtgdshdnhap.RowHeadersVisible = false;
             this.dtgdshdnhap.Size = new System.Drawing.Size(713, 306);
             this.dtgdshdnhap.TabIndex = 0;
+            this.dtgdshdnhap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgdshdnhap_CellContentClick);
             // 
             // stt
             // 
@@ -411,6 +413,7 @@
             this.Name = "fhdnhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hóa đơn nhập";
+            this.Load += new System.EventHandler(this.fhdnhap_Load);
             this.gbtimhdnhap.ResumeLayout(false);
             this.gbtimhdnhap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numtongtienhdnhap)).EndInit();
