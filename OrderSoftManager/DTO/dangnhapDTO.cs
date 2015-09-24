@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace OrderSoftManager.DTO
+namespace QLBanHang.DTO
 {
     /// <summary>
     /// khai báo thuộc tính

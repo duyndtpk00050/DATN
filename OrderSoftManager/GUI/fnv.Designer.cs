@@ -1,4 +1,4 @@
-﻿namespace OrderSoftManager
+﻿namespace QLBanHang
 {
     partial class fnv
     {
@@ -284,7 +284,7 @@
             // picanhnv
             // 
             this.picanhnv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picanhnv.Image = global::OrderSoftManager.Properties.Resources.person;
+            this.picanhnv.Image = global::QLBanHang.Properties.Resources.person;
             this.picanhnv.Location = new System.Drawing.Point(347, 25);
             this.picanhnv.Name = "picanhnv";
             this.picanhnv.Size = new System.Drawing.Size(108, 142);

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 
-namespace OrderSoftManager.BUS
+namespace QLBanHang.BUS
 {
     public class calamBUS
     {

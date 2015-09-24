@@ -1,4 +1,4 @@
-﻿namespace OrderSoftManager
+﻿namespace QLBanHang
 {
     partial class fmain
     {
@@ -97,7 +97,7 @@
             // picphanquyen
             // 
             this.picphanquyen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picphanquyen.Image = global::OrderSoftManager.Properties.Resources.setup;
+            this.picphanquyen.Image = global::QLBanHang.Properties.Resources.setup;
             this.picphanquyen.ImageLocation = "";
             this.picphanquyen.Location = new System.Drawing.Point(27, 25);
             this.picphanquyen.Name = "picphanquyen";
@@ -174,7 +174,7 @@
             // picncc
             // 
             this.picncc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picncc.Image = global::OrderSoftManager.Properties.Resources.buy1;
+            this.picncc.Image = global::QLBanHang.Properties.Resources.buy1;
             this.picncc.ImageLocation = "";
             this.picncc.Location = new System.Drawing.Point(484, 29);
             this.picncc.Name = "picncc";
@@ -188,7 +188,7 @@
             // picmh
             // 
             this.picmh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picmh.Image = global::OrderSoftManager.Properties.Resources.products;
+            this.picmh.Image = global::QLBanHang.Properties.Resources.products;
             this.picmh.ImageLocation = "";
             this.picmh.Location = new System.Drawing.Point(335, 29);
             this.picmh.Name = "picmh";
@@ -202,7 +202,7 @@
             // picnv
             // 
             this.picnv.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picnv.Image = global::OrderSoftManager.Properties.Resources.preferences_contact_list;
+            this.picnv.Image = global::QLBanHang.Properties.Resources.preferences_contact_list;
             this.picnv.ImageLocation = "";
             this.picnv.Location = new System.Drawing.Point(186, 29);
             this.picnv.Name = "picnv";
@@ -216,7 +216,7 @@
             // pickh
             // 
             this.pickh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pickh.Image = global::OrderSoftManager.Properties.Resources.guest;
+            this.pickh.Image = global::QLBanHang.Properties.Resources.guest;
             this.pickh.ImageLocation = "";
             this.pickh.Location = new System.Drawing.Point(37, 29);
             this.pickh.Name = "pickh";
@@ -256,7 +256,7 @@
             // picthongke
             // 
             this.picthongke.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picthongke.Image = global::OrderSoftManager.Properties.Resources.analytics;
+            this.picthongke.Image = global::QLBanHang.Properties.Resources.analytics;
             this.picthongke.ImageLocation = "";
             this.picthongke.Location = new System.Drawing.Point(325, 25);
             this.picthongke.Name = "picthongke";
@@ -292,7 +292,7 @@
             // picbanhang
             // 
             this.picbanhang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picbanhang.Image = global::OrderSoftManager.Properties.Resources.Package_Download;
+            this.picbanhang.Image = global::QLBanHang.Properties.Resources.Package_Download;
             this.picbanhang.ImageLocation = "";
             this.picbanhang.Location = new System.Drawing.Point(178, 25);
             this.picbanhang.Name = "picbanhang";
@@ -306,7 +306,7 @@
             // picnhaphang
             // 
             this.picnhaphang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picnhaphang.Image = global::OrderSoftManager.Properties.Resources.Sales_by_Payment;
+            this.picnhaphang.Image = global::QLBanHang.Properties.Resources.Sales_by_Payment;
             this.picnhaphang.ImageLocation = "";
             this.picnhaphang.Location = new System.Drawing.Point(31, 25);
             this.picnhaphang.Name = "picnhaphang";
@@ -385,7 +385,7 @@
             // 
             // picbanner
             // 
-            this.picbanner.Image = global::OrderSoftManager.Properties.Resources.banner;
+            this.picbanner.Image = global::QLBanHang.Properties.Resources.banner;
             this.picbanner.Location = new System.Drawing.Point(11, 12);
             this.picbanner.Name = "picbanner";
             this.picbanner.Size = new System.Drawing.Size(628, 169);

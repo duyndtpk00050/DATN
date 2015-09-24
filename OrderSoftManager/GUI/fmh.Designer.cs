@@ -1,4 +1,4 @@
-﻿namespace OrderSoftManager
+﻿namespace QLBanHang
 {
     partial class fmh
     {
@@ -117,7 +117,7 @@
             // 
             // picmh
             // 
-            this.picmh.Image = global::OrderSoftManager.Properties.Resources.product;
+            this.picmh.Image = global::QLBanHang.Properties.Resources.product;
             this.picmh.Location = new System.Drawing.Point(291, 19);
             this.picmh.Name = "picmh";
             this.picmh.Size = new System.Drawing.Size(100, 117);

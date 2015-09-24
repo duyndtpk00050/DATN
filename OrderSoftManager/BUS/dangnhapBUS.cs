@@ -5,7 +5,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace OrderSoftManager.BUS
+namespace QLBanHang.BUS
 {
     public class dangnhapBUS
     {

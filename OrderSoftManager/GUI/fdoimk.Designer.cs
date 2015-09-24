@@ -1,4 +1,4 @@
-﻿namespace OrderSoftManager
+﻿namespace QLBanHang
 {
     partial class fdoimk
     {

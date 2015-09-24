@@ -1,4 +1,4 @@
-﻿namespace OrderSoftManager
+﻿namespace QLBanHang
 {
     partial class fdangnhap
     {
@@ -125,7 +125,7 @@
             // 
             // piclogin
             // 
-            this.piclogin.Image = global::OrderSoftManager.Properties.Resources.login;
+            this.piclogin.Image = global::QLBanHang.Properties.Resources.login;
             this.piclogin.Location = new System.Drawing.Point(12, 16);
             this.piclogin.Name = "piclogin";
             this.piclogin.Size = new System.Drawing.Size(177, 170);

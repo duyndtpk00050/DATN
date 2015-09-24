@@ -7,7 +7,7 @@
     <ProjectGuid>{D4F3A62E-92C5-44E7-9957-006CB7494AA6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OrderSoftManager</RootNamespace>
+    <RootNamespace>QLBanHang</RootNamespace>
     <AssemblyName>OrderSoftManager</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

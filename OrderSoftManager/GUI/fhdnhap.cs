@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace OrderSoftManager
+namespace QLBanHang
 {
     public partial class fhdnhap : Form
     {
