@@ -21,13 +21,44 @@ namespace QLBanHang
             dataload();
         }
 
+        ///tạo đối tượng lấy các phương thức hoặc hàm từ Class calamBUS
+        BUS.calamBUS data = new BUS.calamBUS();
+
+        ///tạo đối tượng nhập các giá trị vào Class calamDTO
+        DTO.calamDTO laygiatri = new DTO.calamDTO();
+
+        /// <summary>
+        /// hàm đổ dữ liệu vào DataGridView
+        /// </summary>
         private void dataload()
         {
-            BUS.calamBUS data = new BUS.calamBUS();
+            ///đổ dữ liệu vào DataGridView
             dtgdscl.DataSource = data.showtable();
+
+            ///Số thứ tự tăng tự động ở mỗi dòng thêm mới
             for (int i = 0; i < dtgdscl.Rows.Count; i++)
             {
                 dtgdscl.Rows[i].Cells[0].Value = i + 1;
+            }
+        }
+
+        private void btnaddcl_Click(object sender, EventArgs e)
+        {
+            addtable();
+            dataload();
+        }
+
+        public void addtable()
+        {
+            try
+            {
+                laygiatri.Tencl = txttencl.Text;
+                laygiatri.Thoigiancl = txtthoigianlam.Text;
+                data.addtable(laygiatri.Tencl, laygiatri.Thoigiancl);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
     }
