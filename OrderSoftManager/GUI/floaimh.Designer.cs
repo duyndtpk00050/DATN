@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(floaimh));
             this.gbthongtinloaimh = new System.Windows.Forms.GroupBox();
             this.dtgdsloaimh = new System.Windows.Forms.DataGridView();
-            this.sttloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txttencl = new System.Windows.Forms.TextBox();
             this.lbltenloaimh = new System.Windows.Forms.Label();
             this.gbchucnangloaimh = new System.Windows.Forms.GroupBox();
@@ -41,6 +38,9 @@
             this.btndelloaimh = new System.Windows.Forms.Button();
             this.btneditloaimh = new System.Windows.Forms.Button();
             this.btnaddloaimh = new System.Windows.Forms.Button();
+            this.sttloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbthongtinloaimh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsloaimh)).BeginInit();
             this.gbchucnangloaimh.SuspendLayout();
@@ -63,6 +63,7 @@
             // 
             // dtgdsloaimh
             // 
+            this.dtgdsloaimh.AllowUserToAddRows = false;
             this.dtgdsloaimh.AllowUserToResizeRows = false;
             this.dtgdsloaimh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -85,30 +86,6 @@
             this.dtgdsloaimh.RowHeadersVisible = false;
             this.dtgdsloaimh.Size = new System.Drawing.Size(375, 116);
             this.dtgdsloaimh.TabIndex = 3;
-            // 
-            // sttloaimh
-            // 
-            this.sttloaimh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.sttloaimh.HeaderText = "STT";
-            this.sttloaimh.Name = "sttloaimh";
-            this.sttloaimh.ReadOnly = true;
-            this.sttloaimh.Width = 52;
-            // 
-            // tenloaimh
-            // 
-            this.tenloaimh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.tenloaimh.HeaderText = "Loại mặt hàng";
-            this.tenloaimh.Name = "tenloaimh";
-            this.tenloaimh.ReadOnly = true;
-            this.tenloaimh.Width = 98;
-            // 
-            // idloaimh
-            // 
-            this.idloaimh.HeaderText = "idloaimh";
-            this.idloaimh.Name = "idloaimh";
-            this.idloaimh.ReadOnly = true;
-            this.idloaimh.Visible = false;
-            this.idloaimh.Width = 70;
             // 
             // txttencl
             // 
@@ -188,6 +165,32 @@
             this.btnaddloaimh.Text = "Thêm mới";
             this.btnaddloaimh.UseVisualStyleBackColor = false;
             // 
+            // sttloaimh
+            // 
+            this.sttloaimh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.sttloaimh.HeaderText = "STT";
+            this.sttloaimh.Name = "sttloaimh";
+            this.sttloaimh.ReadOnly = true;
+            this.sttloaimh.Width = 52;
+            // 
+            // tenloaimh
+            // 
+            this.tenloaimh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tenloaimh.DataPropertyName = "tenloaimh";
+            this.tenloaimh.HeaderText = "Loại mặt hàng";
+            this.tenloaimh.Name = "tenloaimh";
+            this.tenloaimh.ReadOnly = true;
+            this.tenloaimh.Width = 98;
+            // 
+            // idloaimh
+            // 
+            this.idloaimh.DataPropertyName = "idloaimh";
+            this.idloaimh.HeaderText = "idloaimh";
+            this.idloaimh.Name = "idloaimh";
+            this.idloaimh.ReadOnly = true;
+            this.idloaimh.Visible = false;
+            this.idloaimh.Width = 69;
+            // 
             // floaimh
             // 
             this.AcceptButton = this.btnaddloaimh;
@@ -202,6 +205,7 @@
             this.Name = "floaimh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loại mặt hàng";
+            this.Load += new System.EventHandler(this.floaimh_Load);
             this.gbthongtinloaimh.ResumeLayout(false);
             this.gbthongtinloaimh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsloaimh)).EndInit();

@@ -45,7 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\calamBUS.cs" />
+    <Compile Include="BUS\chitiethoadonbanBUS.cs" />
     <Compile Include="BUS\dangnhapBUS.cs" />
+    <Compile Include="BUS\loaimathangBUS.cs" />
+    <Compile Include="BUS\mathangBUS.cs" />
     <Compile Include="BUS\nhacungcapBUS.cs" />
     <Compile Include="DAL\ConnectDAL.cs" />
     <Compile Include="DTO\calamDTO.cs" />

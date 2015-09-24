@@ -27,5 +27,19 @@ namespace QLBanHang
             fkh frm = new fkh();
             frm.ShowDialog();
         }
+
+        BUS.chitiethoadonbanBUS data = new BUS.chitiethoadonbanBUS();
+        private void dataload()
+        {
+            dtgchitiethdban.DataSource = data.showtable();
+            for (int i = 0; i < dtgchitiethdban.Rows.Count; i++)
+            {
+                dtgchitiethdban.Rows[i].Cells[0].Value = i + 1;
+            }
+        }
+        private void fbanhang_Load(object sender, EventArgs e)
+        {
+            dataload();
+        }
     }
 }
