@@ -28,16 +28,5 @@ namespace QLBanHang.DTO
             get { return _thoigiancl; }
             set { _thoigiancl = value; }
         }
-
-        public calamDTO()
-        {
-            Tencl = null;
-            Thoigiancl = null;
-        }
-        public calamDTO(string tencl, string thoigiancl)
-        {
-            Tencl = tencl;
-            Thoigiancl = thoigiancl;
-        }
     }
 }

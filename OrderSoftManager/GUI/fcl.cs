@@ -42,18 +42,29 @@ namespace QLBanHang
             }
         }
 
+        /// <summary>
+        /// Thực hiện Chọn nút Thêm
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnaddcl_Click(object sender, EventArgs e)
         {
             addtable();
             dataload();
         }
 
+        /// <summary>
+        /// Hàm thêm dữ liệu vào Database
+        /// </summary>
         public void addtable()
         {
             try
             {
+                ///lưu thông tin vào calamDTO được nhập từ Textbox
                 laygiatri.Tencl = txttencl.Text;
                 laygiatri.Thoigiancl = txtthoigianlam.Text;
+
+                ///gán giá trị vào hàm truy vấn addtable chỉ thực thi từ Class calamBUS
                 data.addtable(laygiatri.Tencl, laygiatri.Thoigiancl);
             }
             catch(Exception ex)
