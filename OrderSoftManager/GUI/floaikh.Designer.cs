@@ -31,9 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(floaikh));
             this.gbthongtinloaikh = new System.Windows.Forms.GroupBox();
             this.dtgdsloaikh = new System.Windows.Forms.DataGridView();
-            this.sttcl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenloaikh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idloaikh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txttenloaikh = new System.Windows.Forms.TextBox();
             this.lbltenloaikh = new System.Windows.Forms.Label();
             this.gbchucnangloaikh = new System.Windows.Forms.GroupBox();
@@ -41,6 +38,9 @@
             this.btndelloaikh = new System.Windows.Forms.Button();
             this.btneditloaikh = new System.Windows.Forms.Button();
             this.btnaddloaikh = new System.Windows.Forms.Button();
+            this.sttcl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenloaikh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idloaikh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbthongtinloaikh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsloaikh)).BeginInit();
             this.gbchucnangloaikh.SuspendLayout();
@@ -60,6 +60,7 @@
             // 
             // dtgdsloaikh
             // 
+            this.dtgdsloaikh.AllowUserToAddRows = false;
             this.dtgdsloaikh.AllowUserToResizeRows = false;
             this.dtgdsloaikh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -82,30 +83,6 @@
             this.dtgdsloaikh.RowHeadersVisible = false;
             this.dtgdsloaikh.Size = new System.Drawing.Size(363, 197);
             this.dtgdsloaikh.TabIndex = 3;
-            // 
-            // sttcl
-            // 
-            this.sttcl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.sttcl.HeaderText = "STT";
-            this.sttcl.Name = "sttcl";
-            this.sttcl.ReadOnly = true;
-            this.sttcl.Width = 52;
-            // 
-            // tenloaikh
-            // 
-            this.tenloaikh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.tenloaikh.HeaderText = "Tên loại khách hàng";
-            this.tenloaikh.Name = "tenloaikh";
-            this.tenloaikh.ReadOnly = true;
-            this.tenloaikh.Width = 129;
-            // 
-            // idloaikh
-            // 
-            this.idloaikh.HeaderText = "idloaikh";
-            this.idloaikh.Name = "idloaikh";
-            this.idloaikh.ReadOnly = true;
-            this.idloaikh.Visible = false;
-            this.idloaikh.Width = 68;
             // 
             // txttenloaikh
             // 
@@ -182,6 +159,33 @@
             this.btnaddloaikh.TabIndex = 0;
             this.btnaddloaikh.Text = "Thêm mới";
             this.btnaddloaikh.UseVisualStyleBackColor = false;
+            this.btnaddloaikh.Click += new System.EventHandler(this.btnaddloaikh_Click);
+            // 
+            // sttcl
+            // 
+            this.sttcl.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.sttcl.HeaderText = "STT";
+            this.sttcl.Name = "sttcl";
+            this.sttcl.ReadOnly = true;
+            this.sttcl.Width = 52;
+            // 
+            // tenloaikh
+            // 
+            this.tenloaikh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tenloaikh.DataPropertyName = "tenloaikh";
+            this.tenloaikh.HeaderText = "Tên loại khách hàng";
+            this.tenloaikh.Name = "tenloaikh";
+            this.tenloaikh.ReadOnly = true;
+            this.tenloaikh.Width = 129;
+            // 
+            // idloaikh
+            // 
+            this.idloaikh.DataPropertyName = "idloaikh";
+            this.idloaikh.HeaderText = "idloaikh";
+            this.idloaikh.Name = "idloaikh";
+            this.idloaikh.ReadOnly = true;
+            this.idloaikh.Visible = false;
+            this.idloaikh.Width = 67;
             // 
             // floaikh
             // 
@@ -212,9 +216,6 @@
 
         private System.Windows.Forms.GroupBox gbthongtinloaikh;
         private System.Windows.Forms.DataGridView dtgdsloaikh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sttcl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenloaikh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idloaikh;
         private System.Windows.Forms.TextBox txttenloaikh;
         private System.Windows.Forms.Label lbltenloaikh;
         private System.Windows.Forms.GroupBox gbchucnangloaikh;
@@ -222,5 +223,8 @@
         private System.Windows.Forms.Button btndelloaikh;
         private System.Windows.Forms.Button btneditloaikh;
         private System.Windows.Forms.Button btnaddloaikh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sttcl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenloaikh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idloaikh;
     }
 }

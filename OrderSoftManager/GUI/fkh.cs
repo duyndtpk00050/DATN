@@ -21,5 +21,21 @@ namespace QLBanHang
             floaikh frm = new floaikh();
             frm.ShowDialog();
         }
+
+        BUS.khachhangBUS data = new BUS.khachhangBUS();
+        DTO.khachhangDTO laygiatri = new DTO.khachhangDTO();
+
+        private void fkh_Load(object sender, EventArgs e)
+        {
+            dataload();
+        }
+        private void dataload()
+    {
+        dtgdskh.DataSource = data.showtable();
+        for (int i = 0; i < dtgdskh.Rows.Count; i++)
+        {
+           dtgdskh.Rows[i].Cells[0].Value = i + 1;
+        }
+    }
     }
 }

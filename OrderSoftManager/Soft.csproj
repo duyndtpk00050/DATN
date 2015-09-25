@@ -47,6 +47,8 @@
     <Compile Include="BUS\calamBUS.cs" />
     <Compile Include="BUS\chitiethoadonbanBUS.cs" />
     <Compile Include="BUS\dangnhapBUS.cs" />
+    <Compile Include="BUS\khachhangBUS.cs" />
+    <Compile Include="BUS\loaikhachhangBUS.cs" />
     <Compile Include="BUS\loaimathangBUS.cs" />
     <Compile Include="BUS\mathangBUS.cs" />
     <Compile Include="BUS\nhacungcapBUS.cs" />

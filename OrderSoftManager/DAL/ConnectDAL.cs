@@ -13,7 +13,7 @@ namespace QLBanHang.DAL
         /// <summary>
         /// chuỗi kết nối đến CSDL
         /// </summary>
-        public string str = " Data Source = (local); Database = PMQLKinhDoanhMayTinh; Integrated Security = True";
+        public string str = " Data Source = (local); Database = DATN; Integrated Security = True";
 
         /// <summary>
         /// hàm truy vấn Database
@@ -74,5 +74,7 @@ namespace QLBanHang.DAL
             ///trả về kết quả thực thi câu lệnh
             return ketqua;
         }
+
+        
     }
 }

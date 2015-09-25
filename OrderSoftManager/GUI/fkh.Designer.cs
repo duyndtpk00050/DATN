@@ -326,6 +326,7 @@
             // 
             // dtgdskh
             // 
+            this.dtgdskh.AllowUserToAddRows = false;
             this.dtgdskh.AllowUserToResizeRows = false;
             this.dtgdskh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -364,6 +365,7 @@
             // 
             // tenkh
             // 
+            this.tenkh.DataPropertyName = "hotenkh";
             this.tenkh.HeaderText = "Họ và tên";
             this.tenkh.Name = "tenkh";
             this.tenkh.ReadOnly = true;
@@ -371,6 +373,7 @@
             // 
             // ngaysinhkh
             // 
+            this.ngaysinhkh.DataPropertyName = "ngaysinhkh";
             this.ngaysinhkh.HeaderText = "Ngày sinh";
             this.ngaysinhkh.Name = "ngaysinhkh";
             this.ngaysinhkh.ReadOnly = true;
@@ -378,6 +381,7 @@
             // 
             // gioitinh
             // 
+            this.gioitinh.DataPropertyName = "gioitinhkh";
             this.gioitinh.HeaderText = "Giới tính";
             this.gioitinh.Name = "gioitinh";
             this.gioitinh.ReadOnly = true;
@@ -385,6 +389,7 @@
             // 
             // cmndkh
             // 
+            this.cmndkh.DataPropertyName = "cmndkh";
             this.cmndkh.HeaderText = "Số CMND";
             this.cmndkh.Name = "cmndkh";
             this.cmndkh.ReadOnly = true;
@@ -392,6 +397,7 @@
             // 
             // sdtkh
             // 
+            this.sdtkh.DataPropertyName = "sdtkh";
             this.sdtkh.HeaderText = "Số điện thoại";
             this.sdtkh.Name = "sdtkh";
             this.sdtkh.ReadOnly = true;
@@ -399,6 +405,7 @@
             // 
             // diachikh
             // 
+            this.diachikh.DataPropertyName = "diachikh";
             this.diachikh.HeaderText = "Địa chỉ";
             this.diachikh.Name = "diachikh";
             this.diachikh.ReadOnly = true;
@@ -406,6 +413,7 @@
             // 
             // mailkh
             // 
+            this.mailkh.DataPropertyName = "emailkh";
             this.mailkh.HeaderText = "Email";
             this.mailkh.Name = "mailkh";
             this.mailkh.ReadOnly = true;
@@ -413,6 +421,7 @@
             // 
             // loaikh
             // 
+            this.loaikh.DataPropertyName = "tenloaikh";
             this.loaikh.HeaderText = "Loại khách hàng";
             this.loaikh.Name = "loaikh";
             this.loaikh.ReadOnly = true;
@@ -433,6 +442,7 @@
             this.Name = "fkh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Khách hàng";
+            this.Load += new System.EventHandler(this.fkh_Load);
             this.gbchucnangkh.ResumeLayout(false);
             this.gbthongtinkh.ResumeLayout(false);
             this.gbthongtinkh.PerformLayout();
@@ -468,6 +478,7 @@
         private System.Windows.Forms.Button btneditkh;
         private System.Windows.Forms.Button btnaddkh;
         private System.Windows.Forms.Button btnviewloaikh;
+        private System.Windows.Forms.DataGridView dtgdskh;
         private System.Windows.Forms.DataGridViewTextBoxColumn stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaysinhkh;
@@ -477,6 +488,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diachikh;
         private System.Windows.Forms.DataGridViewTextBoxColumn mailkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaikh;
-        private System.Windows.Forms.DataGridView dtgdskh;
     }
 }
