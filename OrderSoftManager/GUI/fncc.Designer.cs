@@ -83,6 +83,7 @@
             this.btndelncc.TabIndex = 3;
             this.btndelncc.Text = "Xóa";
             this.btndelncc.UseVisualStyleBackColor = true;
+            this.btndelncc.Click += new System.EventHandler(this.btndelncc_Click);
             // 
             // btneditncc
             // 
@@ -94,6 +95,7 @@
             this.btneditncc.TabIndex = 2;
             this.btneditncc.Text = "Sửa";
             this.btneditncc.UseVisualStyleBackColor = true;
+            this.btneditncc.Click += new System.EventHandler(this.btneditncc_Click);
             // 
             // btnaddncc
             // 
@@ -135,21 +137,21 @@
             this.gbthongtinncc.Controls.Add(this.lbltenncc);
             this.gbthongtinncc.Location = new System.Drawing.Point(12, 83);
             this.gbthongtinncc.Name = "gbthongtinncc";
-            this.gbthongtinncc.Size = new System.Drawing.Size(387, 279);
+            this.gbthongtinncc.Size = new System.Drawing.Size(387, 280);
             this.gbthongtinncc.TabIndex = 0;
             this.gbthongtinncc.TabStop = false;
             this.gbthongtinncc.Text = "Thông tin";
             // 
             // txtfaxncc
             // 
-            this.txtfaxncc.Location = new System.Drawing.Point(127, 238);
+            this.txtfaxncc.Location = new System.Drawing.Point(127, 194);
             this.txtfaxncc.Name = "txtfaxncc";
             this.txtfaxncc.Size = new System.Drawing.Size(238, 20);
             this.txtfaxncc.TabIndex = 4;
             // 
             // txtsdtncc
             // 
-            this.txtsdtncc.Location = new System.Drawing.Point(127, 197);
+            this.txtsdtncc.Location = new System.Drawing.Point(127, 235);
             this.txtsdtncc.Name = "txtsdtncc";
             this.txtsdtncc.Size = new System.Drawing.Size(238, 20);
             this.txtsdtncc.TabIndex = 3;
@@ -179,7 +181,7 @@
             // lblsdtncc
             // 
             this.lblsdtncc.AutoSize = true;
-            this.lblsdtncc.Location = new System.Drawing.Point(39, 201);
+            this.lblsdtncc.Location = new System.Drawing.Point(39, 242);
             this.lblsdtncc.Name = "lblsdtncc";
             this.lblsdtncc.Size = new System.Drawing.Size(70, 13);
             this.lblsdtncc.TabIndex = 7;
@@ -188,7 +190,7 @@
             // lblfaxncc
             // 
             this.lblfaxncc.AutoSize = true;
-            this.lblfaxncc.Location = new System.Drawing.Point(85, 242);
+            this.lblfaxncc.Location = new System.Drawing.Point(85, 201);
             this.lblfaxncc.Name = "lblfaxncc";
             this.lblfaxncc.Size = new System.Drawing.Size(24, 13);
             this.lblfaxncc.TabIndex = 6;
@@ -229,7 +231,7 @@
             this.gbdsncc.Controls.Add(this.dtgdsncc);
             this.gbdsncc.Location = new System.Drawing.Point(405, 12);
             this.gbdsncc.Name = "gbdsncc";
-            this.gbdsncc.Size = new System.Drawing.Size(383, 350);
+            this.gbdsncc.Size = new System.Drawing.Size(383, 351);
             this.gbdsncc.TabIndex = 2;
             this.gbdsncc.TabStop = false;
             this.gbdsncc.Text = "Danh sách nhà cung cấp";
@@ -262,7 +264,7 @@
             this.dtgdsncc.ReadOnly = true;
             this.dtgdsncc.RowHeadersVisible = false;
             this.dtgdsncc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dtgdsncc.Size = new System.Drawing.Size(377, 331);
+            this.dtgdsncc.Size = new System.Drawing.Size(377, 332);
             this.dtgdsncc.TabIndex = 0;
             // 
             // sttncc
@@ -319,7 +321,7 @@
             this.idncc.Name = "idncc";
             this.idncc.ReadOnly = true;
             this.idncc.Visible = false;
-            this.idncc.Width = 57;
+            this.idncc.Width = 56;
             // 
             // fncc
             // 
@@ -327,7 +329,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 374);
+            this.ClientSize = new System.Drawing.Size(800, 375);
             this.Controls.Add(this.gbdsncc);
             this.Controls.Add(this.gbthongtinncc);
             this.Controls.Add(this.gbchucnangncc);
@@ -364,6 +366,7 @@
         private System.Windows.Forms.Label lblmailncc;
         private System.Windows.Forms.Label lbldiachincc;
         private System.Windows.Forms.Label lbltenncc;
+        private System.Windows.Forms.DataGridView dtgdsncc;
         private System.Windows.Forms.DataGridViewTextBoxColumn sttncc;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenncc;
         private System.Windows.Forms.DataGridViewTextBoxColumn diachincc;
@@ -371,6 +374,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn sofaxncc;
         private System.Windows.Forms.DataGridViewTextBoxColumn sdtncc;
         private System.Windows.Forms.DataGridViewTextBoxColumn idncc;
-        private System.Windows.Forms.DataGridView dtgdsncc;
     }
 }
