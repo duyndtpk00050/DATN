@@ -40,10 +40,10 @@
             this.thoigiancl = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcl = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbthongtincl = new System.Windows.Forms.GroupBox();
+            this.txtthoigianlam = new System.Windows.Forms.TextBox();
             this.txttencl = new System.Windows.Forms.TextBox();
             this.lbldaucl = new System.Windows.Forms.Label();
             this.lbltencl = new System.Windows.Forms.Label();
-            this.txtthoigianlam = new System.Windows.Forms.TextBox();
             this.gbchucnangcl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdscl)).BeginInit();
             this.gbthongtincl.SuspendLayout();
@@ -86,6 +86,7 @@
             this.btndelcl.TabIndex = 2;
             this.btndelcl.Text = "Xóa";
             this.btndelcl.UseVisualStyleBackColor = false;
+            this.btndelcl.Click += new System.EventHandler(this.btndelcl_Click);
             // 
             // btneditcl
             // 
@@ -192,6 +193,13 @@
             this.gbthongtincl.TabStop = false;
             this.gbthongtincl.Text = "Thông tin ca làm";
             // 
+            // txtthoigianlam
+            // 
+            this.txtthoigianlam.Location = new System.Drawing.Point(80, 64);
+            this.txtthoigianlam.Name = "txtthoigianlam";
+            this.txtthoigianlam.Size = new System.Drawing.Size(106, 20);
+            this.txtthoigianlam.TabIndex = 1;
+            // 
             // txttencl
             // 
             this.txttencl.Location = new System.Drawing.Point(80, 30);
@@ -216,13 +224,6 @@
             this.lbltencl.Size = new System.Drawing.Size(41, 13);
             this.lbltencl.TabIndex = 0;
             this.lbltencl.Text = "Tên ca";
-            // 
-            // txtthoigianlam
-            // 
-            this.txtthoigianlam.Location = new System.Drawing.Point(80, 64);
-            this.txtthoigianlam.Name = "txtthoigianlam";
-            this.txtthoigianlam.Size = new System.Drawing.Size(106, 20);
-            this.txtthoigianlam.TabIndex = 1;
             // 
             // fcl
             // 

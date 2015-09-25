@@ -22,5 +22,10 @@ namespace QLBanHang.BUS
         {
             ketnoi.thucthisql("insert into calam values(N'" + tenca + "',N'" + thoigiancl + "')");
         }
+
+        public void delrows(int cacl)
+        {
+            ketnoi.thucthisql("delete from calam where idcl = " + cacl + "");
+        }
     }
 }
