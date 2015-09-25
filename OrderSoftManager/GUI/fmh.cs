@@ -22,7 +22,7 @@ namespace QLBanHang
             frm.ShowDialog();
         }
         BUS.mathangBUS data = new BUS.mathangBUS();
-        //DTO.mathangDTO laygiatri = new DTO.mathangDTO(); 
+        DTO.mathangDTO laygiatri = new DTO.mathangDTO(); 
         private void dataload()
         {
             dtgdsmh.DataSource = data.showtable();            
@@ -38,7 +38,21 @@ namespace QLBanHang
         }
         private void addtable()
         {
+            try
+            {
+                laygiatri.Tenmh = txttenmh.Text;
+                laygiatri.Idloaimh = cbbloaimh.SelectedValue.ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
 
+        private void btnaddmh_Click(object sender, EventArgs e)
+        {
+            addtable();
+            dataload();
         }
 
     }
