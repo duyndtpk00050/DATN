@@ -72,5 +72,37 @@ namespace QLBanHang
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        /// <summary>
+        /// hàm xóa dòng dữ liệu theo khóa chính của bảng trong Database
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btndelcl_Click(object sender, EventArgs e)
+        {
+            ///kiểm tra giá trị được lấy từ DataGridView
+            //MessageBox.Show(dtgdscl.CurrentRow.Cells["idcl"].Value.ToString());
+
+            ///lấy giá trị của cột có tên idcl tại dòng được chọn
+            int columnid = Convert.ToInt16(dtgdscl.CurrentRow.Cells["idcl"].Value.ToString());
+
+            ///thực thi hàm xóa có giá trị được lấy từ DataGridView
+            data.delrows(columnid);
+
+            ///thực hiện tải lại dữ liệu từ Database
+            dataload();
+        }
+
+        private void btneditcl_Click(object sender, EventArgs e)
+        {
+            int columnid = Convert.ToInt16(dtgdscl.CurrentRow.Cells["idcl"].Value.ToString());
+
+            laygiatri.Tencl = txttencl.Text;
+            laygiatri.Thoigiancl = txtthoigianlam.Text;
+
+            data.editrows(columnid, laygiatri.Tencl, laygiatri.Thoigiancl);
+
+            dataload();
+        }
     }
 }
