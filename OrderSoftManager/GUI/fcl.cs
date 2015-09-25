@@ -93,6 +93,11 @@ namespace QLBanHang
             dataload();
         }
 
+        /// <summary>
+        /// hàm sửa dòng dữ liệu được chọn ở DataGridView
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btneditcl_Click(object sender, EventArgs e)
         {
             int columnid = Convert.ToInt16(dtgdscl.CurrentRow.Cells["idcl"].Value.ToString());
@@ -100,7 +105,7 @@ namespace QLBanHang
             laygiatri.Tencl = txttencl.Text;
             laygiatri.Thoigiancl = txtthoigianlam.Text;
 
-            data.editrows(columnid, laygiatri.Tencl, laygiatri.Thoigiancl);
+            data.editrow(columnid, laygiatri.Tencl, laygiatri.Thoigiancl);
 
             dataload();
         }
