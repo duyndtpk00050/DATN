@@ -92,5 +92,17 @@ namespace QLBanHang
             ///thực hiện tải lại dữ liệu từ Database
             dataload();
         }
+
+        private void btneditcl_Click(object sender, EventArgs e)
+        {
+            int columnid = Convert.ToInt16(dtgdscl.CurrentRow.Cells["idcl"].Value.ToString());
+
+            laygiatri.Tencl = txttencl.Text;
+            laygiatri.Thoigiancl = txtthoigianlam.Text;
+
+            data.editrows(columnid, laygiatri.Tencl, laygiatri.Thoigiancl);
+
+            dataload();
+        }
     }
 }

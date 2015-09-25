@@ -99,6 +99,7 @@
             this.btneditcl.TabIndex = 1;
             this.btneditcl.Text = "Sửa";
             this.btneditcl.UseVisualStyleBackColor = false;
+            this.btneditcl.Click += new System.EventHandler(this.btneditcl_Click);
             // 
             // btnaddcl
             // 
