@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fbanhang));
             this.gbchucnanghdban = new System.Windows.Forms.GroupBox();
+            this.btnrefreshhdban = new System.Windows.Forms.Button();
             this.btncancelhdban = new System.Windows.Forms.Button();
             this.btnsavehdban = new System.Windows.Forms.Button();
             this.btnaddhdban = new System.Windows.Forms.Button();
@@ -85,7 +86,6 @@
             this.giamhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dvmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thuemhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnrefreshhdban = new System.Windows.Forms.Button();
             this.gbchucnanghdban.SuspendLayout();
             this.gbthongtinhdban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numthuehdban)).BeginInit();
@@ -112,6 +112,17 @@
             this.gbchucnanghdban.TabIndex = 1;
             this.gbchucnanghdban.TabStop = false;
             this.gbchucnanghdban.Text = "Chức năng";
+            // 
+            // btnrefreshhdban
+            // 
+            this.btnrefreshhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnrefreshhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnrefreshhdban.Location = new System.Drawing.Point(18, 171);
+            this.btnrefreshhdban.Name = "btnrefreshhdban";
+            this.btnrefreshhdban.Size = new System.Drawing.Size(75, 26);
+            this.btnrefreshhdban.TabIndex = 5;
+            this.btnrefreshhdban.Text = "Làm mới";
+            this.btnrefreshhdban.UseVisualStyleBackColor = true;
             // 
             // btncancelhdban
             // 
@@ -653,6 +664,7 @@
             // 
             // dtgchitiethdban
             // 
+            this.dtgchitiethdban.AllowUserToAddRows = false;
             this.dtgchitiethdban.AllowUserToResizeRows = false;
             this.dtgchitiethdban.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -690,6 +702,7 @@
             // 
             // tenchitiethdban
             // 
+            this.tenchitiethdban.DataPropertyName = "idhdban";
             this.tenchitiethdban.HeaderText = "Tên hóa đơn";
             this.tenchitiethdban.Name = "tenchitiethdban";
             this.tenchitiethdban.ReadOnly = true;
@@ -697,6 +710,7 @@
             // 
             // mhchitiethdban
             // 
+            this.mhchitiethdban.DataPropertyName = "tenmh";
             this.mhchitiethdban.HeaderText = "Mặt hàng";
             this.mhchitiethdban.Name = "mhchitiethdban";
             this.mhchitiethdban.ReadOnly = true;
@@ -704,6 +718,7 @@
             // 
             // soluongchitiethdban
             // 
+            this.soluongchitiethdban.DataPropertyName = "soluongmhban";
             this.soluongchitiethdban.HeaderText = "Số lượng";
             this.soluongchitiethdban.Name = "soluongchitiethdban";
             this.soluongchitiethdban.ReadOnly = true;
@@ -711,20 +726,23 @@
             // 
             // tongtienchitiethdban
             // 
-            this.tongtienchitiethdban.HeaderText = "Tổng tiền (VNĐ)";
+            this.tongtienchitiethdban.DataPropertyName = "giaban";
+            this.tongtienchitiethdban.HeaderText = "Giá Bán (VNĐ)";
             this.tongtienchitiethdban.Name = "tongtienchitiethdban";
             this.tongtienchitiethdban.ReadOnly = true;
-            this.tongtienchitiethdban.Width = 108;
+            this.tongtienchitiethdban.Width = 101;
             // 
             // giamhban
             // 
-            this.giamhban.HeaderText = "Giá (VNĐ)";
+            this.giamhban.DataPropertyName = "thanhtien";
+            this.giamhban.HeaderText = "Tổng Tiền (VNĐ)";
             this.giamhban.Name = "giamhban";
             this.giamhban.ReadOnly = true;
-            this.giamhban.Width = 79;
+            this.giamhban.Width = 112;
             // 
             // dvmhban
             // 
+            this.dvmhban.DataPropertyName = "donvimh";
             this.dvmhban.HeaderText = "Đơn vị tính";
             this.dvmhban.Name = "dvmhban";
             this.dvmhban.ReadOnly = true;
@@ -736,17 +754,6 @@
             this.thuemhban.Name = "thuemhban";
             this.thuemhban.ReadOnly = true;
             this.thuemhban.Width = 80;
-            // 
-            // btnrefreshhdban
-            // 
-            this.btnrefreshhdban.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnrefreshhdban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnrefreshhdban.Location = new System.Drawing.Point(18, 171);
-            this.btnrefreshhdban.Name = "btnrefreshhdban";
-            this.btnrefreshhdban.Size = new System.Drawing.Size(75, 26);
-            this.btnrefreshhdban.TabIndex = 5;
-            this.btnrefreshhdban.Text = "Làm mới";
-            this.btnrefreshhdban.UseVisualStyleBackColor = true;
             // 
             // fbanhang
             // 
@@ -764,6 +771,7 @@
             this.Name = "fbanhang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bán hàng";
+            this.Load += new System.EventHandler(this.fbanhang_Load);
             this.gbchucnanghdban.ResumeLayout(false);
             this.gbthongtinhdban.ResumeLayout(false);
             this.gbthongtinhdban.PerformLayout();
@@ -822,14 +830,6 @@
         private System.Windows.Forms.Label lbltienkhtra;
         private System.Windows.Forms.TextBox txtsdtkh;
         private System.Windows.Forms.Label lblsdtkhhdban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sttchitiethdban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenchitiethdban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mhchitiethdban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soluongchitiethdban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tongtienchitiethdban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn giamhban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dvmhban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn thuemhban;
         private System.Windows.Forms.NumericUpDown numphivchdban;
         private System.Windows.Forms.Label lbldvtinhtien;
         private System.Windows.Forms.Label lblphivchdban;
@@ -839,5 +839,13 @@
         private System.Windows.Forms.Label lblthuehdban;
         private System.Windows.Forms.Label lbltienhdban;
         private System.Windows.Forms.Button btnrefreshhdban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sttchitiethdban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenchitiethdban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mhchitiethdban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluongchitiethdban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tongtienchitiethdban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giamhban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvmhban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thuemhban;
     }
 }

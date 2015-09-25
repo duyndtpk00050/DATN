@@ -15,5 +15,19 @@ namespace QLBanHang
         {
             InitializeComponent();
         }
+        BUS.loaimathangBUS data = new BUS.loaimathangBUS();
+        private void dataload()
+        {
+            dtgdsloaimh.DataSource = data.showtable();
+            for (int i = 0; i < dtgdsloaimh.Rows.Count; i++)
+            {
+                dtgdsloaimh.Rows[i].Cells[0].Value = i + 1;
+            }
+        }
+
+        private void floaimh_Load(object sender, EventArgs e)
+        {
+            dataload();
+        }
     }
 }

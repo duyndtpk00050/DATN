@@ -57,13 +57,14 @@
             this.gbdsmh = new System.Windows.Forms.GroupBox();
             this.dtgdsmh = new System.Windows.Forms.DataGridView();
             this.sttmh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenmh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thongtinmh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giamh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gianhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluongmh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dvtinhmh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giamh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gianhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thongtinmh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbthongtinmh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picmh)).BeginInit();
@@ -386,6 +387,7 @@
             // 
             // dtgdsmh
             // 
+            this.dtgdsmh.AllowUserToAddRows = false;
             this.dtgdsmh.AllowUserToResizeRows = false;
             this.dtgdsmh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -398,13 +400,14 @@
             this.dtgdsmh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dtgdsmh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.sttmh,
-            this.loaimh,
             this.tenmh,
-            this.thongtinmh,
-            this.giamh,
-            this.gianhap,
+            this.loaimh,
             this.soluongmh,
             this.dvtinhmh,
+            this.giamh,
+            this.gianhap,
+            this.thongtinmh,
+            this.Column1,
             this.idloaimh});
             this.dtgdsmh.EnableHeadersVisualStyles = false;
             this.dtgdsmh.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -422,43 +425,25 @@
             this.sttmh.ReadOnly = true;
             this.sttmh.Width = 52;
             // 
-            // loaimh
-            // 
-            this.loaimh.HeaderText = "Loại mặt hàng";
-            this.loaimh.Name = "loaimh";
-            this.loaimh.ReadOnly = true;
-            this.loaimh.Width = 98;
-            // 
             // tenmh
             // 
+            this.tenmh.DataPropertyName = "tenmh";
             this.tenmh.HeaderText = "Tên mặt hàng";
             this.tenmh.Name = "tenmh";
             this.tenmh.ReadOnly = true;
             this.tenmh.Width = 97;
             // 
-            // thongtinmh
+            // loaimh
             // 
-            this.thongtinmh.HeaderText = "Thông tin";
-            this.thongtinmh.Name = "thongtinmh";
-            this.thongtinmh.ReadOnly = true;
-            this.thongtinmh.Width = 76;
-            // 
-            // giamh
-            // 
-            this.giamh.HeaderText = "Giá (VNĐ)";
-            this.giamh.Name = "giamh";
-            this.giamh.ReadOnly = true;
-            this.giamh.Width = 79;
-            // 
-            // gianhap
-            // 
-            this.gianhap.HeaderText = "Giá nhập (VNĐ)";
-            this.gianhap.Name = "gianhap";
-            this.gianhap.ReadOnly = true;
-            this.gianhap.Width = 106;
+            this.loaimh.DataPropertyName = "tenloaimh";
+            this.loaimh.HeaderText = "Loại mặt hàng";
+            this.loaimh.Name = "loaimh";
+            this.loaimh.ReadOnly = true;
+            this.loaimh.Width = 98;
             // 
             // soluongmh
             // 
+            this.soluongmh.DataPropertyName = "soluong";
             this.soluongmh.HeaderText = "Số lượng";
             this.soluongmh.Name = "soluongmh";
             this.soluongmh.ReadOnly = true;
@@ -466,13 +451,47 @@
             // 
             // dvtinhmh
             // 
+            this.dvtinhmh.DataPropertyName = "donvimh";
             this.dvtinhmh.HeaderText = "Đơn vị tính";
             this.dvtinhmh.Name = "dvtinhmh";
             this.dvtinhmh.ReadOnly = true;
             this.dvtinhmh.Width = 84;
             // 
+            // giamh
+            // 
+            this.giamh.DataPropertyName = "gianhap";
+            this.giamh.HeaderText = "Giá Nhập";
+            this.giamh.Name = "giamh";
+            this.giamh.ReadOnly = true;
+            this.giamh.Width = 76;
+            // 
+            // gianhap
+            // 
+            this.gianhap.DataPropertyName = "giaban";
+            this.gianhap.HeaderText = "Giá Bán (VNĐ)";
+            this.gianhap.Name = "gianhap";
+            this.gianhap.ReadOnly = true;
+            this.gianhap.Width = 101;
+            // 
+            // thongtinmh
+            // 
+            this.thongtinmh.DataPropertyName = "thongtinmh";
+            this.thongtinmh.HeaderText = "Thông tin";
+            this.thongtinmh.Name = "thongtinmh";
+            this.thongtinmh.ReadOnly = true;
+            this.thongtinmh.Width = 76;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "anhmh";
+            this.Column1.HeaderText = "Hình Ảnh";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 75;
+            // 
             // idloaimh
             // 
+            this.idloaimh.DataPropertyName = "idloaimh";
             this.idloaimh.HeaderText = "idloaimh";
             this.idloaimh.Name = "idloaimh";
             this.idloaimh.ReadOnly = true;
@@ -493,6 +512,7 @@
             this.Name = "fmh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mặt hàng";
+            this.Load += new System.EventHandler(this.fmh_Load);
             this.gbthongtinmh.ResumeLayout(false);
             this.gbthongtinmh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picmh)).EndInit();
@@ -533,16 +553,17 @@
         private System.Windows.Forms.PictureBox picmh;
         private System.Windows.Forms.NumericUpDown numsoluongmh;
         private System.Windows.Forms.Label lblsoluongmh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sttmh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn loaimh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenmh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn thongtinmh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn giamh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gianhap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soluongmh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dvtinhmh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idloaimh;
         private System.Windows.Forms.Button btnloaimh;
         private System.Windows.Forms.Button btnaddmh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sttmh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenmh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaimh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluongmh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvtinhmh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giamh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gianhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn thongtinmh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idloaimh;
     }
 }
