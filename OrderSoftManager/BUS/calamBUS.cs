@@ -14,18 +14,23 @@ namespace QLBanHang.BUS
 
         public DataTable showtable()
         {
-            DataTable dt = ketnoi.laydulieu("select * from calam");
+            DataTable dt = ketnoi.laydulieu("SELECT * FROM calam");
             return dt;
         }
 
         public void addtable(string tenca, string thoigiancl)
         {
-            ketnoi.thucthisql("insert into calam values(N'" + tenca + "',N'" + thoigiancl + "')");
+            ketnoi.thucthisql("INSERT INTO calam values(N'" + tenca + "',N'" + thoigiancl + "')");
         }
 
-        public void delrows(int cacl)
+        public void delrows(int idcl)
         {
-            ketnoi.thucthisql("delete from calam where idcl = " + cacl + "");
+            ketnoi.thucthisql("DELETE FROM calam WHERE idcl = " + idcl + "");
+        }
+
+        public void editrows(int idcl, string tenca, string thoigiancl)
+        {
+            ketnoi.thucthisql("UPDATE calam SET tencl = N'" + tenca + "', thoigiancl = N'" + thoigiancl + "' WHERE idcl = '" + idcl + "'");
         }
     }
 }
