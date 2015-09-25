@@ -28,7 +28,7 @@ namespace QLBanHang.BUS
             ketnoi.thucthisql("DELETE FROM calam WHERE idcl = " + idcl + "");
         }
 
-        public void editrows(int idcl, string tenca, string thoigiancl)
+        public void editrow(int idcl, string tenca, string thoigiancl)
         {
             ketnoi.thucthisql("UPDATE calam SET tencl = N'" + tenca + "', thoigiancl = N'" + thoigiancl + "' WHERE idcl = '" + idcl + "'");
         }
