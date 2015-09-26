@@ -16,6 +16,7 @@ namespace QLBanHang
             InitializeComponent();
         }
         BUS.loaimathangBUS data = new BUS.loaimathangBUS();
+        DTO.loaimathangDTO laygiatri = new DTO.loaimathangDTO();
         private void dataload()
         {
             dtgdsloaimh.DataSource = data.showtable();
@@ -28,6 +29,31 @@ namespace QLBanHang
         private void floaimh_Load(object sender, EventArgs e)
         {
             dataload();
+        }
+
+        public void addtable()
+        {
+            try
+            {
+                laygiatri.Tenloaimh = txttenloaimh.Text;
+                data.addtable(laygiatri.Tenloaimh);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void clear()
+        {
+            txttenloaimh.Text = null;
+        }
+
+        private void btnaddloaimh_Click(object sender, EventArgs e)
+        {
+            addtable();
+            dataload();
+            clear();
         }
     }
 }

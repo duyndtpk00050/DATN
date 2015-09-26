@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="BUS\calamBUS.cs" />
     <Compile Include="BUS\chitiethoadonbanBUS.cs" />
+    <Compile Include="BUS\chucvuBUS.cs" />
     <Compile Include="BUS\dangnhapBUS.cs" />
     <Compile Include="BUS\khachhangBUS.cs" />
     <Compile Include="BUS\loaikhachhangBUS.cs" />

@@ -31,16 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(floaimh));
             this.gbthongtinloaimh = new System.Windows.Forms.GroupBox();
             this.dtgdsloaimh = new System.Windows.Forms.DataGridView();
-            this.txttencl = new System.Windows.Forms.TextBox();
+            this.sttloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txttenloaimh = new System.Windows.Forms.TextBox();
             this.lbltenloaimh = new System.Windows.Forms.Label();
             this.gbchucnangloaimh = new System.Windows.Forms.GroupBox();
             this.btnchitietloaimh = new System.Windows.Forms.Button();
             this.btndelloaimh = new System.Windows.Forms.Button();
             this.btneditloaimh = new System.Windows.Forms.Button();
             this.btnaddloaimh = new System.Windows.Forms.Button();
-            this.sttloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idloaimh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbthongtinloaimh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdsloaimh)).BeginInit();
             this.gbchucnangloaimh.SuspendLayout();
@@ -52,7 +52,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbthongtinloaimh.Controls.Add(this.dtgdsloaimh);
-            this.gbthongtinloaimh.Controls.Add(this.txttencl);
+            this.gbthongtinloaimh.Controls.Add(this.txttenloaimh);
             this.gbthongtinloaimh.Controls.Add(this.lbltenloaimh);
             this.gbthongtinloaimh.Location = new System.Drawing.Point(12, 86);
             this.gbthongtinloaimh.Name = "gbthongtinloaimh";
@@ -87,12 +87,38 @@
             this.dtgdsloaimh.Size = new System.Drawing.Size(375, 116);
             this.dtgdsloaimh.TabIndex = 3;
             // 
-            // txttencl
+            // sttloaimh
             // 
-            this.txttencl.Location = new System.Drawing.Point(93, 25);
-            this.txttencl.Name = "txttencl";
-            this.txttencl.Size = new System.Drawing.Size(236, 20);
-            this.txttencl.TabIndex = 0;
+            this.sttloaimh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.sttloaimh.HeaderText = "STT";
+            this.sttloaimh.Name = "sttloaimh";
+            this.sttloaimh.ReadOnly = true;
+            this.sttloaimh.Width = 52;
+            // 
+            // tenloaimh
+            // 
+            this.tenloaimh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.tenloaimh.DataPropertyName = "tenloaimh";
+            this.tenloaimh.HeaderText = "Loại mặt hàng";
+            this.tenloaimh.Name = "tenloaimh";
+            this.tenloaimh.ReadOnly = true;
+            this.tenloaimh.Width = 98;
+            // 
+            // idloaimh
+            // 
+            this.idloaimh.DataPropertyName = "idloaimh";
+            this.idloaimh.HeaderText = "idloaimh";
+            this.idloaimh.Name = "idloaimh";
+            this.idloaimh.ReadOnly = true;
+            this.idloaimh.Visible = false;
+            this.idloaimh.Width = 69;
+            // 
+            // txttenloaimh
+            // 
+            this.txttenloaimh.Location = new System.Drawing.Point(93, 25);
+            this.txttenloaimh.Name = "txttenloaimh";
+            this.txttenloaimh.Size = new System.Drawing.Size(236, 20);
+            this.txttenloaimh.TabIndex = 0;
             // 
             // lbltenloaimh
             // 
@@ -164,32 +190,7 @@
             this.btnaddloaimh.TabIndex = 0;
             this.btnaddloaimh.Text = "Thêm mới";
             this.btnaddloaimh.UseVisualStyleBackColor = false;
-            // 
-            // sttloaimh
-            // 
-            this.sttloaimh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.sttloaimh.HeaderText = "STT";
-            this.sttloaimh.Name = "sttloaimh";
-            this.sttloaimh.ReadOnly = true;
-            this.sttloaimh.Width = 52;
-            // 
-            // tenloaimh
-            // 
-            this.tenloaimh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.tenloaimh.DataPropertyName = "tenloaimh";
-            this.tenloaimh.HeaderText = "Loại mặt hàng";
-            this.tenloaimh.Name = "tenloaimh";
-            this.tenloaimh.ReadOnly = true;
-            this.tenloaimh.Width = 98;
-            // 
-            // idloaimh
-            // 
-            this.idloaimh.DataPropertyName = "idloaimh";
-            this.idloaimh.HeaderText = "idloaimh";
-            this.idloaimh.Name = "idloaimh";
-            this.idloaimh.ReadOnly = true;
-            this.idloaimh.Visible = false;
-            this.idloaimh.Width = 69;
+            this.btnaddloaimh.Click += new System.EventHandler(this.btnaddloaimh_Click);
             // 
             // floaimh
             // 
@@ -218,7 +219,7 @@
 
         private System.Windows.Forms.GroupBox gbthongtinloaimh;
         private System.Windows.Forms.DataGridView dtgdsloaimh;
-        private System.Windows.Forms.TextBox txttencl;
+        private System.Windows.Forms.TextBox txttenloaimh;
         private System.Windows.Forms.Label lbltenloaimh;
         private System.Windows.Forms.GroupBox gbchucnangloaimh;
         private System.Windows.Forms.Button btnchitietloaimh;

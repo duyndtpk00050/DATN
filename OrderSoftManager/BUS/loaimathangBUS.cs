@@ -15,5 +15,10 @@ namespace QLBanHang.BUS
             DataTable dt = ketnoi.laydulieu("select *from loaimathang");
             return dt;
         }
+
+        public void addtable(string tenloaimh)
+        {
+            ketnoi.thucthisql("insert into loaimathang values(N'" + tenloaimh + "')");
+        }
     }
 }

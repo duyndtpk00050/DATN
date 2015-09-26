@@ -326,6 +326,7 @@
             this.btnaddmh.TabIndex = 1;
             this.btnaddmh.Text = "Thêm";
             this.btnaddmh.UseVisualStyleBackColor = true;
+            this.btnaddmh.Click += new System.EventHandler(this.btnaddmh_Click);
             // 
             // btnloaimh
             // 
