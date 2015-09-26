@@ -33,5 +33,25 @@ namespace QLBanHang
             fncc frm = new fncc();
             frm.ShowDialog();
         }
+
+        private void fnhaphang_Load(object sender, EventArgs e)
+        {
+            dataload();
+        }
+
+
+        BUS.nhaphangBUS data = new BUS.nhaphangBUS();
+        DTO.chitiethdnhapDTO laygiatri = new DTO.chitiethdnhapDTO();
+
+        private void dataload()
+        {
+            // Đổ dữ liệu vào DataGridView
+            dtgdschitiethdnhap.DataSource = data.showtable();
+            // Số thứ tự tăng tự động
+            for (int i = 0; i < dtgdschitiethdnhap.Rows.Count; i++)
+            {
+                dtgdschitiethdnhap.Rows[i].Cells[0].Value = i + 1;
+            }
+        }
     }
 }

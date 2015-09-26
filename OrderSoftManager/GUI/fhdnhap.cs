@@ -6,33 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace QLBanHang
 {
     public partial class fhdnhap : Form
     {
-        //SqlConnection conn =null;
-        //DataSet ds = null;
-        //DataView dv = null;
-        //DataTable dt = null;
-
-        private void getdata()
-        {
-            SqlConnection conn = new SqlConnection("Data Source=(local);Initial Catalog=DATN;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = conn;
-            conn.Open();
-            cmd.CommandText = "Select* from dbo.hoadonnhap";
-
-            //ds = new DataSet();
-
-            SqlDataAdapter da = new SqlDataAdapter();
-            da.SelectCommand = cmd;
-            //da.Fill(ds.Tables["dbo.hoadonnhap"]);
-            //dtgdshdnhap.DataSource = dv;
-
-        }
         public fhdnhap()
         {
             InitializeComponent();
@@ -43,14 +21,29 @@ namespace QLBanHang
 
         }
 
+        BUS.hoadonnhapBUS data = new BUS.hoadonnhapBUS();
+        DTO.hoadonnhapDTO laygiatri = new DTO.hoadonnhapDTO();
+
         private void fhdnhap_Load(object sender, EventArgs e)
         {
+            dataload();
+        }
 
+        private void dataload()
+        {
+            dtgdshdnhap.DataSource = data.showtable();
+
+            for (int i = 0; i < dtgdshdnhap.Rows.Count; i++)
+            {
+                dtgdshdnhap.Rows[i].Cells[0].Value = i + 1;
+            }
         }
 
         private void dtgdshdnhap_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+
     }
 }

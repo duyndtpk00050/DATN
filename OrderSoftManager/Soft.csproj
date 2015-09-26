@@ -49,11 +49,13 @@
     <Compile Include="BUS\banhangBUS.cs" />
     <Compile Include="BUS\chucvuBUS.cs" />
     <Compile Include="BUS\dangnhapBUS.cs" />
+    <Compile Include="BUS\hoadonnhapBUS.cs" />
     <Compile Include="BUS\khachhangBUS.cs" />
     <Compile Include="BUS\loaikhachhangBUS.cs" />
     <Compile Include="BUS\loaimathangBUS.cs" />
     <Compile Include="BUS\mathangBUS.cs" />
     <Compile Include="BUS\nhacungcapBUS.cs" />
+    <Compile Include="BUS\nhaphangBUS.cs" />
     <Compile Include="DAL\ConnectDAL.cs" />
     <Compile Include="DTO\calamDTO.cs" />
     <Compile Include="DTO\chitietcalamDTO.cs" />

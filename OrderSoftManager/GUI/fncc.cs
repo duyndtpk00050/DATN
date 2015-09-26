@@ -42,43 +42,15 @@ namespace QLBanHang
 
         private void btnrefreshncc_Click(object sender, EventArgs e)
         {
-            //txttenncc.Clear();
-            //txtdiachincc.Clear();
-            //txtmailncc.Clear();
-            //txtsdtncc.Clear();
-            //txtfaxncc.Clear();
+            txttenncc.Clear();
+            txtdiachincc.Clear();
+            txtmailncc.Clear();
+            txtsdtncc.Clear();
+            txtfaxncc.Clear();
         }
 
-        //private void btnaddncc_Click(object sender, EventArgs e)
-        //{
-        //    addtable();
-        //    dataload();
-        //}
-
-
-        // Hàm thêm dữ liệu vào Database
-        //private void addtable()
-        //{
-        //    try
-        //    {
-        //        //lưu thông tin vào nhacungcapDTO
-        //        laygiatri.Tenncc = txttenncc.Text;
-        //        laygiatri.Diachincc = txtdiachincc.Text;
-        //        laygiatri.Emailncc = txtmailncc.Text;
-        //        laygiatri.Sofaxncc = Int16.Parse(txtfaxncc.Text);
-        //        laygiatri.Sdtncc = Int16.Parse(txtsdtncc.Text);
-
-        //        // Gán giá trị vào hàm truy vấn addtable chỉ thực thi từ Class nhacungcapBUS
-        //        data.addtable(laygiatri.Tenncc, laygiatri.Diachincc, laygiatri.Emailncc, laygiatri.Sofaxncc, laygiatri.Sdtncc);
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.ToString());
-        //    }
-        //}
-
-        // Hàm xóa dòng dữ liệu theo khóa chính của bảng trong Datatable
-        
+        private void btnaddncc_Click(object sender, EventArgs e)
+        {
+        }  
     }
 }

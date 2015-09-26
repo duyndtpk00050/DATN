@@ -14,6 +14,7 @@ namespace QLBanHang.DAL
         /// chuỗi kết nối đến CSDL
         /// </summary>
         public string str = " Data Source = (local); Database =PMQLKinhDoanhMayTinh; Integrated Security = True";
+        //public string str = @" Data Source = HASWELL\SQLEXPRESS; Database =DATN; Integrated Security = True";
 
 
         /// <summary>

@@ -58,7 +58,6 @@
             this.phivanchuyenhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thuevathdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tongtienhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangthaihdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nvnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbtimhdnhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numtongtienhdnhap)).BeginInit();
@@ -323,7 +322,6 @@
             this.phivanchuyenhdban,
             this.thuevathdban,
             this.tongtienhdnhap,
-            this.trangthaihdnhap,
             this.nvnhap});
             this.dtgdshdnhap.EnableHeadersVisualStyles = false;
             this.dtgdshdnhap.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -344,6 +342,7 @@
             // 
             // tenhdnhap
             // 
+            this.tenhdnhap.DataPropertyName = "idhdnhap";
             this.tenhdnhap.HeaderText = "Tên hóa đơn";
             this.tenhdnhap.Name = "tenhdnhap";
             this.tenhdnhap.ReadOnly = true;
@@ -351,6 +350,7 @@
             // 
             // ngaynhaphd
             // 
+            this.ngaynhaphd.DataPropertyName = "ngaynhap";
             this.ngaynhaphd.HeaderText = "Ngày nhập";
             this.ngaynhaphd.Name = "ngaynhaphd";
             this.ngaynhaphd.ReadOnly = true;
@@ -358,6 +358,7 @@
             // 
             // ncchdnhap
             // 
+            this.ncchdnhap.DataPropertyName = "tenncc";
             this.ncchdnhap.HeaderText = "Nhà cung cấp";
             this.ncchdnhap.Name = "ncchdnhap";
             this.ncchdnhap.ReadOnly = true;
@@ -365,6 +366,7 @@
             // 
             // phivanchuyenhdban
             // 
+            this.phivanchuyenhdban.DataPropertyName = "phivanchuyen";
             this.phivanchuyenhdban.HeaderText = "Phí vận chuyển";
             this.phivanchuyenhdban.Name = "phivanchuyenhdban";
             this.phivanchuyenhdban.ReadOnly = true;
@@ -372,6 +374,7 @@
             // 
             // thuevathdban
             // 
+            this.thuevathdban.DataPropertyName = "thueVAT";
             this.thuevathdban.HeaderText = "Thuế VAT";
             this.thuevathdban.Name = "thuevathdban";
             this.thuevathdban.ReadOnly = true;
@@ -379,20 +382,15 @@
             // 
             // tongtienhdnhap
             // 
+            this.tongtienhdnhap.DataPropertyName = "tongtiennhap";
             this.tongtienhdnhap.HeaderText = "Tổng tiền";
             this.tongtienhdnhap.Name = "tongtienhdnhap";
             this.tongtienhdnhap.ReadOnly = true;
             this.tongtienhdnhap.Width = 76;
             // 
-            // trangthaihdnhap
-            // 
-            this.trangthaihdnhap.HeaderText = "Trạng thái";
-            this.trangthaihdnhap.Name = "trangthaihdnhap";
-            this.trangthaihdnhap.ReadOnly = true;
-            this.trangthaihdnhap.Width = 79;
-            // 
             // nvnhap
             // 
+            this.nvnhap.DataPropertyName = "tennv";
             this.nvnhap.HeaderText = "Nhân viên nhập hóa đơn";
             this.nvnhap.Name = "nvnhap";
             this.nvnhap.ReadOnly = true;
@@ -455,7 +453,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phivanchuyenhdban;
         private System.Windows.Forms.DataGridViewTextBoxColumn thuevathdban;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongtienhdnhap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn trangthaihdnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn nvnhap;
     }
 }
