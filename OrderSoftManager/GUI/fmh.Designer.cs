@@ -207,6 +207,10 @@
             this.cbbdvtinhmh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.cbbdvtinhmh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbbdvtinhmh.FormattingEnabled = true;
+            this.cbbdvtinhmh.Items.AddRange(new object[] {
+            "Cái",
+            "Chiếc",
+            "Bộ"});
             this.cbbdvtinhmh.Location = new System.Drawing.Point(128, 380);
             this.cbbdvtinhmh.Name = "cbbdvtinhmh";
             this.cbbdvtinhmh.Size = new System.Drawing.Size(181, 21);

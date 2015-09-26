@@ -73,9 +73,6 @@
             this.txttenmhban = new System.Windows.Forms.TextBox();
             this.lbltenmhhdban = new System.Windows.Forms.Label();
             this.dtgdsmhhdban = new System.Windows.Forms.DataGridView();
-            this.sttmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soluongmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbchitiethdban = new System.Windows.Forms.GroupBox();
             this.dtgchitiethdban = new System.Windows.Forms.DataGridView();
             this.sttchitiethdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,6 +83,9 @@
             this.giamhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dvmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thuemhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sttmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluongmhban = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbchucnanghdban.SuspendLayout();
             this.gbthongtinhdban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numthuehdban)).BeginInit();
@@ -605,6 +605,7 @@
             // 
             // dtgdsmhhdban
             // 
+            this.dtgdsmhhdban.AllowUserToAddRows = false;
             this.dtgdsmhhdban.AllowUserToResizeRows = false;
             this.dtgdsmhhdban.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -627,27 +628,6 @@
             this.dtgdsmhhdban.RowHeadersVisible = false;
             this.dtgdsmhhdban.Size = new System.Drawing.Size(345, 466);
             this.dtgdsmhhdban.TabIndex = 2;
-            // 
-            // sttmhban
-            // 
-            this.sttmhban.HeaderText = "STT";
-            this.sttmhban.Name = "sttmhban";
-            this.sttmhban.ReadOnly = true;
-            this.sttmhban.Width = 52;
-            // 
-            // tenmhban
-            // 
-            this.tenmhban.HeaderText = "Tên mặt hàng";
-            this.tenmhban.Name = "tenmhban";
-            this.tenmhban.ReadOnly = true;
-            this.tenmhban.Width = 97;
-            // 
-            // soluongmhban
-            // 
-            this.soluongmhban.HeaderText = "Số lượng";
-            this.soluongmhban.Name = "soluongmhban";
-            this.soluongmhban.ReadOnly = true;
-            this.soluongmhban.Width = 73;
             // 
             // gbchitiethdban
             // 
@@ -703,10 +683,10 @@
             // tenchitiethdban
             // 
             this.tenchitiethdban.DataPropertyName = "idhdban";
-            this.tenchitiethdban.HeaderText = "Tên hóa đơn";
+            this.tenchitiethdban.HeaderText = "Hóa đơn";
             this.tenchitiethdban.Name = "tenchitiethdban";
             this.tenchitiethdban.ReadOnly = true;
-            this.tenchitiethdban.Width = 93;
+            this.tenchitiethdban.Width = 73;
             // 
             // mhchitiethdban
             // 
@@ -754,6 +734,29 @@
             this.thuemhban.Name = "thuemhban";
             this.thuemhban.ReadOnly = true;
             this.thuemhban.Width = 80;
+            // 
+            // sttmhban
+            // 
+            this.sttmhban.HeaderText = "STT";
+            this.sttmhban.Name = "sttmhban";
+            this.sttmhban.ReadOnly = true;
+            this.sttmhban.Width = 52;
+            // 
+            // tenmhban
+            // 
+            this.tenmhban.DataPropertyName = "tenmh";
+            this.tenmhban.HeaderText = "Tên mặt hàng";
+            this.tenmhban.Name = "tenmhban";
+            this.tenmhban.ReadOnly = true;
+            this.tenmhban.Width = 97;
+            // 
+            // soluongmhban
+            // 
+            this.soluongmhban.DataPropertyName = "soluong";
+            this.soluongmhban.HeaderText = "Số lượng";
+            this.soluongmhban.Name = "soluongmhban";
+            this.soluongmhban.ReadOnly = true;
+            this.soluongmhban.Width = 73;
             // 
             // fbanhang
             // 
@@ -812,9 +815,6 @@
         private System.Windows.Forms.Button btnsavehdban;
         private System.Windows.Forms.GroupBox gbchitiethdban;
         private System.Windows.Forms.DataGridView dtgchitiethdban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sttmhban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenmhban;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soluongmhban;
         private System.Windows.Forms.Label lbltenmhhdban;
         private System.Windows.Forms.TextBox txttenmhban;
         private System.Windows.Forms.TextBox txtdiachikh;
@@ -839,6 +839,9 @@
         private System.Windows.Forms.Label lblthuehdban;
         private System.Windows.Forms.Label lbltienhdban;
         private System.Windows.Forms.Button btnrefreshhdban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sttmhban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenmhban;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluongmhban;
         private System.Windows.Forms.DataGridViewTextBoxColumn sttchitiethdban;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenchitiethdban;
         private System.Windows.Forms.DataGridViewTextBoxColumn mhchitiethdban;

@@ -28,10 +28,11 @@ namespace QLBanHang
             frm.ShowDialog();
         }
 
-        BUS.chitiethoadonbanBUS data = new BUS.chitiethoadonbanBUS();
-        private void dataload()
+        BUS.banhangBUS data = new BUS.banhangBUS();
+        DTO.chitiethdbanDTO laygiatri = new DTO.chitiethdbanDTO();
+        private void dataloadhd()
         {
-            dtgchitiethdban.DataSource = data.showtable();
+            dtgchitiethdban.DataSource = data.showtablehd();
             for (int i = 0; i < dtgchitiethdban.Rows.Count; i++)
             {
                 dtgchitiethdban.Rows[i].Cells[0].Value = i + 1;
@@ -39,7 +40,17 @@ namespace QLBanHang
         }
         private void fbanhang_Load(object sender, EventArgs e)
         {
-            dataload();
+            dataloadhd();
+            dataloadmh();
+        }
+
+        private void dataloadmh()
+        {
+            dtgdsmhhdban.DataSource = data.showtablemh();
+            for (int i = 0; i < dtgdsmhhdban.Rows.Count; i++)
+            {
+                dtgdsmhhdban.Rows[i].Cells[0].Value = i + 1;
+            }
         }
     }
 }

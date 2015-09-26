@@ -15,6 +15,7 @@ namespace QLBanHang.BUS
         public DataTable showtable()
         {
             DataTable dt = ketnoi.laydulieu("SELECT * FROM calam");
+            
             return dt;
         }
 

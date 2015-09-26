@@ -83,7 +83,7 @@
             this.btndelncc.TabIndex = 3;
             this.btndelncc.Text = "Xóa";
             this.btndelncc.UseVisualStyleBackColor = true;
-            this.btndelncc.Click += new System.EventHandler(this.btndelncc_Click);
+            //this.btndelncc.Click += new System.EventHandler(this.btndelncc_Click);
             // 
             // btneditncc
             // 
@@ -95,7 +95,7 @@
             this.btneditncc.TabIndex = 2;
             this.btneditncc.Text = "Sửa";
             this.btneditncc.UseVisualStyleBackColor = true;
-            this.btneditncc.Click += new System.EventHandler(this.btneditncc_Click);
+            //this.btneditncc.Click += new System.EventHandler(this.btneditncc_Click);
             // 
             // btnaddncc
             // 
@@ -107,7 +107,7 @@
             this.btnaddncc.TabIndex = 1;
             this.btnaddncc.Text = "Thêm";
             this.btnaddncc.UseVisualStyleBackColor = true;
-            this.btnaddncc.Click += new System.EventHandler(this.btnaddncc_Click);
+            //this.btnaddncc.Click += new System.EventHandler(this.btnaddncc_Click);
             // 
             // btnrefreshncc
             // 

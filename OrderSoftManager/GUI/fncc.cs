@@ -31,7 +31,7 @@ namespace QLBanHang
         // Hàm đổ dữ liệu vào DataGridView
         private void dataload()
         {
-            BUS.nhacungcapBUS data = new BUS.nhacungcapBUS();
+            
             dtgdsncc.DataSource = data.showtable();
 
             for (int i = 0; i < dtgdsncc.Rows.Count; i++)
@@ -49,61 +49,36 @@ namespace QLBanHang
             //txtfaxncc.Clear();
         }
 
-        private void btnaddncc_Click(object sender, EventArgs e)
-        {
-            addtable();
-            dataload();
-        }
+        //private void btnaddncc_Click(object sender, EventArgs e)
+        //{
+        //    addtable();
+        //    dataload();
+        //}
 
 
         // Hàm thêm dữ liệu vào Database
-        private void addtable()
-        {
-            try
-            {
-                //lưu thông tin vào nhacungcapDTO
-                laygiatri.Tenncc = txttenncc.Text;
-                laygiatri.Diachincc = txtdiachincc.Text;
-                laygiatri.Emailncc = txtmailncc.Text;
-                laygiatri.Sofaxncc = Int16.Parse(txtfaxncc.Text);
-                laygiatri.Sdtncc = Int16.Parse(txtsdtncc.Text);
+        //private void addtable()
+        //{
+        //    try
+        //    {
+        //        //lưu thông tin vào nhacungcapDTO
+        //        laygiatri.Tenncc = txttenncc.Text;
+        //        laygiatri.Diachincc = txtdiachincc.Text;
+        //        laygiatri.Emailncc = txtmailncc.Text;
+        //        laygiatri.Sofaxncc = Int16.Parse(txtfaxncc.Text);
+        //        laygiatri.Sdtncc = Int16.Parse(txtsdtncc.Text);
 
-                // Gán giá trị vào hàm truy vấn addtable chỉ thực thi từ Class nhacungcapBUS
-                data.addtable(laygiatri.Tenncc, laygiatri.Diachincc, laygiatri.Emailncc, laygiatri.Sofaxncc, laygiatri.Sdtncc);
+        //        // Gán giá trị vào hàm truy vấn addtable chỉ thực thi từ Class nhacungcapBUS
+        //        data.addtable(laygiatri.Tenncc, laygiatri.Diachincc, laygiatri.Emailncc, laygiatri.Sofaxncc, laygiatri.Sdtncc);
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.ToString());
+        //    }
+        //}
 
         // Hàm xóa dòng dữ liệu theo khóa chính của bảng trong Datatable
-        private void btndelncc_Click(object sender, EventArgs e)
-        {
-            // Lấy giá trị của cột có tên idncc tại dòng được chọn trong DataGridView
-            int columnid = Convert.ToInt16(dtgdsncc.CurrentRow.Cells["idncc"].Value.ToString());
-
-            // Thực thi hàm xóa có giá trị lấy được từ DataGridView
-            data.delrows(columnid);
-
-            // Load lại dữ liệu trong DataGridView
-            dataload();
-        }
-
-        private void btneditncc_Click(object sender, EventArgs e)
-        {
-            int columnid = Convert.ToInt16(dtgdsncc.CurrentRow.Cells["idncc"].Value.ToString());
-
-            laygiatri.Tenncc = txttenncc.Text;
-            laygiatri.Diachincc = txtdiachincc.Text;
-            laygiatri.Emailncc = txtmailncc.Text;
-            laygiatri.Sofaxncc = Int16.Parse(txtfaxncc.Text);
-            laygiatri.Sdtncc = Int16.Parse(txtsdtncc.Text);
-
-            data.editrows(laygiatri.Tenncc, laygiatri.Diachincc, laygiatri.Emailncc, laygiatri.Sofaxncc, laygiatri.Sdtncc);
-
-            dataload();
-        }
+        
     }
 }

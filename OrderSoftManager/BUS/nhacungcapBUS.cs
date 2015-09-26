@@ -9,7 +9,7 @@ namespace QLBanHang.BUS
     public class nhacungcapBUS
     {
         DAL.ConnectDAL ketnoi = new DAL.ConnectDAL();
-
+        DTO.nhacungcapDTO laythongtin = new DTO.nhacungcapDTO();
         public DataTable showtable()
         {
             DataTable dt = ketnoi.laydulieu("select * from dbo.nhacungcap");
@@ -20,5 +20,6 @@ namespace QLBanHang.BUS
         {
             ketnoi.thucthisql("INSERT INTO nhacungcap values(N'" + tenncc + "',N'" + diachincc + "',N'" + emailncc + "',' + sofaxncc + ',' + sdtncc + ')");
         }
+
     }
 }

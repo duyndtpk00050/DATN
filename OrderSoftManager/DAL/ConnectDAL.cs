@@ -13,11 +13,8 @@ namespace QLBanHang.DAL
         /// <summary>
         /// chuỗi kết nối đến CSDL
         /// </summary>
-<<<<<<< HEAD
-        public string str = " Data Source = (local); Database = DATN; Integrated Security = True";
-=======
-        public string str = @"Data Source=(local);Initial Catalog=DATN;Trusted_Connection=Yes";
->>>>>>> origin/master
+        public string str = " Data Source = (local); Database =PMQLKinhDoanhMayTinh; Integrated Security = True";
+
 
         /// <summary>
         /// hàm truy vấn Database

@@ -44,8 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\hoadonbanhangBUS.cs" />
     <Compile Include="BUS\calamBUS.cs" />
-    <Compile Include="BUS\chitiethoadonbanBUS.cs" />
+    <Compile Include="BUS\banhangBUS.cs" />
     <Compile Include="BUS\chucvuBUS.cs" />
     <Compile Include="BUS\dangnhapBUS.cs" />
     <Compile Include="BUS\khachhangBUS.cs" />

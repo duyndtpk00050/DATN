@@ -31,15 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fhdban));
             this.gbdshdban = new System.Windows.Forms.GroupBox();
             this.dtgdshdban = new System.Windows.Forms.DataGridView();
-            this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaybanhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenkhhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phivanchuyenhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thuevathdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongtienhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangthaihdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nvnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbchucnanghdban = new System.Windows.Forms.GroupBox();
             this.btnchitiethdban = new System.Windows.Forms.Button();
             this.btntimhdban = new System.Windows.Forms.Button();
@@ -60,6 +51,15 @@
             this.lblnvtaohd = new System.Windows.Forms.Label();
             this.lblkhhdban = new System.Windows.Forms.Label();
             this.lblngayhdban = new System.Windows.Forms.Label();
+            this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaybanhd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenkhhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phivanchuyenhdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thuevathdban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongtienhdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangthaihdnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbdshdban.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgdshdban)).BeginInit();
             this.gbchucnanghdban.SuspendLayout();
@@ -82,6 +82,7 @@
             // 
             // dtgdshdban
             // 
+            this.dtgdshdban.AllowUserToAddRows = false;
             this.dtgdshdban.AllowUserToResizeRows = false;
             this.dtgdshdban.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -110,69 +111,6 @@
             this.dtgdshdban.RowHeadersVisible = false;
             this.dtgdshdban.Size = new System.Drawing.Size(714, 287);
             this.dtgdshdban.TabIndex = 0;
-            // 
-            // stt
-            // 
-            this.stt.HeaderText = "STT";
-            this.stt.Name = "stt";
-            this.stt.ReadOnly = true;
-            this.stt.Width = 52;
-            // 
-            // tenhdnhap
-            // 
-            this.tenhdnhap.HeaderText = "Tên hóa đơn";
-            this.tenhdnhap.Name = "tenhdnhap";
-            this.tenhdnhap.ReadOnly = true;
-            this.tenhdnhap.Width = 93;
-            // 
-            // ngaybanhd
-            // 
-            this.ngaybanhd.HeaderText = "Ngày bán";
-            this.ngaybanhd.Name = "ngaybanhd";
-            this.ngaybanhd.ReadOnly = true;
-            this.ngaybanhd.Width = 77;
-            // 
-            // tenkhhdban
-            // 
-            this.tenkhhdban.HeaderText = "Khách hàng";
-            this.tenkhhdban.Name = "tenkhhdban";
-            this.tenkhhdban.ReadOnly = true;
-            this.tenkhhdban.Width = 89;
-            // 
-            // phivanchuyenhdban
-            // 
-            this.phivanchuyenhdban.HeaderText = "Phí vận chuyển";
-            this.phivanchuyenhdban.Name = "phivanchuyenhdban";
-            this.phivanchuyenhdban.ReadOnly = true;
-            this.phivanchuyenhdban.Width = 107;
-            // 
-            // thuevathdban
-            // 
-            this.thuevathdban.HeaderText = "Thuế VAT";
-            this.thuevathdban.Name = "thuevathdban";
-            this.thuevathdban.ReadOnly = true;
-            this.thuevathdban.Width = 80;
-            // 
-            // tongtienhdnhap
-            // 
-            this.tongtienhdnhap.HeaderText = "Tổng tiền";
-            this.tongtienhdnhap.Name = "tongtienhdnhap";
-            this.tongtienhdnhap.ReadOnly = true;
-            this.tongtienhdnhap.Width = 76;
-            // 
-            // trangthaihdnhap
-            // 
-            this.trangthaihdnhap.HeaderText = "Trạng thái";
-            this.trangthaihdnhap.Name = "trangthaihdnhap";
-            this.trangthaihdnhap.ReadOnly = true;
-            this.trangthaihdnhap.Width = 79;
-            // 
-            // nvnhap
-            // 
-            this.nvnhap.HeaderText = "Nhân viên nhập hóa đơn";
-            this.nvnhap.Name = "nvnhap";
-            this.nvnhap.ReadOnly = true;
-            this.nvnhap.Width = 150;
             // 
             // gbchucnanghdban
             // 
@@ -396,6 +334,77 @@
             this.lblngayhdban.TabIndex = 0;
             this.lblngayhdban.Text = "Ngày bán";
             // 
+            // stt
+            // 
+            this.stt.HeaderText = "STT";
+            this.stt.Name = "stt";
+            this.stt.ReadOnly = true;
+            this.stt.Width = 52;
+            // 
+            // tenhdnhap
+            // 
+            this.tenhdnhap.DataPropertyName = "idhdban";
+            this.tenhdnhap.HeaderText = "Tên hóa đơn";
+            this.tenhdnhap.Name = "tenhdnhap";
+            this.tenhdnhap.ReadOnly = true;
+            this.tenhdnhap.Width = 93;
+            // 
+            // ngaybanhd
+            // 
+            this.ngaybanhd.DataPropertyName = "ngayghihdban";
+            this.ngaybanhd.HeaderText = "Ngày bán";
+            this.ngaybanhd.Name = "ngaybanhd";
+            this.ngaybanhd.ReadOnly = true;
+            this.ngaybanhd.Width = 77;
+            // 
+            // tenkhhdban
+            // 
+            this.tenkhhdban.DataPropertyName = "hotenkh";
+            this.tenkhhdban.HeaderText = "Khách hàng";
+            this.tenkhhdban.Name = "tenkhhdban";
+            this.tenkhhdban.ReadOnly = true;
+            this.tenkhhdban.Width = 89;
+            // 
+            // phivanchuyenhdban
+            // 
+            this.phivanchuyenhdban.DataPropertyName = "phivanchuyen";
+            this.phivanchuyenhdban.HeaderText = "Phí vận chuyển";
+            this.phivanchuyenhdban.Name = "phivanchuyenhdban";
+            this.phivanchuyenhdban.ReadOnly = true;
+            this.phivanchuyenhdban.Width = 107;
+            // 
+            // thuevathdban
+            // 
+            this.thuevathdban.DataPropertyName = "thueVAT";
+            this.thuevathdban.HeaderText = "Thuế VAT";
+            this.thuevathdban.Name = "thuevathdban";
+            this.thuevathdban.ReadOnly = true;
+            this.thuevathdban.Width = 80;
+            // 
+            // tongtienhdnhap
+            // 
+            this.tongtienhdnhap.DataPropertyName = "tongtienhdban";
+            this.tongtienhdnhap.HeaderText = "Tổng tiền";
+            this.tongtienhdnhap.Name = "tongtienhdnhap";
+            this.tongtienhdnhap.ReadOnly = true;
+            this.tongtienhdnhap.Width = 76;
+            // 
+            // trangthaihdnhap
+            // 
+            this.trangthaihdnhap.DataPropertyName = "trangthai";
+            this.trangthaihdnhap.HeaderText = "Trạng thái";
+            this.trangthaihdnhap.Name = "trangthaihdnhap";
+            this.trangthaihdnhap.ReadOnly = true;
+            this.trangthaihdnhap.Width = 79;
+            // 
+            // nvnhap
+            // 
+            this.nvnhap.DataPropertyName = "tennv";
+            this.nvnhap.HeaderText = "Nhân viên nhập hóa đơn";
+            this.nvnhap.Name = "nvnhap";
+            this.nvnhap.ReadOnly = true;
+            this.nvnhap.Width = 150;
+            // 
             // fhdban
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -409,6 +418,7 @@
             this.Name = "fhdban";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hóa đơn bán";
+            this.Load += new System.EventHandler(this.fhdban_Load);
             this.gbdshdban.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgdshdban)).EndInit();
             this.gbchucnanghdban.ResumeLayout(false);

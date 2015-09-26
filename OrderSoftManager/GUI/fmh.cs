@@ -21,8 +21,10 @@ namespace QLBanHang
             floaimh frm = new floaimh();
             frm.ShowDialog();
         }
+        
         BUS.mathangBUS data = new BUS.mathangBUS();
         DTO.mathangDTO laygiatri = new DTO.mathangDTO(); 
+
         private void dataload()
         {
             dtgdsmh.DataSource = data.showtable();            
@@ -34,14 +36,26 @@ namespace QLBanHang
 
         private void fmh_Load(object sender, EventArgs e)
         {
+            loadloaimh();
             dataload();
+
+            
         }
+
         private void addtable()
         {
             try
             {
                 laygiatri.Tenmh = txttenmh.Text;
-                laygiatri.Idloaimh = cbbloaimh.SelectedValue.ToString();
+                laygiatri.Idloaimh = Convert.ToInt16(cbbloaimh.ValueMember.ToString());
+                laygiatri.Soluong = Convert.ToInt16(numsoluongmh.Value.ToString());
+                laygiatri.Donvitinh = cbbdvtinhmh.SelectedText.ToString();
+                laygiatri.Gianhap = Convert.ToDouble(numgianhapmh.Value.ToString());
+                laygiatri.Giaban = Convert.ToDouble(numgiabanmh.Value.ToString());
+                laygiatri.Thongtinmh = txtthongtinmh.Text;
+                laygiatri.Anhmh = picmh.Image.ToString();
+
+                data.addtable(laygiatri.Tenmh, laygiatri.Idloaimh, laygiatri.Soluong, laygiatri.Donvitinh, laygiatri.Gianhap, laygiatri.Giaban, laygiatri.Thongtinmh, laygiatri.Anhmh);
             }
             catch (Exception ex)
             {
@@ -53,6 +67,14 @@ namespace QLBanHang
         {
             addtable();
             dataload();
+        }
+
+        private void loadloaimh()
+        {
+
+            cbbloaimh.DataSource = data.Showcbb();
+            cbbloaimh.ValueMember = "idloaimh";
+            cbbloaimh.DisplayMember = "tenloaimh";
         }
 
     }
